@@ -1,0 +1,14 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Orangeworm has used HTTP for C2. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.002",
+        "Technique": "Remote Services: SMB/Windows Admin Shares",
+        "Use": "Orangeworm has copied its backdoor across open network shares, including ADMIN$, C$WINDOWS, D$WINDOWS, and E$WINDOWS. [1]"
+    }
+]

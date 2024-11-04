@@ -1,0 +1,272 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.001",
+        "Technique": "Account Discovery: Local Account",
+        "Use": "Ke3chang performs account discovery using commands such as net localgroup administrators and net group \"REDACTED\" /domain on specific permissions groups. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "Ke3chang performs account discovery using commands such as net localgroup administrators and net group \"REDACTED\" /domain on specific permissions groups. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Ke3chang malware including RoyalCli and BS2005 have communicated over HTTP with the C2 server through Internet Explorer (IE) by using the COM interface IWebBrowser2. [2] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.004",
+        "Technique": "Application Layer Protocol: DNS",
+        "Use": "Ke3chang malware RoyalDNS has used DNS for C2. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560",
+        "Technique": "Archive Collected Data",
+        "Use": "The Ke3chang group has been known to compress data before exfiltration. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Archive via Utility",
+        "Use": "Ke3chang is known to use 7Zip and RAR with passwords to encrypt data prior to exfiltration. [1] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1119",
+        "Technique": "Automated Collection",
+        "Use": "Ke3chang has performed frequent and scheduled data collection from victim networks. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1020",
+        "Technique": "Automated Exfiltration",
+        "Use": "Ke3chang has performed  frequent and scheduled data exfiltration from compromised networks. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "Several Ke3chang backdoors achieved persistence by adding a Run key. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059",
+        "Technique": "Command and Scripting Interpreter",
+        "Use": "Malware used by Ke3chang can run commands on the command-line interface. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.003",
+        "Technique": "Windows Command Shell",
+        "Use": "Ke3chang has used batch scripts in its malware to install persistence mechanisms. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.003",
+        "Technique": "Create or Modify System Process: Windows Service",
+        "Use": "Ke3chang backdoor RoyalDNS established persistence through adding a service called Nwsapagent . [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1213.002",
+        "Technique": "Data from Information Repositories: Sharepoint",
+        "Use": "Ke3chang used a SharePoint enumeration and data dumping tool known as spwebmember. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "Ke3chang gathered information and files from local directories for exfiltration. [1] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "Ke3chang has deobfuscated Base64-encoded shellcode strings prior to loading them. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1587.001",
+        "Technique": "Develop Capabilities: Malware",
+        "Use": "Ke3chang has developed custom malware that allowed them to maintain persistence on victim networks. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1114.002",
+        "Technique": "Email Collection: Remote Email Collection",
+        "Use": "Ke3chang has used compromised credentials and a .NET tool to dump data from Microsoft Exchange mailboxes. [2] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1041",
+        "Technique": "Exfiltration Over C2 Channel",
+        "Use": "Ke3chang transferred compressed and encrypted RAR files containing exfiltration through the established backdoor command and control channel during operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "Ke3chang has compromised networks by exploiting Internet-facing applications, including vulnerable Microsoft Exchange and SharePoint servers. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1133",
+        "Technique": "External Remote Services",
+        "Use": "Ke3chang has gained access through VPNs including with compromised accounts and stolen VPN certificates. [2] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Ke3chang uses command-line interaction to search files and directories. [1] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Ke3chang has used tools to download files to compromised machines. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.001",
+        "Technique": "Input Capture: Keylogging",
+        "Use": "Ke3chang has used keyloggers. [2] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.002",
+        "Technique": "Masquerading: Right-to-Left Override",
+        "Use": "Ke3chang has used the right-to-left override character in spearphishing attachment names to trick targets into executing .scr and .exe files. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Ke3chang has dropped their malware into legitimate installed software paths including: C:\\ProgramFiles\\Realtek\\Audio\\HDA\\AERTSr.exe , C:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\FoxitRdr64.exe , C:\\Program Files (x86)\\Adobe\\Flash Player\\AddIns\\airappinstaller\\airappinstall.exe , and C:\\Program Files (x86)\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd64.exe . [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027",
+        "Technique": "Obfuscated Files or Information",
+        "Use": "Ke3chang has used Base64-encoded shellcode strings. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Ke3chang has obtained and used tools such as Mimikatz . [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "Ke3chang has dumped credentials, including by using Mimikatz . [1] [2] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.002",
+        "Technique": "OS Credential Dumping: Security Account Manager",
+        "Use": "Ke3chang has dumped credentials, including by using gsecdump. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.003",
+        "Technique": "OS Credential Dumping: NTDS",
+        "Use": "Ke3chang has used NTDSDump and other password dumping tools to gather credentials. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.004",
+        "Technique": "OS Credential Dumping: LSA Secrets",
+        "Use": "Ke3chang has dumped credentials, including by using gsecdump. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069.002",
+        "Technique": "Permission Groups Discovery: Domain Groups",
+        "Use": "Ke3chang performs discovery of permission groups net group /domain . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "Ke3chang performs process discovery using tasklist commands. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.002",
+        "Technique": "Remote Services: SMB/Windows Admin Shares",
+        "Use": "Ke3chang actors have been known to copy files to the network shares of other computers to move laterally. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "Ke3chang has used network scanning and enumeration tools, including Ping . [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1558.001",
+        "Technique": "Steal or Forge Kerberos Tickets: Golden Ticket",
+        "Use": "Ke3chang has used Mimikatz to generate Kerberos golden tickets. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Ke3chang performs operating system information discovery using systeminfo and has used implants to identify the system language and computer name. [1] [2] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1614.001",
+        "Technique": "System Location Discovery: System Language Discovery",
+        "Use": "Ke3chang has used implants to collect the system language ID of a compromised machine. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "Ke3chang has performed local network configuration discovery using ipconfig . [1] [2] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "Ke3chang performs local network connection discovery using netstat . [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "Ke3chang has used implants capable of collecting the signed-in username. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1007",
+        "Technique": "System Service Discovery",
+        "Use": "Ke3chang performs service discovery using net start commands. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1569.002",
+        "Technique": "System Services: Service Execution",
+        "Use": "Ke3chang has used a tool known as RemoteExec (similar to PsExec ) to remotely execute batch scripts and binaries. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "Ke3chang has used credential dumpers or stealers to obtain legitimate credentials, which they used to gain access to victim accounts. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1569.004",
+        "Technique": "Cloud Accounts",
+        "Use": "Ke3chang has used compromised credentials to sign into victims’ Microsoft 365 accounts. [4]"
+    }
+]

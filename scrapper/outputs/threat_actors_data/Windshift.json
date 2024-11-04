@@ -1,0 +1,212 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Windshift has used tools that communicate with C2 over HTTP. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "Windshift has created LNK files in the Startup folder to establish persistence. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "Windshift has used Visual Basic 6 (VB6) payloads. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "Windshift has used compromised websites to register custom URL schemes on a remote system. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Windshift has used tools to deploy additional payloads to compromised hosts. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036",
+        "Technique": "Masquerading",
+        "Use": "Windshift has used icons mimicking MS Office files to mask malicious executables. [2] Windshift has also attempted to hide executables by changing the file extension to \".scr\" to mimic Windows screensavers. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Invalid Code Signature",
+        "Use": "Windshift has used revoked certificates to sign malware. [2] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027",
+        "Technique": "Obfuscated Files or Information",
+        "Use": "Windshift has used string encoding with floating point calculations. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Windshift has sent spearphishing emails with attachment to harvest credentials and deliver malware. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "Windshift has sent spearphishing emails with links to harvest credentials and deliver malware. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.003",
+        "Technique": "Phishing: Spearphishing via Service",
+        "Use": "Windshift has used fake personas on social media to engage and target victims. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "Windshift has used malware to enumerate active processes. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518",
+        "Technique": "Software Discovery",
+        "Use": "Windshift has used malware to identify installed software. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Security Software Discovery",
+        "Use": "Windshift has used malware to identify installed AV and commonly used forensic and malware analysis tools. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Windshift has used malware to identify the computer name of a compromised host. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "Windshift has used malware to identify the username on a compromised host. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "Windshift has used links embedded in e-mails to lure victims into executing malicious code. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Windshift has used e-mail attachments to lure victims into executing malicious code. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "Windshift has used WMI to collect information about target machines. [4]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1429",
+        "Technique": "Audio Capture",
+        "Use": "Windshift has included phone call and audio recording capabilities in the malicious apps deployed as part of Operation BULL and Operation ROCK. [4]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1533",
+        "Technique": "Data from Local System",
+        "Use": "Windshift has exfiltrated local account data and calendar information as part of Operation ROCK. [4]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1407",
+        "Technique": "Download New Code at Runtime",
+        "Use": "Windshift has included malware functionality capable of downloading new DEX files at runtime during Operation BULL. [4]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1521.001",
+        "Technique": "Encrypted Channel: Symmetric Cryptography",
+        "Use": "Windshift has encrypted C2 communications using AES in CBC mode during Operation BULL and Operation ROCK. [4]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1627.001",
+        "Technique": "Execution Guardrails: Geofencing",
+        "Use": "Windshift has region-locked their malicious applications during their Operation BULL campaign. [4]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1420",
+        "Technique": "File and Directory Discovery",
+        "Use": "Windshift has included file enumeration in the malicious apps deployed as part of Operation BULL and Operation ROCK. [4]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1628.003",
+        "Technique": "Hide Artifacts: Conceal Multimedia Files",
+        "Use": "Windshift has hidden multimedia files from the user. [5]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1417.001",
+        "Technique": "Input Capture: Keylogging",
+        "Use": "Windshift has included keylogging capabilities as part of Operation ROCK. [4]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1430",
+        "Technique": "Location Tracking",
+        "Use": "Windshift has included location tracking capabilities in the malicious apps deployed as part of Operation BULL and Operation ROCK. [4]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1406",
+        "Technique": "Obfuscated Files or Information",
+        "Use": "Windshift has encrypted application strings using AES in ECB mode and Blowfish, and stored strings encoded in hex during Operation BULL. Further, in Operation BULL, encryption keys were stored within the application’s launcher icon file. [4]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1636.003",
+        "Technique": "Protected User Data: Contact List",
+        "Use": "Windshift has included contact list exfiltration in the malicious apps deployed as part of Operation BULL. [4]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1636.004",
+        "Technique": "Protected User Data: SMS Messages",
+        "Use": "Windshift has included SMS message exfiltration in the malicious apps deployed as part of Operation BULL and Operation ROCK. [4]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1632.001",
+        "Technique": "Subvert Trust Controls: Code Signing Policy Modification",
+        "Use": "Windshift has installed malicious MDM profiles on iOS devices as part of Operation ROCK. [4]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1426",
+        "Technique": "System Information Discovery",
+        "Use": "Windshift has included system information enumeration in the malicious apps deployed as part of Operation BULL and Operation ROCK. [4]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1512",
+        "Technique": "Video Capture",
+        "Use": "Windshift has included video recording in the malicious apps deployed as part of Operation BULL. [4]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1633.001",
+        "Technique": "Virtualization/Sandbox Evasion: System Checks",
+        "Use": "Windshift has deployed anti-analysis capabilities during their Operation BULL campaign. [4]"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "SilverTerrier uses HTTP for C2 communications. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.002",
+        "Technique": "Application Layer Protocol: File Transfer Protocols",
+        "Use": "SilverTerrier uses FTP for C2 communications. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.003",
+        "Technique": "Application Layer Protocol: Mail Protocols",
+        "Use": "SilverTerrier uses SMTP for C2 communications. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1657",
+        "Technique": "Financial Theft",
+        "Use": "SilverTerrier targets organizations in high technology, higher education, and manufacturing for business email compromise (BEC) campaigns with the goal of financial theft. [1] [2]"
+    }
+]

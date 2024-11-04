@@ -1,0 +1,68 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "PLATINUM has sometimes used drive-by attacks against vulnerable browser plugins. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1068",
+        "Technique": "Exploitation for Privilege Escalation",
+        "Use": "PLATINUM has leveraged a zero-day vulnerability to escalate privileges. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "PLATINUM has transferred files using the Intel® Active Management Technology (AMT) Serial-over-LAN (SOL) channel. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.001",
+        "Technique": "Input Capture: Keylogging",
+        "Use": "PLATINUM has used several different keyloggers. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.004",
+        "Technique": "Input Capture: Credential API Hooking",
+        "Use": "PLATINUM is capable of using Windows hook interfaces for information gathering such as credential access. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036",
+        "Technique": "Masquerading",
+        "Use": "PLATINUM has renamed rar.exe to avoid detection. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1095",
+        "Technique": "Non-Application Layer Protocol",
+        "Use": "PLATINUM has used the Intel® Active Management Technology (AMT) Serial-over-LAN (SOL) channel for command and control. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "PLATINUM has used keyloggers that are also capable of dumping credentials. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "PLATINUM has sent spearphishing emails with attachments to victims as its primary initial access vector. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055",
+        "Technique": "Process Injection",
+        "Use": "PLATINUM has used various methods of process injection including hot patching. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "PLATINUM has attempted to get users to open malicious files by sending spearphishing emails with attachments to victims. [1]"
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Rancor has used HTTP for C2. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Rancor has used cmd.exe to execute commmands. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "Rancor has used VBS scripts as well as embedded macros for execution. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1546.003",
+        "Technique": "Event Triggered Execution: Windows Management Instrumentation Event Subscription",
+        "Use": "Rancor has complied VBScript-generated MOF files into WMI event subscriptions for persistence. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Rancor has downloaded additional malware, including by using certutil . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Rancor has attached a malicious document to an email to gain initial access. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "Rancor launched a scheduled task to gain persistence using the schtasks /create /sc command. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.007",
+        "Technique": "System Binary Proxy Execution: Msiexec",
+        "Use": "Rancor has used msiexec to download and execute malicious installer files over HTTP. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Rancor attempted to get users to click on an embedded macro within a Microsoft Office Excel document to launch their malware. [1]"
+    }
+]

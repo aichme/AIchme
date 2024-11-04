@@ -1,0 +1,8 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.002",
+        "Technique": "Masquerading: Right-to-Left Override",
+        "Use": "Scarlet Mimic has used the left-to-right override character in self-extracting RAR archive spearphishing attachment file names. [1]"
+    }
+]

@@ -1,0 +1,98 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "SideCopy has sent Microsoft Office Publisher documents to victims that have embedded malicious macros that execute an hta file via calling mshta.exe . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.001",
+        "Technique": "Compromise Infrastructure: Domains",
+        "Use": "SideCopy has compromised domains for some of their infrastructure, including for C2 and staging malware. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.002",
+        "Technique": "Hijack Execution Flow: DLL Side-Loading",
+        "Use": "SideCopy has used a malicious loader DLL file to execute the credwiz.exe process and side-load the malicious payload Duser.dll . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "SideCopy has delivered trojanized executables via spearphishing emails that contacts actor-controlled servers to download malicious payloads. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "SideCopy has used a legitimate DLL file name, Duser.dll to disguise a malicious remote access tool. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1106",
+        "Technique": "Native API",
+        "Use": "SideCopy has executed malware by calling the API function CreateProcessW . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "SideCopy has sent spearphishing emails with malicious hta file attachments. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1598.002",
+        "Technique": "Phishing for Information: Spearphishing Attachment",
+        "Use": "SideCopy has crafted generic lures for spam campaigns to collect emails and credentials for targeting efforts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518",
+        "Technique": "Software Discovery",
+        "Use": "SideCopy has collected browser information from a compromised host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1598.001",
+        "Technique": "Security Software Discovery",
+        "Use": "SideCopy uses a loader DLL file to collect AV product names from an infected host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.001",
+        "Technique": "Stage Capabilities: Upload Malware",
+        "Use": "SideCopy has used compromised domains to host its malicious payloads. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.005",
+        "Technique": "System Binary Proxy Execution: Mshta",
+        "Use": "SideCopy has utilized mshta.exe to execute a malicious hta file. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "SideCopy has identified the OS version of a compromised host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1614",
+        "Technique": "System Location Discovery",
+        "Use": "SideCopy has identified the country location of a compromised host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "SideCopy has identified the IP address of a compromised host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "SideCopy has attempted to lure victims into clicking on malicious embedded archive files sent via spearphishing campaigns. [1]"
+    }
+]

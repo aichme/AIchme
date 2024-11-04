@@ -1,0 +1,176 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1548.002",
+        "Technique": "Abuse Elevation Control Mechanism: Bypass User Account Control",
+        "Use": "APT37 has a function in the initial dropper to bypass Windows UAC in order to execute the next payload with higher privileges. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "APT37 uses HTTPS to conceal C2 communications. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1123",
+        "Technique": "Audio Capture",
+        "Use": "APT37 has used an audio capturing utility known as SOUNDWAVE that captures microphone input. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "APT37 's has added persistence via the Registry key HKCU\\Software\\Microsoft\\CurrentVersion\\Run\\ . [1] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059",
+        "Technique": "Command and Scripting Interpreter",
+        "Use": "APT37 has used Ruby scripts to execute payloads. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.003",
+        "Technique": "Windows Command Shell",
+        "Use": "APT37 has used the command-line interface. [1] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.005",
+        "Technique": "Visual Basic",
+        "Use": "APT37 executes shellcode and a VBA script to decode Base64 strings. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.006",
+        "Technique": "Python",
+        "Use": "APT37 has used Python scripts to execute payloads. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.003",
+        "Technique": "Credentials from Password Stores: Credentials from Web Browsers",
+        "Use": "APT37 has used a credential stealer known as ZUMKONG that can harvest usernames and passwords stored in browsers. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "APT37 has collected data from victims' local systems. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1561.002",
+        "Technique": "Disk Wipe: Disk Structure Wipe",
+        "Use": "APT37 has access to destructive malware that is capable of overwriting a machine's Master Boot Record (MBR). [1] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "APT37 has used strategic web compromises, particularly of South Korean websites, to distribute malware. The group has also used torrent file-sharing sites to more indiscriminately disseminate malware to victims. As part of their compromises, the group has used a Javascript based profiler called RICECURRY to profile a victim's web browser and deliver malicious code accordingly. [2] [1] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "APT37 has used exploits for Flash Player (CVE-2016-4117, CVE-2018-4878), Word (CVE-2017-0199), Internet Explorer (CVE-2020-1380 and CVE-2020-26411), and Microsoft Edge (CVE-2021-26411) for execution. [2] [1] [3] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "APT37 has downloaded second stage malware from compromised websites. [1] [5] [4] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1559.002",
+        "Technique": "Inter-Process Communication: Dynamic Data Exchange",
+        "Use": "APT37 has used Windows DDE for execution of commands and a malicious VBS. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.001",
+        "Technique": "Masquerading: Invalid Code Signature",
+        "Use": "APT37 has signed its malware with an invalid digital certificates listed as \"Tencent Technology (Shenzhen) Company Limited.\" [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1106",
+        "Technique": "Native API",
+        "Use": "APT37 leverages the Windows API calls: VirtualAlloc(), WriteProcessMemory(), and CreateRemoteThread() for process injection. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027",
+        "Technique": "Obfuscated Files or Information",
+        "Use": "APT37 obfuscates strings and payloads. [3] [5] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.003",
+        "Technique": "Steganography",
+        "Use": "APT37 uses steganography to send images to users that are embedded with shellcode. [3] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1120",
+        "Technique": "Peripheral Device Discovery",
+        "Use": "APT37 has a Bluetooth device harvester, which uses Windows Bluetooth APIs to find information on connected Bluetooth devices. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "APT37 delivers malware using spearphishing emails with malicious HWP attachments. [1] [3] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "APT37 's Freenki malware lists running processes using the Microsoft Windows API. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055",
+        "Technique": "Process Injection",
+        "Use": "APT37 injects its malware variant, ROKRAT , into the cmd.exe process. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "APT37 has created scheduled tasks to run malicious scripts on a compromised host. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "APT37 collects the computer name, the BIOS model, and execution path. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "APT37 identifies the victim username. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1529",
+        "Technique": "System Shutdown/Reboot",
+        "Use": "APT37 has used malware that will issue the command shutdown /r /t 1 to reboot a system after wiping its MBR. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "APT37 has sent spearphishing attachments attempting to get a user to open them. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102.002",
+        "Technique": "Web Service: Bidirectional Communication",
+        "Use": "APT37 leverages social networking sites and cloud platforms (AOL, Twitter, Yandex, Mediafire, pCloud, Dropbox, and Box) for C2. [1] [3]"
+    }
+]

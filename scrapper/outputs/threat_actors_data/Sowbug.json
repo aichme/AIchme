@@ -1,0 +1,56 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "Sowbug extracted documents and bundled them into a RAR archive. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Sowbug has used command line during its intrusions. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1039",
+        "Technique": "Data from Network Shared Drive",
+        "Use": "Sowbug extracted Word documents from a file server on a victim network. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Sowbug identified and extracted all Word documents on a server by using a command containing * .doc and *.docx. The actors also searched for documents based on a specific date range and attempted to identify all installed software on a victim. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.001",
+        "Technique": "Input Capture: Keylogging",
+        "Use": "Sowbug has used keylogging tools. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Sowbug named its tools to masquerade as Windows or Adobe Reader software, such as by using the file name adobecms.exe and the directory CSIDL_APPDATA\\microsoft\\security . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1135",
+        "Technique": "Network Share Discovery",
+        "Use": "Sowbug listed remote shared drives that were accessible from a victim. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003",
+        "Technique": "OS Credential Dumping",
+        "Use": "Sowbug has used credential dumping tools. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Sowbug obtained OS version and hardware configuration from a victim. [1]"
+    }
+]

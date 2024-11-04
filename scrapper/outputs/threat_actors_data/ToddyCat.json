@@ -1,0 +1,152 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "ToddyCat has run net user %USER% /dom for account discovery. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "ToddyCat has leveraged  xcopy, 7zip, and RAR to stage and compress collected documents prior to exfiltration. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "ToddyCat has used Powershell scripts to perform post exploit collection. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "ToddyCat has used .bat scripts and cmd for execution on compromised hosts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "ToddyCat has run scripts to collect documents from targeted hosts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.002",
+        "Technique": "Data Staged: Remote Data Staging",
+        "Use": "ToddyCat manually transferred collected files to an exfiltration host using xcopy. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "ToddyCat has used a DropBox uploader to exfiltrate stolen files. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "ToddyCat has exploited the ProxyLogon vulnerability (CVE-2021-26855) to compromise Exchange Servers at multiple organizations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "ToddyCat has run scripts to enumerate recently modified documents having either a .pdf, .doc, .docx, .xls or .xlsx extension. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.003",
+        "Technique": "Hide Artifacts: Hidden Window",
+        "Use": "ToddyCat has hidden malicious scripts using powershell.exe -windowstyle hidden . [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.004",
+        "Technique": "Impair Defenses: Disable or Modify System Firewall",
+        "Use": "Prior to executing a backdoor ToddyCat has run cmd /c start /b netsh advfirewall firewall add rule name=\"SGAccessInboundRule\" dir=in protocol=udp action=allow localport=49683 to allow the targeted system to receive UDP packets on port 49683. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "ToddyCat has used the name debug.exe for malware components. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1106",
+        "Technique": "Native API",
+        "Use": "ToddyCat has used WinExec to execute commands received from C2 on compromised hosts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1095",
+        "Technique": "Non-Application Layer Protocol",
+        "Use": "ToddyCat has used a passive backdoor that receives commands with UDP packets. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069.002",
+        "Technique": "Permission Groups Discovery: Domain Groups",
+        "Use": "ToddyCat has executed net group \"domain admins\" /dom for discovery on compromised machines. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.003",
+        "Technique": "Phishing: Spearphishing via Service",
+        "Use": "ToddyCat has sent loaders configured to run Ninja as zip archives via Telegram. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "ToddyCat has run cmd /c start /b tasklist to enumerate processes. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.002",
+        "Technique": "Remote Services: SMB/Windows Admin Shares",
+        "Use": "ToddyCat has used locally mounted network shares for lateral movement through targated environments. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "ToddyCat has used ping %REMOTE_HOST% for post exploit discovery. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "ToddyCat has used scheduled tasks to execute discovery commands and scripts for collection. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518.001",
+        "Technique": "Software Discovery: Security Software Discovery",
+        "Use": "ToddyCat can determine is Kaspersky software is running on an endpoint by running cmd /c wmic process where name=\"avp.exe\" . [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "ToddyCat has collected information on bootable drives including model, vendor, and serial numbers. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "ToddyCat has used netstat -anop tcp to discover TCP connections to compromised hosts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.002",
+        "Technique": "Valid Accounts: Domain Accounts",
+        "Use": "ToddyCat has used compromised domain admin credentials to mount local network shares. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "ToddyCat has used WMI to execute scripts for post exploit document collection. [2]"
+    }
+]

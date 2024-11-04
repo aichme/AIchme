@@ -1,0 +1,56 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "Elderwood has delivered zero-day exploits and malware to victims by injecting malicious code into specific public Web pages visited by targets within a particular sector. [2] [3] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "Elderwood has used exploitation of endpoint software, including Microsoft Internet Explorer Adobe Flash vulnerabilities, to gain execution. They have also used zero-day exploits. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "The Ritsol backdoor trojan used by Elderwood can download files onto a compromised host from a remote location. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.002",
+        "Technique": "Obfuscated Files or Information: Software Packing",
+        "Use": "Elderwood has packed malware payloads before delivery to victims. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "Elderwood has encrypted documents and malicious executables. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Elderwood has delivered zero-day exploits and malware to victims via targeted emails containing malicious attachments. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "Elderwood has delivered zero-day exploits and malware to victims via targeted emails containing a link to malicious content hosted on an uncommon Web server. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "Elderwood has leveraged multiple types of spearphishing in order to attempt to get a user to open links. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Elderwood has leveraged multiple types of spearphishing in order to attempt to get a user to open attachments. [2] [3]"
+    }
+]

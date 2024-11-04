@@ -1,0 +1,158 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "ZIRCONIUM has purchased domains for use in targeted campaigns. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.006",
+        "Technique": "Acquire Infrastructure: Web Services",
+        "Use": "ZIRCONIUM has used GitHub to host malware linked in spearphishing e-mails. [4] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "ZIRCONIUM has created a Registry Run key named Dropbox Update Setup to establish persistence for a malicious Python binary. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "ZIRCONIUM has used a tool to open a Windows Command Shell on a remote host. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.006",
+        "Technique": "Command and Scripting Interpreter: Python",
+        "Use": "ZIRCONIUM has used Python-based implants to interact with compromised hosts. [4] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.003",
+        "Technique": "Credentials from Password Stores: Credentials from Web Browsers",
+        "Use": "ZIRCONIUM has used a tool to steal credentials from installed web browsers including Microsoft Internet Explorer and Google Chrome. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "ZIRCONIUM has used the AES256 algorithm with a SHA1 derived key to decrypt exploit code. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1573.001",
+        "Technique": "Encrypted Channel: Symmetric Cryptography",
+        "Use": "ZIRCONIUM has used AES encrypted communications in C2. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1041",
+        "Technique": "Exfiltration Over C2 Channel",
+        "Use": "ZIRCONIUM has exfiltrated files via the Dropbox API C2. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "ZIRCONIUM has exfiltrated stolen data to Dropbox. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1068",
+        "Technique": "Exploitation for Privilege Escalation",
+        "Use": "ZIRCONIUM has exploited CVE-2017-0005 for local privilege escalation. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "ZIRCONIUM has used tools to download malicious files to compromised hosts. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036",
+        "Technique": "Masquerading",
+        "Use": "ZIRCONIUM has spoofed legitimate applications in phishing lures and changed file extensions to conceal  installation of malware. [4] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.004",
+        "Technique": "Masquerade Task or Service",
+        "Use": "ZIRCONIUM has created a run key named Dropbox Update Setup to mask a persistence mechanism for a malicious binary. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.002",
+        "Technique": "Obfuscated Files or Information: Software Packing",
+        "Use": "ZIRCONIUM has used multi-stage packers for exploit code. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "ZIRCONIUM has used malicious links in e-mails to deliver malware. [1] [4] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1598",
+        "Technique": "Phishing for Information",
+        "Use": "ZIRCONIUM targeted presidential campaign staffers with credential phishing e-mails. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.003",
+        "Technique": "Spearphishing Link",
+        "Use": "ZIRCONIUM has used web beacons in e-mails to track hits to attacker-controlled URL's. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1012",
+        "Technique": "Query Registry",
+        "Use": "ZIRCONIUM has used a tool to query the Registry for proxy settings. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.007",
+        "Technique": "System Binary Proxy Execution: Msiexec",
+        "Use": "ZIRCONIUM has used the msiexec.exe command-line utility to download and execute malicious MSI files. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "ZIRCONIUM has used a tool to capture the processor architecture of a compromised host in order to register it with C2. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "ZIRCONIUM has used a tool to enumerate proxy settings in the target environment. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "ZIRCONIUM has used a tool to capture the username on a compromised host in order to register it with C2. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1124",
+        "Technique": "System Time Discovery",
+        "Use": "ZIRCONIUM has used a tool to capture the time on a compromised host in order to register it with C2. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "ZIRCONIUM has used malicious links in e-mails to lure victims into downloading malware. [4] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102.002",
+        "Technique": "Web Service: Bidirectional Communication",
+        "Use": "ZIRCONIUM has used Dropbox for C2 allowing upload and download of files as well as execution of arbitrary commands. [4] [5]"
+    }
+]

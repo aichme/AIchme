@@ -1,0 +1,44 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "The White Company has taken advantage of a known vulnerability in Microsoft Word (CVE 2012-0158) to execute code. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "The White Company has the ability to delete its malware entirely from the target system. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.002",
+        "Technique": "Obfuscated Files or Information: Software Packing",
+        "Use": "The White Company has obfuscated their payloads through packing. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "The White Company has sent phishing emails with malicious Microsoft Word attachments to victims. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518.001",
+        "Technique": "Software Discovery: Security Software Discovery",
+        "Use": "The White Company has checked for specific antivirus products on the target’s computer, including Kaspersky, Quick Heal, AVG, BitDefender, Avira, Sophos, Avast!, and ESET. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1124",
+        "Technique": "System Time Discovery",
+        "Use": "The White Company has checked the current date on the victim system. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "The White Company has used phishing lure documents that trick users into opening them and infecting their computers. [1]"
+    }
+]

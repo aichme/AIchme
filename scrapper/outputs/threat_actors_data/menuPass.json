@@ -1,0 +1,284 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "menuPass has used the Microsoft administration tool csvde.exe to export Active Directory data. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "menuPass has registered malicious domains for use in intrusion campaigns. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560",
+        "Technique": "Archive Collected Data",
+        "Use": "menuPass has encrypted files and information before exfiltration. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Archive via Utility",
+        "Use": "menuPass has compressed files before exfiltration using TAR and RAR. [6] [12] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1119",
+        "Technique": "Automated Collection",
+        "Use": "menuPass has used the Csvde tool to collect Active Directory files and data. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "menuPass uses PowerSploit to inject shellcode into PowerShell. [12] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "menuPass executes commands using a command-line interface and reverse shell. The group has used a modified version of pentesting script wmiexec.vbs to execute commands. [6] [12] [13] [10] menuPass has used malicious macros embedded inside Office documents to execute files. [9] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "menuPass has collected various files from the compromised computers. [1] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1039",
+        "Technique": "Data from Network Shared Drive",
+        "Use": "menuPass has collected data from remote systems by mounting network shares with net use and using Robocopy to transfer data. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.001",
+        "Technique": "Data Staged: Local Data Staging",
+        "Use": "menuPass stages data prior to exfiltration in multi-part archives, often saved in the Recycle Bin. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.002",
+        "Technique": "Data Staged: Remote Data Staging",
+        "Use": "menuPass has staged data on remote MSP systems or other victim networks prior to exfiltration. [6] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "menuPass has used certutil in a macro to decode base64-encoded content contained in a dropper document attached to an email. The group has also used certutil -decode to decode files on the victim’s machine when dropping UPPERCUT . [9] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1568.001",
+        "Technique": "Dynamic Resolution: Fast Flux DNS",
+        "Use": "menuPass has used dynamic DNS service providers to host malicious domains. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "menuPass has leveraged vulnerabilities in Pulse Secure VPNs to hijack sessions. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1210",
+        "Technique": "Exploitation of Remote Services",
+        "Use": "menuPass has used tools to exploit the ZeroLogon vulnerability (CVE-2020-1472). [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "menuPass has searched compromised systems for folders of interest including those related to HR, audit and expense, and meeting memos. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.001",
+        "Technique": "Hijack Execution Flow: DLL Search Order Hijacking",
+        "Use": "menuPass has used DLL search order hijacking. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.002",
+        "Technique": "Hijack Execution Flow: DLL Side-Loading",
+        "Use": "menuPass has used DLL side-loading to launch versions of Mimikatz and PwDump6 as well as UPPERCUT . [12] [10] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.003",
+        "Technique": "Indicator Removal: Clear Command History",
+        "Use": "menuPass has used Wevtutil to remove PowerShell execution logs. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "A menuPass macro deletes files after it has decoded and decompressed them. [9] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "menuPass has installed updates and new malware on victims. [6] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.001",
+        "Technique": "Input Capture: Keylogging",
+        "Use": "menuPass has used key loggers to steal usernames and passwords. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036",
+        "Technique": "Masquerading",
+        "Use": "menuPass has used esentutl to change file extensions to their true type that were masquerading as .txt files. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.003",
+        "Technique": "Rename System Utilities",
+        "Use": "menuPass has renamed certutil and moved it to a different location on the system to avoid detection based on use of the tool. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.005",
+        "Technique": "Match Legitimate Name or Location",
+        "Use": "menuPass has been seen changing malicious files to appear legitimate. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1106",
+        "Technique": "Native API",
+        "Use": "menuPass has used native APIs including GetModuleFileName , lstrcat , CreateFile , and ReadFile . [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1046",
+        "Technique": "Network Service Discovery",
+        "Use": "menuPass has used tcping.exe, similar to Ping , to probe port status on systems of interest. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "menuPass has encoded strings in its malware with base64 as well as with a simple, single-byte XOR obfuscation using key 0x40. [9] [10] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "menuPass has used and modified open-source tools like Impacket , Mimikatz , and pwdump . [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.002",
+        "Technique": "OS Credential Dumping: Security Account Manager",
+        "Use": "menuPass has used a modified version of pentesting tools wmiexec.vbs and secretsdump.py to dump credentials. [12] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.003",
+        "Technique": "OS Credential Dumping: NTDS",
+        "Use": "menuPass has used Ntdsutil to dump credentials. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.004",
+        "Technique": "OS Credential Dumping: LSA Secrets",
+        "Use": "menuPass has used a modified version of pentesting tools wmiexec.vbs and secretsdump.py to dump credentials. [12] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "menuPass has sent malicious Office documents via email as part of spearphishing campaigns as well as executables disguised as documents. [12] [7] [10] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055.012",
+        "Technique": "Process Injection: Process Hollowing",
+        "Use": "menuPass has used process hollowing in iexplore.exe to load the RedLeaves implant. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090.002",
+        "Technique": "Proxy: External Proxy",
+        "Use": "menuPass has used a global service provider's IP as a proxy for C2 traffic from a victim. [7] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.001",
+        "Technique": "Remote Services: Remote Desktop Protocol",
+        "Use": "menuPass has used RDP connections to move across the victim network. [6] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.004",
+        "Technique": "Remote Services: SSH",
+        "Use": "menuPass has used Putty Secure Copy Client (PSCP) to transfer data. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "menuPass uses scripts to enumerate IP ranges on the victim network. menuPass has also issued the command net view /domain to a PlugX implant to gather information about remote systems on the network. [12] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "menuPass has used a script (atexec.py) to execute a command on a target machine via Task Scheduler. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "menuPass has resized and added data to the certificate table to enable the signing of modified files with legitimate signatures. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.004",
+        "Technique": "System Binary Proxy Execution: InstallUtil",
+        "Use": "menuPass has used InstallUtil.exe to execute malicious software. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "menuPass has used several tools to scan for open NetBIOS nameservers and enumerate NetBIOS sessions. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "menuPass has used net use to conduct connectivity checks to machines. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1199",
+        "Technique": "Trusted Relationship",
+        "Use": "menuPass has used legitimate access granted to Managed Service Providers in order to access victims of interest. [12] [7] [8] [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "menuPass has attempted to get victims to open malicious files such as Windows Shortcuts (.lnk) and/or Microsoft Office documents, sent via email as part of spearphishing campaigns. [12] [7] [9] [10] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "menuPass has used valid accounts including shared between Managed Service Providers and clients to move between the two environments. [6] [8] [2] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "menuPass has used a modified version of pentesting script wmiexec.vbs, which logs into a remote machine using WMI. [12] [13] [8]"
+    }
+]

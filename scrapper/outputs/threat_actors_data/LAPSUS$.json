@@ -1,0 +1,260 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1531",
+        "Technique": "Account Access Removal",
+        "Use": "LAPSUS$ has removed a targeted organization's global admin accounts to lock the organization out of all access. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "LAPSUS$ has used the AD Explorer tool to enumerate users on a victim's network. [2] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098.003",
+        "Technique": "Account Manipulation: Additional Cloud Roles",
+        "Use": "LAPSUS$ has added the global admin role to accounts they have created in the targeted organization's cloud instances. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.003",
+        "Technique": "Acquire Infrastructure: Virtual Private Server",
+        "Use": "LAPSUS$ has used VPS hosting providers for infrastructure. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1586.002",
+        "Technique": "Compromise Accounts: Email Accounts",
+        "Use": "LAPSUS$ has payed employees, suppliers, and business partners of target organizations for credentials. [2] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.002",
+        "Technique": "Compromise Infrastructure: DNS Server",
+        "Use": "LAPSUS$ has reconfigured a victim's DNS records to actor-controlled domains and websites. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.003",
+        "Technique": "Create Account: Cloud Account",
+        "Use": "LAPSUS$ has created global admin accounts in the targeted organization's cloud instances to gain persistence. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.003",
+        "Technique": "Credentials from Password Stores: Credentials from Web Browsers",
+        "Use": "LAPSUS$ has obtained passwords and session tokens with the use of the Redline password stealer. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.005",
+        "Technique": "Credentials from Password Stores: Password Managers",
+        "Use": "LAPSUS$ has accessed local password managers and databases to obtain further credentials from a compromised network. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1485",
+        "Technique": "Data Destruction",
+        "Use": "LAPSUS$ has deleted the target's systems and resources both on-premises and in the cloud. [2] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1213",
+        "Technique": "Data from Information Repositories",
+        "Use": "LAPSUS$ has searched a victim's network for organization collaboration channels like MS Teams or Slack to discover further high-privilege account credentials. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.001",
+        "Technique": "Confluence",
+        "Use": "LAPSUS$ has searched a victim's network for collaboration platforms like Confluence and JIRA to discover further high-privilege account credentials. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.002",
+        "Technique": "Sharepoint",
+        "Use": "LAPSUS$ has searched a victim's network for collaboration platforms like SharePoint to discover further high-privilege account credentials. [2] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.003",
+        "Technique": "Code Repositories",
+        "Use": "LAPSUS$ has searched a victim's network for code repositories like GitLab and GitHub to discover further high-privilege account credentials. [2] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "LAPSUS$ uploaded sensitive files, information, and credentials from a targeted organization for extortion or public release. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1114.003",
+        "Technique": "Email Collection: Email Forwarding Rule",
+        "Use": "LAPSUS$ has set an Office 365 tenant level mail transport rule to send all mail in and out of the targeted organization to the newly created account. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1068",
+        "Technique": "Exploitation for Privilege Escalation",
+        "Use": "LAPSUS$ has exploited unpatched vulnerabilities on internally accessible servers including JIRA, GitLab, and Confluence for privilege escalation. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1133",
+        "Technique": "External Remote Services",
+        "Use": "LAPSUS$ has gained access to internet-facing systems and applications, including virtual private network (VPN), remote desktop protocol (RDP), and virtual desktop infrastructure (VDI) including Citrix. [2] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589",
+        "Technique": "Gather Victim Identity Information",
+        "Use": "LAPSUS$ has gathered detailed information of target employees to enhance their social engineering lures. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1114.001",
+        "Technique": "Credentials",
+        "Use": "LAPSUS$ has gathered user identities and credentials to gain initial access to a victim's organization; the group has also called an organization's help desk to reset a target's credentials. [2] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1114.002",
+        "Technique": "Email Addresses",
+        "Use": "LAPSUS$ has gathered employee email addresses, including personal accounts, for social engineering and initial access efforts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1591.002",
+        "Technique": "Gather Victim Org Information: Business Relationships",
+        "Use": "LAPSUS$ has gathered detailed knowledge of an organization's supply chain relationships. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1591.004",
+        "Technique": "Gather Victim Org Information: Identify Roles",
+        "Use": "LAPSUS$ has gathered detailed knowledge of team structures within a target organization. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1656",
+        "Technique": "Impersonation",
+        "Use": "LAPSUS$ has called victims' help desk and impersonated legitimate users with previously gathered information in order to gain access to privileged accounts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1578.002",
+        "Technique": "Modify Cloud Compute Infrastructure: Create Cloud Instance",
+        "Use": "LAPSUS$ has created new virtual machines within the target's cloud environment after leveraging credential access to cloud assets. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1578.003",
+        "Technique": "Modify Cloud Compute Infrastructure: Delete Cloud Instance",
+        "Use": "LAPSUS$ has deleted the target's systems and resources in the cloud to trigger the organization's incident and crisis response process. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1111",
+        "Technique": "Multi-Factor Authentication Interception",
+        "Use": "LAPSUS$ has replayed stolen session token and passwords to trigger simple-approval MFA prompts in hope of the legitimate user will grant necessary approval. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1621",
+        "Technique": "Multi-Factor Authentication Request Generation",
+        "Use": "LAPSUS$ has spammed target users with MFA prompts in the hope that the legitimate user will grant necessary approval. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.001",
+        "Technique": "Obtain Capabilities: Malware",
+        "Use": "LAPSUS$ acquired and used the Redline password stealer in their operations. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "LAPSUS$ has obtained tools such as RVTools and AD Explorer for their operations. [2] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.003",
+        "Technique": "OS Credential Dumping: NTDS",
+        "Use": "LAPSUS$ has used Windows built-in tool ntdsutil to extract the Active Directory (AD) database. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.006",
+        "Technique": "OS Credential Dumping: DCSync",
+        "Use": "LAPSUS$ has used DCSync attacks to gather credentials for privilege escalation routines. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069.002",
+        "Technique": "Permission Groups Discovery: Domain Groups",
+        "Use": "LAPSUS$ has used the AD Explorer tool to enumerate groups on a victim's network. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1598.004",
+        "Technique": "Phishing for Information: Spearphishing Voice",
+        "Use": "LAPSUS$ has called victims' help desk to convince the support personnel to reset a privileged account’s credentials. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090",
+        "Technique": "Proxy",
+        "Use": "LAPSUS$ has leverage NordVPN for its egress points when targeting intended victims. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1597.002",
+        "Technique": "Search Closed Sources: Purchase Technical Data",
+        "Use": "LAPSUS$ has purchased credentials and session tokens from criminal underground forums. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1593.003",
+        "Technique": "Search Open Websites/Domains: Code Repositories",
+        "Use": "LAPSUS$ has searched public code repositories for exposed credentials. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1489",
+        "Technique": "Service Stop",
+        "Use": "LAPSUS$ has shut down virtual machines from within a victim's on-premise VMware ESXi infrastructure. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1199",
+        "Technique": "Trusted Relationship",
+        "Use": "LAPSUS$ has accessed internet-facing identity providers such as Azure Active Directory and Okta to target specific organizations. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.008",
+        "Technique": "Unsecured Credentials: Chat Messages",
+        "Use": "LAPSUS$ has targeted various collaboration tools like Slack, Teams, JIRA, Confluence, and others to hunt for exposed credentials to support privilege escalation and lateral movement. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204",
+        "Technique": "User Execution",
+        "Use": "LAPSUS$ has recruited target organization employees or contractors who provide credentials and approve an associated MFA prompt, or install remote management software onto a corporate workstation, allowing LAPSUS$ to take control of an authenticated system. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "LAPSUS$ has used compromised credentials and/or session tokens to gain access into a victim's VPN, VDI, RDP, and IAMs. [2] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.004",
+        "Technique": "Cloud Accounts",
+        "Use": "LAPSUS$ has used compromised credentials to access cloud assets within a target organization. [2]"
+    }
+]

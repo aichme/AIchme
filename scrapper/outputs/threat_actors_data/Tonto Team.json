@@ -1,0 +1,92 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Tonto Team has used PowerShell to download additional payloads. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.006",
+        "Technique": "Command and Scripting Interpreter: Python",
+        "Use": "Tonto Team has used Python-based tools for execution. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "Tonto Team has exploited Microsoft vulnerabilities, including CVE-2018-0798, CVE-2018-8174, CVE-2018-0802, CVE-2017-11882, CVE-2019-9489 CVE-2020-8468, and CVE-2018-0798 to enable execution of their delivered malicious payloads. [1] [7] [10] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1068",
+        "Technique": "Exploitation for Privilege Escalation",
+        "Use": "Tonto Team has exploited CVE-2019-0803 and MS16-032 to escalate privileges. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1210",
+        "Technique": "Exploitation of Remote Services",
+        "Use": "Tonto Team has used EternalBlue exploits for lateral movement. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.001",
+        "Technique": "Hijack Execution Flow: DLL Search Order Hijacking",
+        "Use": "Tonto Team abuses a legitimate and signed Microsoft executable to launch a malicious DLL. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Tonto Team has downloaded malicious DLLs which served as a ShadowPad loader. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.001",
+        "Technique": "Input Capture: Keylogging",
+        "Use": "Tonto Team has used keylogging tools in their operations. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1135",
+        "Technique": "Network Share Discovery",
+        "Use": "Tonto Team has used tools such as NBTscan to enumerate network shares. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003",
+        "Technique": "OS Credential Dumping",
+        "Use": "Tonto Team has used a variety of credential dumping tools. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069.001",
+        "Technique": "Permission Groups Discovery: Local Groups",
+        "Use": "Tonto Team has used the ShowLocalGroupDetails command to identify administrator, user, and guest accounts on a compromised host. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Tonto Team has delivered payloads via spearphishing attachments. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090.002",
+        "Technique": "Proxy: External Proxy",
+        "Use": "Tonto Team has routed their traffic through an external server in order to obfuscate their location. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.003",
+        "Technique": "Server Software Component: Web Shell",
+        "Use": "Tonto Team has used a first stage web shell after compromising a vulnerable Exchange server. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Tonto Team has relied on user interaction to open their malicious RTF documents. [7] [10]"
+    }
+]

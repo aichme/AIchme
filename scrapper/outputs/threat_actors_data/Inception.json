@@ -1,0 +1,134 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Inception has used HTTP, HTTPS, and WebDav in network communications. [3] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "Inception has maintained persistence by modifying Registry run key value HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\ . [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Inception has used PowerShell to execute malicious commands and payloads. [1] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "Inception has used VBScript to execute malicious commands and payloads. [1] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.003",
+        "Technique": "Credentials from Password Stores: Credentials from Web Browsers",
+        "Use": "Inception used a browser plugin to steal passwords and sessions from Internet Explorer, Chrome, Opera, Firefox, Torch, and Yandex. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "Inception used a file hunting plugin to collect .txt, .pdf, .xls or .doc files from the infected host. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1573.001",
+        "Technique": "Encrypted Channel: Symmetric Cryptography",
+        "Use": "Inception has encrypted network communications with AES. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "Inception has exploited CVE-2012-0158, CVE-2014-1761, CVE-2017-11882 and CVE-2018-0802 for execution. [4] [3] [2] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Inception used a file listing plugin to collect information about file and directories both on local and remote drives. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "Inception has encrypted malware payloads dropped on victim machines with AES and RC4 encryption. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Inception has obtained and used open-source tools such as LaZagne . [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069.002",
+        "Technique": "Permission Groups Discovery: Domain Groups",
+        "Use": "Inception has used specific malware modules to gather domain membership. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Inception has used weaponized documents attached to spearphishing emails for reconnaissance and initial compromise. [3] [2] [1] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "Inception has used a reconnaissance module to identify active processes and other associated loaded modules. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090.003",
+        "Technique": "Proxy: Multi-hop Proxy",
+        "Use": "Inception used chains of compromised routers to proxy C2 communications between them and cloud service providers. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518",
+        "Technique": "Software Discovery",
+        "Use": "Inception has enumerated installed software on compromised systems. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.005",
+        "Technique": "System Binary Proxy Execution: Mshta",
+        "Use": "Inception has used malicious HTA files to drop and execute malware. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.010",
+        "Technique": "System Binary Proxy Execution: Regsvr32",
+        "Use": "Inception has ensured persistence at system boot by setting the value regsvr32 %path%\\ctfmonrn.dll /s . [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Inception has used a reconnaissance module to gather information about the operating system and hardware on the infected host. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1221",
+        "Technique": "Template Injection",
+        "Use": "Inception has used decoy documents to load malicious remote payloads via HTTP. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Inception lured victims into clicking malicious files for machine reconnaissance and to execute malware. [3] [4] [2] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102",
+        "Technique": "Web Service",
+        "Use": "Inception has incorporated at least five different cloud service providers into their C2 infrastructure including CloudMe. [3] [2]"
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1595.002",
+        "Technique": "Active Scanning: Vulnerability Scanning",
+        "Use": "Aquatic Panda has used publicly accessible DNS logging services to identify servers vulnerable to Log4j (CVE 2021-44228). [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "Aquatic Panda has used WinRAR to compress memory dumps prior to exfiltration. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Aquatic Panda has downloaded additional scripts and executed Base64 encoded commands in PowerShell. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Aquatic Panda has attempted and failed to run Bash commands on a Windows host by passing them to cmd /C . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.001",
+        "Technique": "Hijack Execution Flow: DLL Search Order Hijacking",
+        "Use": "Aquatic Panda has used DLL search-order hijacking to load exe , dll , and dat files into memory. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.001",
+        "Technique": "Impair Defenses: Disable or Modify Tools",
+        "Use": "Aquatic Panda has attempted to stop endpoint detection and response (EDR) tools on compromised systems. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "Aquatic Panda has deleted malicious executables from compromised machines. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Aquatic Panda has downloaded additional malware onto compromised hosts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.010",
+        "Technique": "Obfuscated Files or Information: Command Obfuscation",
+        "Use": "Aquatic Panda has encoded PowerShell commands in Base64. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.001",
+        "Technique": "Obtain Capabilities: Malware",
+        "Use": "Aquatic Panda has acquired and used njRAT in its operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Aquatic Panda has acquired and used Cobalt Strike in its operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "Aquatic Panda has attempted to harvest credentials through LSASS memory dumping. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518.001",
+        "Technique": "Software Discovery: Security Software Discovery",
+        "Use": "Aquatic Panda has attempted to discover third party endpoint detection and response (EDR) tools on compromised systems. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Aquatic Panda has used native OS commands to understand privilege levels and system details. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1007",
+        "Technique": "System Service Discovery",
+        "Use": "Aquatic Panda has attempted to discover services for third party EDR products. [1]"
+    }
+]

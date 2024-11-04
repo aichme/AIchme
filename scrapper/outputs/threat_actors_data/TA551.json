@@ -1,0 +1,86 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "TA551 has used HTTP for C2 communications. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "TA551 has used cmd.exe to execute commands. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1132.001",
+        "Technique": "Data Encoding: Standard Encoding",
+        "Use": "TA551 has used encoded ASCII text for initial C2 communications. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1568.002",
+        "Technique": "Dynamic Resolution: Domain Generation Algorithms",
+        "Use": "TA551 has used a DGA to generate URLs from executed macros. [2] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589.002",
+        "Technique": "Gather Victim Identity Information: Email Addresses",
+        "Use": "TA551 has used spoofed company emails that were acquired from email clients on previously infected hosts to target other individuals. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "TA551 has retrieved DLLs and installer binaries for malware execution from C2. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036",
+        "Technique": "Masquerading",
+        "Use": "TA551 has masked malware DLLs as dat and jpg files. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.003",
+        "Technique": "Obfuscated Files or Information: Steganography",
+        "Use": "TA551 has hidden encoded data for malware DLLs in a PNG. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.010",
+        "Technique": "Obfuscated Files or Information: Command Obfuscation",
+        "Use": "TA551 has used obfuscated variable names in a JavaScript configuration file. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "TA551 has sent spearphishing attachments with password protected ZIP files. [3] [2] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.005",
+        "Technique": "System Binary Proxy Execution: Mshta",
+        "Use": "TA551 has used mshta.exe to execute malicious payloads. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.010",
+        "Technique": "System Binary Proxy Execution: Regsvr32",
+        "Use": "TA551 has used regsvr32.exe to load malicious DLLs. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.011",
+        "Technique": "System Binary Proxy Execution: Rundll32",
+        "Use": "TA551 has used rundll32.exe to load malicious DLLs. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "TA551 has prompted users to enable macros within spearphishing attachments to install malware. [2]"
+    }
+]

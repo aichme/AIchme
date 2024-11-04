@@ -1,0 +1,26 @@
+[
+    {
+        "Domain": "ICS",
+        "ID": "T0817",
+        "Technique": "Drive-by Compromise",
+        "Use": "ALLANITE leverages watering hole attacks to gain access into electric utilities. [2]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0852",
+        "Technique": "Screen Capture",
+        "Use": "ALLANITE has been identified to collect and distribute screenshots of ICS systems such as HMIs. [1] [3]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0865",
+        "Technique": "Spearphishing Attachment",
+        "Use": "ALLANITE utilized spear phishing to gain access into energy sector environments. [4]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0859",
+        "Technique": "Valid Accounts",
+        "Use": "ALLANITE utilized credentials collected through phishing and watering hole attacks. [1]"
+    }
+]

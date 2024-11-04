@@ -1,0 +1,14 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "PittyTiger has obtained and used tools such as Mimikatz and gsecdump . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "PittyTiger attempts to obtain legitimate credentials during operations. [1]"
+    }
+]

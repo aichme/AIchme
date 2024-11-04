@@ -1,0 +1,350 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "Dragonfly has used batch scripts to enumerate users on a victim domain controller. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098",
+        "Technique": "Account Manipulation",
+        "Use": "Dragonfly has added newly created accounts to the administrators group to maintain elevated access. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "Dragonfly has registered domains for targeting intended victims. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.003",
+        "Technique": "Acquire Infrastructure: Virtual Private Server",
+        "Use": "Dragonfly has acquired VPS infrastructure for use in malicious campaigns. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1595.002",
+        "Technique": "Active Scanning: Vulnerability Scanning",
+        "Use": "Dragonfly has scanned targeted systems for vulnerable Citrix and Microsoft Exchange services. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.002",
+        "Technique": "Application Layer Protocol: File Transfer Protocols",
+        "Use": "Dragonfly has used SMB for C2. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560",
+        "Technique": "Archive Collected Data",
+        "Use": "Dragonfly has compressed data into .zip files prior to exfiltration. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "Dragonfly has added the registry value ntdll to the Registry Run key to establish persistence. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110",
+        "Technique": "Brute Force",
+        "Use": "Dragonfly has attempted to brute force credentials to gain access. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.002",
+        "Technique": "Password Cracking",
+        "Use": "Dragonfly has dropped and executed tools used for password cracking, including Hydra and CrackMapExec . [15] [16]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059",
+        "Technique": "Command and Scripting Interpreter",
+        "Use": "Dragonfly has used the command line for execution. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "PowerShell",
+        "Use": "Dragonfly has used PowerShell scripts for execution. [15] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.003",
+        "Technique": "Windows Command Shell",
+        "Use": "Dragonfly has used various types of scripting to perform operations, including batch scripts. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.006",
+        "Technique": "Python",
+        "Use": "Dragonfly has used various types of scripting to perform operations, including Python scripts. The group was observed installing Python 2.7 on a victim. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.004",
+        "Technique": "Compromise Infrastructure: Server",
+        "Use": "Dragonfly has compromised legitimate websites to host C2 and malware modules. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.001",
+        "Technique": "Create Account: Local Account",
+        "Use": "Dragonfly has created accounts on victims, including administrator accounts, some of which appeared to be tailored to each individual staging target. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "Dragonfly has collected data from local victim systems. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.001",
+        "Technique": "Data Staged: Local Data Staging",
+        "Use": "Dragonfly has created a directory named \"out\" in the user's %AppData% folder and copied files to it. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "Dragonfly has compromised targets via strategic web compromise (SWC) utilizing a custom exploit kit. [4] [15] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1114.002",
+        "Technique": "Email Collection: Remote Email Collection",
+        "Use": "Dragonfly has accessed email accounts using Outlook Web Access. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "Dragonfly has conducted SQL injection attacks, exploited vulnerabilities CVE-2019-19781 and CVE-2020-0688 for Citrix and MS Exchange, and CVE-2018-13379 for Fortinet VPNs. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "Dragonfly has exploited CVE-2011-0611 in Adobe Flash Player to gain execution on a targeted system. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1210",
+        "Technique": "Exploitation of Remote Services",
+        "Use": "Dragonfly has exploited a Windows Netlogon vulnerability (CVE-2020-1472) to obtain access to Windows Active Directory servers. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1133",
+        "Technique": "External Remote Services",
+        "Use": "Dragonfly has used VPNs and Outlook Web Access (OWA) to maintain access to victim networks. [15] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Dragonfly has used a batch script to gather folder and file names from victim hosts. [15] [7] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1187",
+        "Technique": "Forced Authentication",
+        "Use": "Dragonfly has gathered hashed user credentials over SMB using spearphishing attachments with external resource links and by modifying .LNK file icon resources to collect credentials from virtualized systems. [15] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1591.002",
+        "Technique": "Gather Victim Org Information: Business Relationships",
+        "Use": "Dragonfly has collected open source information to identify relationships between organizations for targeting purposes. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.002",
+        "Technique": "Hide Artifacts: Hidden Users",
+        "Use": "Dragonfly has modified the Registry to hide created user accounts. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.004",
+        "Technique": "Impair Defenses: Disable or Modify System Firewall",
+        "Use": "Dragonfly has disabled host-based firewalls. The group has also globally opened port 3389. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.001",
+        "Technique": "Indicator Removal: Clear Windows Event Logs",
+        "Use": "Dragonfly has cleared Windows event logs and other logs produced by tools they used, including system, security, terminal services, remote services, and audit logs. The actors also deleted specific Registry keys. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "Dragonfly has deleted many of its files used during operations as part of cleanup, including removing applications and deleting screenshots. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Dragonfly has copied and installed tools for operations once in the victim environment. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036",
+        "Technique": "Masquerading",
+        "Use": "Dragonfly has created accounts disguised as legitimate backup and service accounts as well as an email administration account. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1112",
+        "Technique": "Modify Registry",
+        "Use": "Dragonfly has modified the Registry to perform multiple techniques through the use of Reg . [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1135",
+        "Technique": "Network Share Discovery",
+        "Use": "Dragonfly has identified and browsed file servers in the victim network, sometimes , viewing files pertaining to ICS or Supervisory Control and Data Acquisition (SCADA) systems. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Dragonfly has obtained and used tools such as Mimikatz , CrackMapExec , and PsExec . [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.002",
+        "Technique": "OS Credential Dumping: Security Account Manager",
+        "Use": "Dragonfly has dropped and executed SecretsDump to dump password hashes. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.003",
+        "Technique": "OS Credential Dumping: NTDS",
+        "Use": "Dragonfly has dropped and executed SecretsDump to dump password hashes. They also obtained ntds.dit from domain controllers. [15] [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.004",
+        "Technique": "OS Credential Dumping: LSA Secrets",
+        "Use": "Dragonfly has dropped and executed SecretsDump to dump password hashes. [15] [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069.002",
+        "Technique": "Permission Groups Discovery: Domain Groups",
+        "Use": "Dragonfly has used batch scripts to enumerate administrators and users in the domain. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Dragonfly has sent emails with malicious attachments to gain initial access. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1598.002",
+        "Technique": "Phishing for Information: Spearphishing Attachment",
+        "Use": "Dragonfly has used spearphishing with Microsoft Office attachments to enable harvesting of user credentials. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1598.003",
+        "Technique": "Phishing for Information: Spearphishing Link",
+        "Use": "Dragonfly has used spearphishing with PDF attachments containing malicious links that redirected to credential harvesting websites. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1012",
+        "Technique": "Query Registry",
+        "Use": "Dragonfly has queried the Registry to identify victim information. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.001",
+        "Technique": "Remote Services: Remote Desktop Protocol",
+        "Use": "Dragonfly has moved laterally via RDP. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "Dragonfly has likely obtained a list of hosts in the victim environment. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "Dragonfly has used scheduled tasks to automatically log out of created accounts every 8 hours as well as to execute malicious files. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1113",
+        "Technique": "Screen Capture",
+        "Use": "Dragonfly has performed screen captures of victims, including by using a tool, scr.exe (which matched the hash of ScreenUtil). [15] [5] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.003",
+        "Technique": "Server Software Component: Web Shell",
+        "Use": "Dragonfly has commonly created Web shells on victims' publicly accessible email and web servers, which they used to maintain access to a victim network and download additional malicious files. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.004",
+        "Technique": "Stage Capabilities: Drive-by Target",
+        "Use": "Dragonfly has compromised websites to redirect traffic and to host exploit kits. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1195.002",
+        "Technique": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "Use": "Dragonfly has placed trojanized installers for control system software on legitimate vendor app stores. [4] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "Dragonfly has used batch scripts to enumerate network information, including information about trusts, zones, and the domain. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "Dragonfly used the command query user on victim hosts. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1221",
+        "Technique": "Template Injection",
+        "Use": "Dragonfly has injected SMB URLs into malicious Word spearphishing attachments to initiate Forced Authentication . [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Dragonfly has used various forms of spearphishing in attempts to get users to open malicious attachments. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "Dragonfly has compromised user credentials and used valid accounts for operations. [15] [7] [8]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0817",
+        "Technique": "Drive-by Compromise",
+        "Use": "Dragonfly utilized watering hole attacks on energy sector websites by injecting a redirect iframe to deliver Backdoor.Oldrea or Trojan.Karagany . [18]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0862",
+        "Technique": "Supply Chain Compromise",
+        "Use": "Dragonfly trojanized legitimate ICS equipment providers software packages available for download on their websites. [18]"
+    }
+]

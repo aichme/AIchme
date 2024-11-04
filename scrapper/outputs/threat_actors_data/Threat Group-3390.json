@@ -1,0 +1,344 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1548.002",
+        "Technique": "Abuse Elevation Control Mechanism: Bypass User Account Control",
+        "Use": "A Threat Group-3390 tool can use a public UAC bypass method to elevate privileges. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.001",
+        "Technique": "Account Discovery: Local Account",
+        "Use": "Threat Group-3390 has used net user to conduct internal discovery of systems. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "Threat Group-3390 has registered domains for C2. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Threat Group-3390 malware has used HTTP for C2. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.002",
+        "Technique": "Archive Collected Data: Archive via Library",
+        "Use": "Threat Group-3390 has used RAR to compress, encrypt, and password-protect files prior to exfiltration. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1119",
+        "Technique": "Automated Collection",
+        "Use": "Threat Group-3390 ran a command to compile an archive of file types of interest from the victim user's directories. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "Threat Group-3390 's malware can add a Registry key to Software\\Microsoft\\Windows\\CurrentVersion\\Run for persistence. [6] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Threat Group-3390 has used PowerShell for execution. [2] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Threat Group-3390 has used command-line interfaces for execution. [2] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.003",
+        "Technique": "Create or Modify System Process: Windows Service",
+        "Use": "Threat Group-3390 's malware can create a new service, sometimes naming it after the config information, to gain persistence. [6] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.005",
+        "Technique": "Credentials from Password Stores: Password Managers",
+        "Use": "Threat Group-3390 obtained a KeePass database from a compromised host. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "Threat Group-3390 ran a command to compile an archive of file types of interest from the victim user's directories. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.001",
+        "Technique": "Data Staged: Local Data Staging",
+        "Use": "Threat Group-3390 has locally staged encrypted archives for later exfiltration efforts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.002",
+        "Technique": "Data Staged: Remote Data Staging",
+        "Use": "Threat Group-3390 has moved staged encrypted archives to Internet-facing servers that had previously been compromised with China Chopper prior to exfiltration. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1030",
+        "Technique": "Data Transfer Size Limits",
+        "Use": "Threat Group-3390 actors have split RAR files for exfiltration into parts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "During execution, Threat Group-3390 malware deobfuscates and decompresses code that was encoded with Metasploit’s shikata_ga_nai encoder as well as compressed with LZNT1 compression. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "Threat Group-3390 has extensively used strategic web compromises to target victims. [1] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "Threat Group-3390 has exfiltrated stolen data to Dropbox. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "Threat Group-3390 has exploited the Microsoft SharePoint vulnerability CVE-2019-0604 and CVE-2021-26855, CVE-2021-26857, CVE-2021-26858, and CVE-2021-27065 in Exchange Server. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "Threat Group-3390 has exploited CVE-2018-0798 in Equation Editor. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1068",
+        "Technique": "Exploitation for Privilege Escalation",
+        "Use": "Threat Group-3390 has used CVE-2014-6324 and CVE-2017-0213 to escalate privileges. [2] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1210",
+        "Technique": "Exploitation of Remote Services",
+        "Use": "Threat Group-3390 has exploited MS17-010 to move laterally to other systems on the network. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1133",
+        "Technique": "External Remote Services",
+        "Use": "Threat Group-3390 actors look for and use VPN profiles during an operation to access the network using external VPN services. [1] Threat Group-3390 has also obtained OWA account credentials during intrusions that it subsequently used to attempt to regain access when evicted from a victim network. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.001",
+        "Technique": "Hijack Execution Flow: DLL Search Order Hijacking",
+        "Use": "Threat Group-3390 has performed DLL search order hijacking to execute their payload. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.002",
+        "Technique": "Hijack Execution Flow: DLL Side-Loading",
+        "Use": "Threat Group-3390 has used DLL side-loading, including by using legitimate Kaspersky antivirus variants as well as rc.exe , a legitimate Microsoft Resource Compiler. [1] [2] [3] [9] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.002",
+        "Technique": "Impair Defenses: Disable Windows Event Logging",
+        "Use": "Threat Group-3390 has used appcmd.exe to disable logging on a victim server. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "Threat Group-3390 has deleted existing logs and exfiltrated file archives from a victim. [2] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.005",
+        "Technique": "Indicator Removal: Network Share Connection Removal",
+        "Use": "Threat Group-3390 has detached network shares after exfiltrating files, likely to evade detection. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Threat Group-3390 has downloaded additional malware and tools, including through the use of certutil , onto a compromised host . [1] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.001",
+        "Technique": "Input Capture: Keylogging",
+        "Use": "Threat Group-3390 actors installed a credential logger on Microsoft Exchange servers. Threat Group-3390 also leveraged the reconnaissance framework, ScanBox, to capture keystrokes. [1] [7] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1112",
+        "Technique": "Modify Registry",
+        "Use": "A Threat Group-3390 tool has created new Registry keys under HKEY_CURRENT_USER\\Software\\Classes\\ and HKLM\\SYSTEM\\CurrentControlSet\\services . [6] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1046",
+        "Technique": "Network Service Discovery",
+        "Use": "Threat Group-3390 actors use the Hunter tool to conduct network service discovery for vulnerable systems. [1] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.002",
+        "Technique": "Obfuscated Files or Information: Software Packing",
+        "Use": "Threat Group-3390 has packed malware and tools, including using VMProtect. [4] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "A Threat Group-3390 tool can encrypt payloads using XOR. Threat Group-3390 malware is also obfuscated using Metasploit’s shikata_ga_nai encoder as well as compressed with LZNT1 compression. [6] [3] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Threat Group-3390 has obtained and used tools such as Impacket , pwdump , Mimikatz , gsecdump , NBTscan , and Windows Credential Editor . [9] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.003",
+        "Technique": "Obtain Capabilities: Code Signing Certificates",
+        "Use": "Threat Group-3390 has obtained stolen valid certificates, including from VMProtect and the Chinese instant messaging application Youdu, for their operations. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "Threat Group-3390 actors have used a modified version of Mimikatz called Wrapikatz to dump credentials. They have also dumped credentials from domain controllers. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.002",
+        "Technique": "OS Credential Dumping: Security Account Manager",
+        "Use": "Threat Group-3390 actors have used gsecdump to dump credentials. They have also dumped credentials from domain controllers. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.004",
+        "Technique": "OS Credential Dumping: LSA Secrets",
+        "Use": "Threat Group-3390 actors have used gsecdump to dump credentials. They have also dumped credentials from domain controllers. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Threat Group-3390 has used e-mail to deliver malicious attachments to victims. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055.012",
+        "Technique": "Process Injection: Process Hollowing",
+        "Use": "A Threat Group-3390 tool can spawn svchost.exe and inject the payload into that process. [6] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1012",
+        "Technique": "Query Registry",
+        "Use": "A Threat Group-3390 tool can read and decrypt stored Registry values. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.006",
+        "Technique": "Remote Services: Windows Remote Management",
+        "Use": "Threat Group-3390 has used WinRM to enable remote execution. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "Threat Group-3390 has used the net view command. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.002",
+        "Technique": "Scheduled Task/Job: At",
+        "Use": "Threat Group-3390 actors use at to schedule tasks to run self-extracting RAR archives, which install HTTPBrowser or PlugX on other victims on a network. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.003",
+        "Technique": "Server Software Component: Web Shell",
+        "Use": "Threat Group-3390 has used a variety of Web shells. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.001",
+        "Technique": "Stage Capabilities: Upload Malware",
+        "Use": "Threat Group-3390 has hosted malicious payloads on Dropbox. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.002",
+        "Technique": "Stage Capabilities: Upload Tool",
+        "Use": "Threat Group-3390 has staged tools, including gsecdump and WCE, on previously compromised websites. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.004",
+        "Technique": "Stage Capabilities: Drive-by Target",
+        "Use": "Threat Group-3390 has embedded malicious code into websites to screen a potential victim's IP address and then exploit their browser if they are of interest. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1195.002",
+        "Technique": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "Use": "Threat Group-3390 has compromised the Able Desktop installer to gain access to victim's environments. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "Threat Group-3390 actors use NBTscan to discover vulnerable systems. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "Threat Group-3390 has used net use and netstat to conduct internal discovery of systems. The group has also used quser.exe to identify existing RDP sessions on a victim. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "Threat Group-3390 has used whoami to collect system user information. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1199",
+        "Technique": "Trusted Relationship",
+        "Use": "Threat Group-3390 has compromised third party service providers to gain access to victim's environments. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Threat Group-3390 has lured victims into opening malicious files containing malware. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "Threat Group-3390 actors obtain legitimate credentials using a variety of methods and use them to further lateral movement on victim networks. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "A Threat Group-3390 tool can use WMI to execute a binary. [6]"
+    }
+]

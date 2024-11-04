@@ -1,0 +1,356 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.001",
+        "Technique": "Account Discovery: Local Account",
+        "Use": "Chimera has used net user for account discovery. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "Chimera has has used net user /dom and net user Administrator to enumerate domain accounts including administrator accounts. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Chimera has used HTTPS for C2 communications. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.004",
+        "Technique": "Application Layer Protocol: DNS",
+        "Use": "Chimera has used Cobalt Strike to encapsulate C2 in DNS traffic. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "Chimera has used gzip for Linux OS and a modified RAR software to archive data on Windows hosts. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1119",
+        "Technique": "Automated Collection",
+        "Use": "Chimera has used custom DLLs for continuous retrieval of data from memory. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1217",
+        "Technique": "Browser Information Discovery",
+        "Use": "Chimera has used type \\ \\c$\\Users\\ \\Favorites\\Links\\Bookmarks bar\\Imported From IE*citrix* for bookmark discovery. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110.003",
+        "Technique": "Brute Force: Password Spraying",
+        "Use": "Chimera has used multiple password spraying attacks against victim's remote services to obtain valid user and administrator accounts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110.004",
+        "Technique": "Brute Force: Credential Stuffing",
+        "Use": "Chimera has used credential stuffing against victim's remote services to obtain valid accounts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Chimera has used PowerShell scripts to execute malicious payloads and the DSInternals PowerShell module to make use of Active Directory features. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Chimera has used the Windows Command Shell and batch scripts for execution on compromised hosts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1213.002",
+        "Technique": "Data from Information Repositories: Sharepoint",
+        "Use": "Chimera has collected documents from the victim's SharePoint. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1039",
+        "Technique": "Data from Network Shared Drive",
+        "Use": "Chimera has collected data of interest from network shares. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.001",
+        "Technique": "Data Staged: Local Data Staging",
+        "Use": "Chimera has staged stolen data locally on compromised hosts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.002",
+        "Technique": "Data Staged: Remote Data Staging",
+        "Use": "Chimera has staged stolen data on designated servers in the target environment. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1482",
+        "Technique": "Domain Trust Discovery",
+        "Use": "Chimera has nltest /domain_trusts to identify domain trust relationships. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1114.001",
+        "Technique": "Email Collection: Local Email Collection",
+        "Use": "Chimera has harvested data from victim's e-mail including through execution of wmic /node: process call create \"cmd /c copy c:\\Users\\ \\ \\backup.pst c:\\windows\\temp\\backup.pst\" copy \"i:\\ \\ \\My Documents\\ .pst\"copy . [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1114.002",
+        "Technique": "Email Collection: Remote Email Collection",
+        "Use": "Chimera has harvested data from remote mailboxes including through execution of \\ \\c$\\Users\\ \\AppData\\Local\\Microsoft\\Outlook*.ost . [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1041",
+        "Technique": "Exfiltration Over C2 Channel",
+        "Use": "Chimera has used Cobalt Strike C2 beacons for data exfiltration. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "Chimera has exfiltrated stolen data to OneDrive accounts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1133",
+        "Technique": "External Remote Services",
+        "Use": "Chimera has used legitimate credentials to login to an external VPN, Citrix, SSH, and other remote services. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Chimera has utilized multiple commands to identify data of interest in file and directory listings. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589.001",
+        "Technique": "Gather Victim Identity Information: Credentials",
+        "Use": "Chimera has collected credentials for the target organization from previous breaches for use in brute force attacks. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.002",
+        "Technique": "Hijack Execution Flow: DLL Side-Loading",
+        "Use": "Chimera has used side loading to place malicious DLLs in memory. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.001",
+        "Technique": "Indicator Removal: Clear Windows Event Logs",
+        "Use": "Chimera has cleared event logs on compromised hosts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "Chimera has performed file deletion to evade detection. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.006",
+        "Technique": "Indicator Removal: Timestomp",
+        "Use": "Chimera has used a Windows version of the Linux touch command to modify the date and time stamp on DLLs. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Chimera has remotely copied tools and malware onto targeted systems. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1570",
+        "Technique": "Lateral Tool Transfer",
+        "Use": "Chimera has copied tools between compromised hosts using SMB. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Chimera has renamed malware to GoogleUpdate.exe and WinRAR to jucheck.exe, RecordedTV.ms, teredo.tmp, update.exe, and msadcs1.exe. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1556.001",
+        "Technique": "Modify Authentication Process: Domain Controller Authentication",
+        "Use": "Chimera 's malware has altered the NTLM authentication program on domain controllers to allow Chimera to login without a valid credential. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1111",
+        "Technique": "Multi-Factor Authentication Interception",
+        "Use": "Chimera has registered alternate phone numbers for compromised users to intercept 2FA codes sent via SMS. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1106",
+        "Technique": "Native API",
+        "Use": "Chimera has used direct Windows system calls by leveraging Dumpert. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1046",
+        "Technique": "Network Service Discovery",
+        "Use": "Chimera has used the get -b -e -p command for network scanning as well as a custom Python tool  packed into a Windows executable named Get.exe to scan IP ranges for HTTP. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1135",
+        "Technique": "Network Share Discovery",
+        "Use": "Chimera has used net share and net view to identify network shares of interest. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.010",
+        "Technique": "Obfuscated Files or Information: Command Obfuscation",
+        "Use": "Chimera has encoded PowerShell commands. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Chimera has obtained and used tools such as BloodHound , Cobalt Strike , Mimikatz , and PsExec . [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.003",
+        "Technique": "OS Credential Dumping: NTDS",
+        "Use": "Chimera has gathered the SYSTEM registry and ntds.dit files from target systems. [1] Chimera specifically has used the NtdsAudit tool to dump the password hashes of domain users via msadcs.exe \"NTDS.dit\" -s \"SYSTEM\" -p RecordedTV_pdmp.txt --users-csv RecordedTV_users.csv and used ntdsutil to copy the Active Directory database. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1201",
+        "Technique": "Password Policy Discovery",
+        "Use": "Chimera has used the NtdsAudit utility to collect information related to accounts and passwords. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069.001",
+        "Technique": "Permission Groups Discovery: Local Groups",
+        "Use": "Chimera has used net localgroup administrators to identify  accounts with local administrative rights. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "Chimera has used tasklist to enumerate processes. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1572",
+        "Technique": "Protocol Tunneling",
+        "Use": "Chimera has encapsulated Cobalt Strike 's C2 protocol in DNS and HTTPS. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1012",
+        "Technique": "Query Registry",
+        "Use": "Chimera has queried Registry keys using reg query \\ \\HKU\\ \\SOFTWARE\\Microsoft\\Terminal Server Client\\Servers and reg query \\ \\HKU\\ \\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings . [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.001",
+        "Technique": "Remote Services: Remote Desktop Protocol",
+        "Use": "Chimera has used RDP to access targeted systems. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.002",
+        "Technique": "Remote Services: SMB/Windows Admin Shares",
+        "Use": "Chimera has used Windows admin shares to move laterally. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.006",
+        "Technique": "Remote Services: Windows Remote Management",
+        "Use": "Chimera has used WinRM for lateral movement. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "Chimera has utilized various scans and queries to find domain controllers and remote services in the target environment. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "Chimera has used scheduled tasks to invoke Cobalt Strike including through batch script schtasks /create /ru \"SYSTEM\" /tn \"update\" /tr \"cmd /c c:\\windows\\temp\\update.bat\" /sc once /f /st and to maintain persistence. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Chimera has used fsutil fsinfo drives , systeminfo , and vssadmin list shadows for system information including shadow volumes and drive information. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "Chimera has used ipconfig , Ping , and tracert to enumerate the IP address and network environment and settings of the local host. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "Chimera has used netstat -ano | findstr EST to discover network connections. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "Chimera has used the quser command to show currently logged on users. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1007",
+        "Technique": "System Service Discovery",
+        "Use": "Chimera has used net start and net use for system service discovery. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1569.002",
+        "Technique": "System Services: Service Execution",
+        "Use": "Chimera has used PsExec to deploy beacons on compromised systems. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1124",
+        "Technique": "System Time Discovery",
+        "Use": "Chimera has used time /t and net time \\ip/hostname for system time discovery. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1550.002",
+        "Technique": "Use Alternate Authentication Material: Pass the Hash",
+        "Use": "Chimera has dumped password hashes for use in pass the hash authentication attacks. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "Chimera has used a valid account to maintain persistence via scheduled task. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1550.002",
+        "Technique": "Domain Accounts",
+        "Use": "Chimera has used compromised domain accounts to gain access to the target environment. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "Chimera has used WMIC to execute remote commands. [1] [2]"
+    }
+]

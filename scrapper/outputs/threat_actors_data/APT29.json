@@ -1,0 +1,686 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1548.002",
+        "Technique": "Abuse Elevation Control Mechanism: Bypass User Account Control",
+        "Use": "APT29 has bypassed UAC. [30]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "During the SolarWinds Compromise , APT29 used PowerShell to discover domain accounts by exectuing Get-ADUser and Get-ADGroupMember . [18] [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.004",
+        "Technique": "Account Discovery: Cloud Account",
+        "Use": "APT29 has conducted enumeration of Azure AD accounts. [31]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098.001",
+        "Technique": "Account Manipulation: Additional Cloud Credentials",
+        "Use": "During the SolarWinds Compromise , APT29 added credentials to OAuth Applications and Service Principals. [32] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098.002",
+        "Technique": "Account Manipulation: Additional Email Delegate Permissions",
+        "Use": "APT29 has used a compromised global administrator account in Azure AD to backdoor a service principal with ApplicationImpersonation rights to start collecting emails from targeted mailboxes; APT29 has also used compromised accounts holding ApplicationImpersonation rights in Exchange to collect emails. [33] [27] During the SolarWinds Compromise , APT29 added their own devices as allowed IDs for active sync using Set-CASMailbox , allowing it to obtain copies of victim mailboxes. It also added additional permissions (such as Mail.Read and Mail.ReadWrite) to compromised Application or Service Principals. [12] [32] [31]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098.003",
+        "Technique": "Account Manipulation: Additional Cloud Roles",
+        "Use": "During the SolarWinds Compromise , APT29 granted company administrator privileges to a newly created service principle. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098.005",
+        "Technique": "Account Manipulation: Device Registration",
+        "Use": "APT29 has enrolled their own devices into compromised cloud tenants, including enrolling a device in MFA to an Azure AD environment following a successful password guessing attack against a dormant account. [33] [34] During the SolarWinds Compromise , APT29 registered devices in order to enable mailbox syncing via the Set-CASMailbox command. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "For the SolarWinds Compromise , APT29 acquired C2 domains, sometimes through resellers. [10] [35] For Operation Ghost , APT29 registered domains for use in C2 including some crafted to appear as existing legitimate domains. [23]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.006",
+        "Technique": "Acquire Infrastructure: Web Services",
+        "Use": "APT29 has registered algorithmically generated Twitter handles that are used for C2 by malware, such as HAMMERTOSS . APT29 has also used legitimate web services such as Dropbox and Constant Contact in their operations. [36] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1595.002",
+        "Technique": "Active Scanning: Vulnerability Scanning",
+        "Use": "APT29 has conducted widespread scanning of target environments to identify vulnerabilities for exploit. [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "During the SolarWinds Compromise , APT29 used HTTP for C2 and data exfiltration. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "During the SolarWinds Compromise , APT29 used 7-Zip to compress stolen emails into password-protected archives prior to exfltration; APT29 also compressed text files into zipped archives. [12] [37] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "APT29 added Registry Run keys to establish persistence. [30]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1037",
+        "Technique": "Boot or Logon Initialization Scripts",
+        "Use": "APT29 has hijacked legitimate application-specific startup scripts to enable malware to execute on system startup. [27]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.004",
+        "Technique": "RC Scripts",
+        "Use": "APT29 has installed a run command on a compromised system to enable malware execution on system startup. [27]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110.001",
+        "Technique": "Brute Force: Password Guessing",
+        "Use": "APT29 has successfully conducted password guessing attacks against a list of mailboxes. [33]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110.003",
+        "Technique": "Brute Force: Password Spraying",
+        "Use": "APT29 has conducted brute force password spray attacks. [21] [31] [34]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1651",
+        "Technique": "Cloud Administration Command",
+        "Use": "APT29 has used Azure Run Command and Azure Admin-on-Behalf-of (AOBO) to execute code on virtual machines. [31]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "APT29 has used encoded PowerShell scripts uploaded to CozyCar installations to download and install SeaDuke . [38] [30] [39] [16] During the SolarWinds Compromise , APT29 used PowerShell to create new tasks on remote machines, identify configuration settings, exfiltrate data, and execute other commands. [12] [40] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "During the SolarWinds Compromise , APT29 used cmd.exe to execute commands on remote machines. [12] [40]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "For the SolarWinds Compromise , APT29 wrote malware such as Sibot in Visual Basic. [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.006",
+        "Technique": "Command and Scripting Interpreter: Python",
+        "Use": "APT29 has developed malware variants written in Python. [38]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.009",
+        "Technique": "Command and Scripting Interpreter: Cloud API",
+        "Use": "APT29 has leveraged the Microsoft Graph API to perform various actions across Azure and M365 environments. They have also utilized AADInternals PowerShell Modules to access the API [20]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1586.002",
+        "Technique": "Compromise Accounts: Email Accounts",
+        "Use": "APT29 has compromised email accounts to further enable phishing campaigns and taken control of dormant accounts. [41] [33]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1586.003",
+        "Technique": "Compromise Accounts: Cloud Accounts",
+        "Use": "APT29 has used residential proxies, including Azure Virtual Machines, to obfuscate their access to victim environments. [33]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.001",
+        "Technique": "Compromise Infrastructure: Domains",
+        "Use": "For the SolarWinds Compromise , APT29 compromised domains to use for C2. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.003",
+        "Technique": "Create Account: Cloud Account",
+        "Use": "APT29 can create new users through Azure AD. [31]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.003",
+        "Technique": "Credentials from Password Stores: Credentials from Web Browsers",
+        "Use": "During the SolarWinds Compromise , APT29 stole users' saved passwords from Chrome. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1213",
+        "Technique": "Data from Information Repositories",
+        "Use": "During the SolarWinds Compromise , APT29 accessed victims' internal knowledge repositories (wikis) to view sensitive corporate information on products, services, and internal business operations. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.003",
+        "Technique": "Code Repositories",
+        "Use": "During the SolarWinds Compromise , APT29 downloaded source code from code repositories. [42]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "APT29 has stolen data from compromised hosts. [27] During the SolarWinds Compromise , APT29 extracted files from compromised networks. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1001.002",
+        "Technique": "Data Obfuscation: Steganography",
+        "Use": "During Operation Ghost , APT29 used steganography to hide the communications between the implants and their C&C servers. [23]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.002",
+        "Technique": "Data Staged: Remote Data Staging",
+        "Use": "During the SolarWinds Compromise , APT29 staged data and files in password-protected archives on a victim's OWA server. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "During the SolarWinds Compromise , APT29 used 7-Zip to decode their Raindrop malware. [43]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1587.001",
+        "Technique": "Develop Capabilities: Malware",
+        "Use": "APT29 has used unique malware in many of their operations. [3] [30] [20] [27] For the SolarWinds Compromise , APT29 used numerous pieces of malware that were likely developed for or by the group, including SUNBURST , SUNSPOT , Raindrop , and TEARDROP . [9] [11] [37] For Operation Ghost , APT29 used new strains of malware including FatDuke , MiniDuke , RegDuke , and PolyglotDuke . [23]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1587.003",
+        "Technique": "Develop Capabilities: Digital Certificates",
+        "Use": "APT29 has created self-signed digital certificates to enable mutual TLS authentication for malware. [25] [26]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1484.002",
+        "Technique": "Domain or Tenant Policy Modification: Trust Modification",
+        "Use": "During the SolarWinds Compromise , APT29 changed domain federation trust settings using Azure AD administrative permissions to configure the domain to accept authorization tokens signed by their own SAML signing certificate. [15] [44]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1482",
+        "Technique": "Domain Trust Discovery",
+        "Use": "During the SolarWinds Compromise , APT29 used the Get-AcceptedDomain PowerShell cmdlet to enumerate accepted domains through an Exchange Management Shell. [12] They also used AdFind to enumerate domains and to discover trust between federated domains. [18] [37]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1568",
+        "Technique": "Dynamic Resolution",
+        "Use": "APT29 has used Dynamic DNS providers for their malware C2 infrastructure. [27] During the SolarWinds Compromise , APT29 used dynamic DNS resolution to construct and resolve to randomly-generated subdomains for C2. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1114.002",
+        "Technique": "Email Collection: Remote Email Collection",
+        "Use": "APT29 has collected emails from targeted mailboxes within a compromised Azure AD tenant and compromised Exchange servers, including via Exchange Web Services (EWS) API requests. [33] [27] During the SolarWinds Compromise , APT29 collected emails from specific individuals, such as executives and IT staff, using New-MailboxExportRequest followed by Get-MailboxExportRequest . [12] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1573",
+        "Technique": "Encrypted Channel",
+        "Use": "APT29 has used multiple layers of encryption within malware to protect C2 communication. [16]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.001",
+        "Technique": "Establish Accounts: Social Media Accounts",
+        "Use": "For Operation Ghost , APT29 registered Twitter accounts to host C2 nodes. [23]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1546.003",
+        "Technique": "Event Triggered Execution: Windows Management Instrumentation Event Subscription",
+        "Use": "APT29 has used WMI event subscriptions for persistence. [30] During the SolarWinds Compromise , APT29 used a WMI event filter to invoke a command-line event consumer at system boot time to launch a backdoor with rundll32.exe . [37] [44] During Operation Ghost , APT29 used WMI event subscriptions to establish persistence for malware. [23]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1546.008",
+        "Technique": "Event Triggered Execution: Accessibility Features",
+        "Use": "APT29 used sticky-keys to obtain unauthenticated, privileged console access. [30] [45]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1048.002",
+        "Technique": "Exfiltration Over Alternative Protocol: Exfiltration Over Asymmetric Encrypted Non-C2 Protocol",
+        "Use": "During the SolarWinds Compromise , APT29 exfiltrated collected data over a simple HTTPS request to a password-protected archive staged on a victim's OWA servers. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "APT29 has exploited CVE-2019-19781 for Citrix, CVE-2019-11510 for Pulse Secure VPNs, CVE-2018-13379 for FortiGate VPNs, and CVE-2019-9670 in Zimbra software to gain access. [13] [24] During the SolarWinds Compromise , APT29 exploited CVE-2020-0688 against the Microsoft Exchange Control Panel to regain access to a network. [12] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "APT29 has used multiple software exploits for common client software, like Microsoft Word, Exchange, and Adobe Reader, to gain code execution. [3] [13] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1068",
+        "Technique": "Exploitation for Privilege Escalation",
+        "Use": "APT29 has exploited CVE-2021-36934 to escalate privileges on a compromised host. [39]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1133",
+        "Technique": "External Remote Services",
+        "Use": "APT29 has used compromised identities to access networks via VPNs and Citrix. [24] [33] For the SolarWinds Compromise , APT29 used compromised identities to access networks via SSH, VPNs, and other remote access tools. [10] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "During the SolarWinds Compromise , APT29 obtained information about the configured Exchange virtual directory using Get-WebServicesVirtualDirectory . [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1606.001",
+        "Technique": "Forge Web Credentials: Web Cookies",
+        "Use": "During the SolarWinds Compromise , APT29 bypassed MFA set on OWA accounts by generating a cookie value from a previously stolen secret key. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1606.002",
+        "Technique": "Forge Web Credentials: SAML Tokens",
+        "Use": "During the SolarWinds Compromise , APT29 created tokens using compromised SAML signing certificates. [32] [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589.001",
+        "Technique": "Gather Victim Identity Information: Credentials",
+        "Use": "For the SolarWinds Compromise , APT29 conducted credential theft operations to obtain credentials to be used for access to victim environments. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1665",
+        "Technique": "Hide Infrastructure",
+        "Use": "APT29 uses compromised residential endpoints, typically within the same ISP IP address range, as proxies to hide the true source of C2 traffic. [34] During the SolarWinds Compromise , APT29 set the hostnames of their C2 infrastructure to match legitimate hostnames in the victim environment. They also used IP addresses originating from the same country as the victim for their VPN infrastructure. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.001",
+        "Technique": "Impair Defenses: Disable or Modify Tools",
+        "Use": "During the SolarWinds Compromise , APT29 used the service control manager on a remote system to disable services associated with security monitoring products. [37]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.002",
+        "Technique": "Impair Defenses: Disable Windows Event Logging",
+        "Use": "During the SolarWinds Compromise , APT29 , used AUDITPOL to prevent the collection of audit logs. [37]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.004",
+        "Technique": "Impair Defenses: Disable or Modify System Firewall",
+        "Use": "During the SolarWinds Compromise , APT29 used netsh to configure firewall rules that limited certain UDP outbound packets. [37]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.008",
+        "Technique": "Impair Defenses: Disable or Modify Cloud Logs",
+        "Use": "APT29 has disabled Purview Audit on targeted accounts prior to stealing emails from  Microsoft 365 tenants. [33]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "APT29 has used SDelete to remove artifacts from victim networks. [30] During the SolarWinds Compromise , APT29 routinely removed their tools, including custom backdoors, once remote access was achieved. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.006",
+        "Technique": "Indicator Removal: Timestomp",
+        "Use": "APT29 has used timestomping to alter the Standard Information timestamps on their web shells to match other files in the same directory. [27] During the SolarWinds Compromise , APT29 modified timestamps of backdoors to match legitimate Windows files. [37]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.008",
+        "Technique": "Indicator Removal: Clear Mailbox Data",
+        "Use": "During the SolarWinds Compromise , APT29 removed evidence of email export requests using Remove-MailboxExportRequest . [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "APT29 has downloaded additional tools and malware onto compromised networks. [30] [25] [3] [27] During the SolarWinds Compromise , APT29 downloaded additional malware, such as TEARDROP and Cobalt Strike , onto a compromised host following initial access. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.004",
+        "Technique": "Masquerading: Masquerade Task or Service",
+        "Use": "During the SolarWinds Compromise , APT29 named tasks \\Microsoft\\Windows\\SoftwareProtectionPlatform\\EventCacheManager in order to appear legitimate. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "APT29 has renamed malicious DLLs with legitimate names to appear benign; they have also created an Azure AD certificate with a Common Name that matched the display name of the compromised service principal. [17] [33] During the SolarWinds Compromise , APT29 renamed software and DLLs with legitimate names to appear benign. [12] [40]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1556.007",
+        "Technique": "Modify Authentication Process: Hybrid Identity",
+        "Use": "APT29 has edited the Microsoft.IdentityServer.Servicehost.exe.config file to load a malicious DLL into the AD FS process, thereby enabling persistent access to any service federated with AD FS for a user with a specified User Principal Name. [46]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1621",
+        "Technique": "Multi-Factor Authentication Request Generation",
+        "Use": "APT29 has used repeated MFA requests to gain access to victim accounts. [47] [34]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.001",
+        "Technique": "Obfuscated Files or Information: Binary Padding",
+        "Use": "APT29 used large size files to avoid detection by security solutions with hardcoded size limits. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.002",
+        "Technique": "Obfuscated Files or Information: Software Packing",
+        "Use": "APT29 used UPX to pack files. [30]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.003",
+        "Technique": "Obfuscated Files or Information: Steganography",
+        "Use": "During Operation Ghost , APT29 used steganography to hide payloads inside valid images. [23]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.006",
+        "Technique": "Obfuscated Files or Information: HTML Smuggling",
+        "Use": "APT29 has embedded an ISO file within an HTML attachment that contained JavaScript code to initiate malware execution. [39]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "APT29 has obtained and used a variety of tools including Mimikatz , SDelete , Tor , meek , and Cobalt Strike . [30] [3] [27]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.002",
+        "Technique": "OS Credential Dumping: Security Account Manager",
+        "Use": "APT29 has used the reg save command to save registry hives. [27]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.004",
+        "Technique": "OS Credential Dumping: LSA Secrets",
+        "Use": "APT29 has used the reg save command to extract LSA secrets offline. [27]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.006",
+        "Technique": "OS Credential Dumping: DCSync",
+        "Use": "During the SolarWinds Compromise , APT29 used privileged accounts to replicate directory service data with domain controllers. [44] [37] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069.002",
+        "Technique": "Permission Groups Discovery: Domain Groups",
+        "Use": "During the SolarWinds Compromise , APT29 used AdFind to enumerate domain groups. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "APT29 has used spearphishing emails with an attachment to deliver files with exploits to initial victims. [3] [19] [39] [16]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "APT29 has used spearphishing with a link to trick victims into clicking on a link to a zip file containing malicious files. [30] [19] [48]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.003",
+        "Technique": "Phishing: Spearphishing via Service",
+        "Use": "APT29 has used the legitimate mailing service Constant Contact to send phishing e-mails. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "During the SolarWinds Compromise , APT29 used multiple command-line utilities to enumerate running processes. [12] [37] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090.001",
+        "Technique": "Proxy: Internal Proxy",
+        "Use": "During the SolarWinds Compromise , APT29 used SSH port forwarding capabilities on public-facing systems, and configured at least one instance of Cobalt Strike to use a network pipe over SMB. [18] [43]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090.002",
+        "Technique": "Proxy: External Proxy",
+        "Use": "APT29 uses compromised residential endpoints as proxies for defense evasion and network access. [34]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090.003",
+        "Technique": "Proxy: Multi-hop Proxy",
+        "Use": "A backdoor used by APT29 created a Tor hidden service to forward traffic from the Tor client to local ports 3389 (RDP), 139 (Netbios), and 445 (SMB) enabling full remote access from outside the network and has also used TOR. [30] [31]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090.004",
+        "Technique": "Proxy: Domain Fronting",
+        "Use": "APT29 has used the meek domain fronting plugin for Tor to hide the destination of C2 traffic. [30]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.001",
+        "Technique": "Remote Services: Remote Desktop Protocol",
+        "Use": "During the SolarWinds Compromise , APT29 used RDP sessions from public-facing systems to internal servers. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.002",
+        "Technique": "Remote Services: SMB/Windows Admin Shares",
+        "Use": "During the SolarWinds Compromise , APT29 used administrative accounts to connect over SMB to targeted users. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.006",
+        "Technique": "Remote Services: Windows Remote Management",
+        "Use": "During the SolarWinds Compromise , APT29 used WinRM via PowerShell to execute commands and payloads on remote hosts. [43]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.007",
+        "Technique": "Remote Services: Cloud Services",
+        "Use": "APT29 has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell. [49]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "During the SolarWinds Compromise , APT29 used AdFind to enumerate remote systems. [37]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "APT29 has used named and hijacked scheduled tasks to establish persistence. [30] During the SolarWinds Compromise , APT29 used scheduler and schtasks to create new tasks on remote host as part of their lateral movement. They manipulated scheduled tasks by updating an existing legitimate task to execute their tools and then returned the scheduled task to its original configuration. APT29 also created a scheduled task to maintain SUNSPOT persistence when the host booted. [12] [9] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.003",
+        "Technique": "Server Software Component: Web Shell",
+        "Use": "APT29 has installed web shells on exploited Microsoft Exchange servers. [13] [27]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1528",
+        "Technique": "Steal Application Access Token",
+        "Use": "APT29 uses stolen tokens to access victim accounts, without needing a password. [34]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1649",
+        "Technique": "Steal or Forge Authentication Certificates",
+        "Use": "APT29 has abused misconfigured AD CS certificate templates to impersonate admin users and create additional authentication certificates. [50]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1558.003",
+        "Technique": "Steal or Forge Kerberos Tickets: Kerberoasting",
+        "Use": "During the SolarWinds Compromise , APT29 obtained Ticket Granting Service (TGS) tickets for Active Directory Service Principle Names to crack offline. [37]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1539",
+        "Technique": "Steal Web Session Cookie",
+        "Use": "During the SolarWinds Compromise , APT29 stole Chrome browser cookies by copying the Chrome profile directories of targeted users. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "During the SolarWinds Compromise , APT29 was able to get SUNBURST signed by SolarWinds code signing certificates by injecting the malware into the SolarWinds Orion software lifecycle. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.005",
+        "Technique": "Subvert Trust Controls: Mark-of-the-Web Bypass",
+        "Use": "APT29 has embedded ISO images and VHDX files in HTML to evade Mark-of-the-Web. [39]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1195.002",
+        "Technique": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "Use": "During the SolarWinds Compromise , APT29 gained initial network access to some victims via a trojanized update of SolarWinds Orion software. [51] [9] [13] [37]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.005",
+        "Technique": "System Binary Proxy Execution: Mshta",
+        "Use": "APT29 has use mshta to execute malicious scripts on a compromised host. [39]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.011",
+        "Technique": "System Binary Proxy Execution: Rundll32",
+        "Use": "During the SolarWinds Compromise , APT29 used Rundll32.exe to execute payloads. [32] [37]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "During the SolarWinds Compromise , APT29 used fsutil to check available free space before executing actions that might create large files on disk. [37]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016.001",
+        "Technique": "System Network Configuration Discovery: Internet Connection Discovery",
+        "Use": "APT29 has ensured web servers in a victim environment are Internet accessible before copying tools or malware to it. [27] During the SolarWinds Compromise , APT29 used GoldFinder to perform HTTP GET requests to check internet connectivity and identify HTTP proxy servers and other redirectors that an HTTP request travels through. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1199",
+        "Technique": "Trusted Relationship",
+        "Use": "APT29 has compromised IT, cloud services, and managed services providers to gain broad access to multiple customers for subsequent operations. [31] During the SolarWinds Compromise , APT29 gained access through compromised accounts at cloud solution partners, and used compromised certificates issued by Mimecast to authenticate to Mimecast customer systems. [13] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.004",
+        "Technique": "Unsecured Credentials: Private Keys",
+        "Use": "During the SolarWinds Compromise , APT29 obtained PKI keys, certificate files, and the private encryption key from an Active Directory Federation Services (AD FS) container to decrypt corresponding SAML signing certificates. [44] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1550.001",
+        "Technique": "Use Alternate Authentication Material: Application Access Token",
+        "Use": "During the SolarWinds Compromise , APT29 used compromised service principals to make changes to the Office 365 environment. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1550.003",
+        "Technique": "Use Alternate Authentication Material: Pass the Ticket",
+        "Use": "APT29 used Kerberos ticket attacks for lateral movement. [30]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1550.004",
+        "Technique": "Use Alternate Authentication Material: Web Session Cookie",
+        "Use": "During the SolarWinds Compromise , APT29 used stolen cookies to access cloud resources and a forged duo-sid cookie to bypass MFA set on an email account. [12] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "APT29 has used various forms of spearphishing attempting to get a user to click on a malicous link. [19] [48]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "APT29 has used various forms of spearphishing attempting to get a user to open attachments, including, but not limited to, malicious Microsoft Word documents, .pdf, and .lnk files. [3] [39] [16]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "APT29 has used a compromised account to access an organization's VPN infrastructure. [33] During the SolarWinds Compromise , APT29 used different compromised credentials for remote access and to move laterally. [9] [10] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "Domain Accounts",
+        "Use": "During the SolarWinds Compromise , APT29 used domain administrators' accounts to help facilitate lateral movement on compromised networks. [18] For Operation Ghost , APT29 used stolen administrator credentials for lateral movement on compromised networks. [23]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.003",
+        "Technique": "Local Accounts",
+        "Use": "APT29 targets dormant or inactive user accounts, accounts belonging to individuals no longer at the organization but whose accounts remain on the system, for access and persistence. [34] During the SolarWinds Compromise , APT29 used compromised local accounts to access victims' networks. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.004",
+        "Technique": "Cloud Accounts",
+        "Use": "APT29 has gained access to a global administrator account in Azure AD and has used Service Principal credentials in Exchange. [33] [27] During the SolarWinds Compromise , APT29 used a compromised O365 administrator account to create a new Service Principal. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102.002",
+        "Technique": "Web Service: Bidirectional Communication",
+        "Use": "For Operation Ghost , APT29 used social media platforms to hide communications to C2 servers. [23]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "APT29 used WMI to steal credentials and execute backdoors at a future time. [30] During the SolarWinds Compromise , APT29 used WMI for the remote execution of files for lateral movement. [44] [37]"
+    }
+]

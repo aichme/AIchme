@@ -1,0 +1,530 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098",
+        "Technique": "Account Manipulation",
+        "Use": "Kimsuky has added accounts to specific groups with net localgroup . [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "Kimsuky has registered domains to spoof targeted organizations and trusted third parties. [10] [13] [5] [3] [4] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.004",
+        "Technique": "Acquire Infrastructure: Server",
+        "Use": "Kimsuky has purchased hosting servers with virtual currency and prepaid cards. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.006",
+        "Technique": "Acquire Infrastructure: Web Services",
+        "Use": "Kimsuky has hosted content used for targeting efforts via web services such as Blogspot. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1557",
+        "Technique": "Adversary-in-the-Middle",
+        "Use": "Kimsuky has used modified versions of PHProxy to examine web traffic between the victim and the accessed website. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Kimsuky has used HTTP GET and POST requests for C2. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.002",
+        "Technique": "Application Layer Protocol: File Transfer Protocols",
+        "Use": "Kimsuky has used FTP to download additional malware to the target machine. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.003",
+        "Technique": "Application Layer Protocol: Mail Protocols",
+        "Use": "Kimsuky has used e-mail to send exfiltrated data to C2 servers. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "Kimsuky has used QuickZip to archive stolen files before exfiltration. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.003",
+        "Technique": "Archive Collected Data: Archive via Custom Method",
+        "Use": "Kimsuky has used RC4 encryption before exfil. [16]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "Kimsuky has placed scripts in the startup folder for persistence and modified the HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce Registry key. [16] [5] [17] [14] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1176",
+        "Technique": "Browser Extensions",
+        "Use": "Kimsuky has used Google Chrome browser extensions to infect victims and to steal passwords and cookies. [9] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Kimsuky has executed a variety of PowerShell scripts. [1] [5] [14] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Kimsuky has executed Windows commands by using cmd and running batch scripts. [14] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "Kimsuky has used Visual Basic to download malicious payloads. [10] [15] [17] [14] Kimsuky has also used malicious VBA macros within maldocs disguised as forms that trigger when a victim types any content into the lure. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.006",
+        "Technique": "Command and Scripting Interpreter: Python",
+        "Use": "Kimsuky has used a macOS Python implant to gather data as well as MailFetcher.py code to automatically collect email data. [5] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.007",
+        "Technique": "Command and Scripting Interpreter: JavaScript",
+        "Use": "Kimsuky has used JScript for logging and downloading additional tools. [15] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1586.002",
+        "Technique": "Compromise Accounts: Email Accounts",
+        "Use": "Kimsuky has compromised email accounts to send spearphishing e-mails. [15] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.001",
+        "Technique": "Compromise Infrastructure: Domains",
+        "Use": "Kimsuky has compromised legitimate sites and used them to distribute malware. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.001",
+        "Technique": "Create Account: Local Account",
+        "Use": "Kimsuky has created accounts with net user . [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.003",
+        "Technique": "Create or Modify System Process: Windows Service",
+        "Use": "Kimsuky has created new services for persistence. [16] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.003",
+        "Technique": "Credentials from Password Stores: Credentials from Web Browsers",
+        "Use": "Kimsuky has used browser extensions including Google Chrome to steal passwords and cookies from browsers. Kimsuky has also used Nirsoft's WebBrowserPassView tool to dump the passwords obtained from victims. [9] [5] [6] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "Kimsuky has collected Office, PDF, and HWP documents from its victims. [16] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.001",
+        "Technique": "Data Staged: Local Data Staging",
+        "Use": "Kimsuky has staged collected data files under C:\\Program Files\\Common Files\\System\\Ole DB\\ . [5] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "Kimsuky has decoded malicious VBScripts using Base64. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1587",
+        "Technique": "Develop Capabilities",
+        "Use": "Kimsuky created and used a mailing toolkit to use in spearphishing attacks. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.001",
+        "Technique": "Malware",
+        "Use": "Kimsuky has developed its own unique malware such as MailFetch.py for use in operations. [12] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1114.002",
+        "Technique": "Email Collection: Remote Email Collection",
+        "Use": "Kimsuky has used tools such as the MailFetch mail crawler to collect victim emails (excluding spam) from online services via IMAP. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1114.003",
+        "Technique": "Email Collection: Email Forwarding Rule",
+        "Use": "Kimsuky has set auto-forward rules on victim's e-mail accounts. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.001",
+        "Technique": "Establish Accounts: Social Media Accounts",
+        "Use": "Kimsuky has created social media accounts to monitor news and security trends as well as potential targets. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.002",
+        "Technique": "Establish Accounts: Email Accounts",
+        "Use": "Kimsuky has created email accounts for phishing operations. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1546.001",
+        "Technique": "Event Triggered Execution: Change Default File Association",
+        "Use": "Kimsuky has a HWP document stealer module which changes the default program association in the registry to open HWP documents. [16]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1041",
+        "Technique": "Exfiltration Over C2 Channel",
+        "Use": "Kimsuky has exfiltrated data over its C2 channel. [16] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "Kimsuky has exfiltrated stolen files and data to actor-controlled Blogspot accounts. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "Kimsuky has exploited various vulnerabilities for initial access, including Microsoft Exchange vulnerability CVE-2020-0688. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1133",
+        "Technique": "External Remote Services",
+        "Use": "Kimsuky has used RDP to establish persistence. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Kimsuky has the ability to enumerate all files and directories on an infected system. [16] [14] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589.002",
+        "Technique": "Gather Victim Identity Information: Email Addresses",
+        "Use": "Kimsuky has collected valid email addresses that were subsequently used in spearphishing campaigns. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589.003",
+        "Technique": "Gather Victim Identity Information: Employee Names",
+        "Use": "Kimsuky has collected victim employee name information. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1591",
+        "Technique": "Gather Victim Org Information",
+        "Use": "Kimsuky has collected victim organization information including but not limited to organization hierarchy, functions, press releases, and others. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.002",
+        "Technique": "Hide Artifacts: Hidden Users",
+        "Use": "Kimsuky has run reg add ‘HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\SpecialAccounts\\UserList’ /v to hide a newly created user. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.003",
+        "Technique": "Hide Artifacts: Hidden Window",
+        "Use": "Kimsuky has used an information gathering module that will hide an AV software window from the victim. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.001",
+        "Technique": "Impair Defenses: Disable or Modify Tools",
+        "Use": "Kimsuky has been observed turning off Windows Security Center and can hide the AV software window from the view of the infected user. [16] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.004",
+        "Technique": "Impair Defenses: Disable or Modify System Firewall",
+        "Use": "Kimsuky has been observed disabling the system firewall. [16]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "Kimsuky has deleted the exfiltrated data on disk after transmission. Kimsuky has also used an instrumentor script to terminate browser processes running on an infected system and then delete the cookie files on disk. [16] [14] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.006",
+        "Technique": "Indicator Removal: Timestomp",
+        "Use": "Kimsuky has manipulated timestamps for creation or compilation dates to defeat anti-forensics. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Kimsuky has downloaded additional scripts, tools, and malware onto victim systems. [17] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.001",
+        "Technique": "Input Capture: Keylogging",
+        "Use": "Kimsuky has used a PowerShell-based keylogger as well as a tool called MECHANICAL to log keystrokes. [1] [16] [5] [6] [14] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1534",
+        "Technique": "Internal Spearphishing",
+        "Use": "Kimsuky has sent internal spearphishing emails for lateral movement after stealing victim information. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.004",
+        "Technique": "Masquerading: Masquerade Task or Service",
+        "Use": "Kimsuky has disguised services to appear as benign software or related to operating system functions. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Kimsuky has renamed malware to legitimate names such as ESTCommon.dll or patch.dll . [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1112",
+        "Technique": "Modify Registry",
+        "Use": "Kimsuky has modified Registry settings for default file associations to enable all macros and for persistence. [5] [17] [14] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1111",
+        "Technique": "Multi-Factor Authentication Interception",
+        "Use": "Kimsuky has used a proprietary tool to intercept one time passwords required for two-factor authentication. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1040",
+        "Technique": "Network Sniffing",
+        "Use": "Kimsuky has used the Nirsoft SniffPass network sniffer to obtain passwords sent over non-secure protocols. [5] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027",
+        "Technique": "Obfuscated Files or Information",
+        "Use": "Kimsuky has obfuscated binary strings including the use of XOR encryption and Base64 encoding. [10] [15] Kimsuky has also modified the first byte of DLL implants targeting victims to prevent recognition of the executable file format. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.002",
+        "Technique": "Software Packing",
+        "Use": "Kimsuky has packed malware with UPX. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Kimsuky has obtained and used tools such as Nirsoft WebBrowserPassVIew, Mimikatz , and PsExec . [6] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.005",
+        "Technique": "Obtain Capabilities: Exploits",
+        "Use": "Kimsuky has obtained exploit code for various CVEs. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "Kimsuky has gathered credentials using Mimikatz and ProcDump. [5] [6] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Kimsuky has used emails containing Word, Excel and/or HWP (Hangul Word Processor) documents in their spearphishing campaigns. [9] [16] [10] [15] [3] [4] [14] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "Kimsuky has sent spearphishing emails containing a link to a document that contained malicious macros or took the victim to an actor-controlled domain. [1] [6] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1598.003",
+        "Technique": "Phishing for Information: Spearphishing Link",
+        "Use": "Kimsuky has used links in e-mail to steal account information. [15] [4] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "Kimsuky can gather a list of all processes running on a victim's machine. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055",
+        "Technique": "Process Injection",
+        "Use": "Kimsuky has used Win7Elevate to inject malicious code into explorer.exe. [16]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1598.012",
+        "Technique": "Process Hollowing",
+        "Use": "Kimsuky has used a file injector DLL to spawn a benign process on the victim's system and inject the malicious payload into it via process hollowing. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1012",
+        "Technique": "Query Registry",
+        "Use": "Kimsuky has obtained specific Registry keys and values on a compromised host. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1219",
+        "Technique": "Remote Access Software",
+        "Use": "Kimsuky has used a modified TeamViewer client as a command and control channel. [16] [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.001",
+        "Technique": "Remote Services: Remote Desktop Protocol",
+        "Use": "Kimsuky has used RDP for direct remote point-and-click access. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "Kimsuky has downloaded additional malware with scheduled tasks. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1593.001",
+        "Technique": "Search Open Websites/Domains: Social Media",
+        "Use": "Kimsuky has used Twitter to monitor potential victims and to prepare targeted phishing e-mails. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1593.002",
+        "Technique": "Search Open Websites/Domains: Search Engines",
+        "Use": "Kimsuky has searched for vulnerabilities, tools, and geopolitical trends on Google to target victims. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1594",
+        "Technique": "Search Victim-Owned Websites",
+        "Use": "Kimsuky has searched for information on the target company's website. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.003",
+        "Technique": "Server Software Component: Web Shell",
+        "Use": "Kimsuky has used modified versions of open source PHP web shells to maintain access, often adding \"Dinosaur\" references within the code. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518.001",
+        "Technique": "Software Discovery: Security Software Discovery",
+        "Use": "Kimsuky has checked for the presence of antivirus software with powershell Get-CimInstance -Namespace root/securityCenter2 – classname antivirusproduct . [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.001",
+        "Technique": "Stage Capabilities: Upload Malware",
+        "Use": "Kimsuky has used Blogspot to host malicious content such as beacons, file exfiltrators, and implants. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "Kimsuky has signed files with the name EGIS CO,. Ltd.. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.005",
+        "Technique": "System Binary Proxy Execution: Mshta",
+        "Use": "Kimsuky has used mshta.exe to run malicious scripts on the system. [1] [5] [17] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.010",
+        "Technique": "System Binary Proxy Execution: Regsvr32",
+        "Use": "Kimsuky has executed malware with regsvr32s . [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.011",
+        "Technique": "System Binary Proxy Execution: Rundll32",
+        "Use": "Kimsuky has used rundll32.exe to execute malicious scripts and malware on a victim's network. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Kimsuky has enumerated drives, OS type, OS version, and other information using a script or the \"systeminfo\" command. [16] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "Kimsuky has used ipconfig/all to gather network configuration information. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1007",
+        "Technique": "System Service Discovery",
+        "Use": "Kimsuky has used an instrumentor script to gather the names of all services running on a victim's system. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.001",
+        "Technique": "Unsecured Credentials: Credentials In Files",
+        "Use": "Kimsuky has used tools that are capable of obtaining credentials from saved mail. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1550.002",
+        "Technique": "Use Alternate Authentication Material: Pass the Hash",
+        "Use": "Kimsuky has used pass the hash for authentication to remote access software used in C2. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "Kimsuky has lured victims into clicking malicious links. [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Kimsuky has used attempted to lure victims into opening malicious e-mail attachments. [10] [15] [5] [3] [4] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.003",
+        "Technique": "Valid Accounts: Local Accounts",
+        "Use": "Kimsuky has used a tool called GREASE to add a Windows admin account in order to allow them continued access via RDP. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102.002",
+        "Technique": "Web Service: Bidirectional Communication",
+        "Use": "Kimsuky has used Blogspot pages for C2. [14]"
+    }
+]

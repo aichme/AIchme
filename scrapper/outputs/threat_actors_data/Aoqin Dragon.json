@@ -1,0 +1,56 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1587.001",
+        "Technique": "Develop Capabilities: Malware",
+        "Use": "Aoqin Dragon has used custom malware, including Mongall and Heyoka Backdoor , in their operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "Aoqin Dragon has exploited CVE-2012-0158 and CVE-2010-3333 for execution against targeted systems. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Aoqin Dragon has run scripts to identify file formats including Microsoft Word. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1570",
+        "Technique": "Lateral Tool Transfer",
+        "Use": "Aoqin Dragon has spread malware in target networks by copying modules to folders masquerading as removable devices. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Aoqin Dragon has used fake icons including antivirus and external drives to disguise malicious payloads. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.002",
+        "Technique": "Obfuscated Files or Information: Software Packing",
+        "Use": "Aoqin Dragon has used the Themida packer to obfuscate malicious payloads. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Aoqin Dragon obtained the Heyoka open source exfiltration tool and subsequently modified it for their operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1091",
+        "Technique": "Replication Through Removable Media",
+        "Use": "Aoqin Dragon has used a dropper that employs a worm infection strategy using a removable device to breach a secure network environment. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Aoqin Dragon has lured victims into opening weaponized documents, fake external drives, and fake antivirus to execute malicious payloads. [1]"
+    }
+]

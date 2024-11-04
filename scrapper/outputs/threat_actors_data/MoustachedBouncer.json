@@ -1,0 +1,56 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "MoustachedBouncer has used plugins to execute PowerShell scripts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.007",
+        "Technique": "Command and Scripting Interpreter: JavaScript",
+        "Use": "MoustachedBouncer has used JavaScript to deliver malware hosted on HTML pages. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1659",
+        "Technique": "Content Injection",
+        "Use": "MoustachedBouncer has injected content into DNS, HTTP, and SMB replies to redirect specifically-targeted victims to a fake Windows Update page to download malware. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.002",
+        "Technique": "Data Staged: Remote Data Staging",
+        "Use": "MoustachedBouncer has used plugins to save captured screenshots to .\\AActdata\\ on an SMB share. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1068",
+        "Technique": "Exploitation for Privilege Escalation",
+        "Use": "MoustachedBouncer has exploited CVE-2021-1732 to execute malware components with elevated rights. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.002",
+        "Technique": "Obfuscated Files or Information: Software Packing",
+        "Use": "MoustachedBouncer has used malware plugins packed with Themida. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090",
+        "Technique": "Proxy",
+        "Use": "MoustachedBouncer has used a reverse proxy tool similar to the GitHub repository revsocks. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1113",
+        "Technique": "Screen Capture",
+        "Use": "MoustachedBouncer has used plugins to take screenshots on targeted systems. [1]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1655.001",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "MoustachedBouncer has used legitimate looking filenames for malicious executables including MicrosoftUpdate845255.exe. [1]"
+    }
+]

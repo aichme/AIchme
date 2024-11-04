@@ -1,0 +1,20 @@
+[
+    {
+        "Domain": "Mobile",
+        "ID": "T1655.001",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "APT-C-23 has masqueraded malware as legitimate applications. [2] [6] [7]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1660",
+        "Technique": "Phishing",
+        "Use": "APT-C-23 sends malicious links to victims to download the masqueraded application. [7] [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1422",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "APT-C-23 can collect the victim's phone number, device information, IMSI, etc. [6]"
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.001",
+        "Technique": "Account Discovery: Local Account",
+        "Use": "Moses Staff has collected the administrator username from a compromised host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1587.001",
+        "Technique": "Develop Capabilities: Malware",
+        "Use": "Moses Staff has built malware, such as DCSrv and PyDCrypt , for targeting victims' machines. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "Moses Staff has exploited known vulnerabilities in public-facing infrastructure such as Microsoft Exchange Servers. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.004",
+        "Technique": "Impair Defenses: Disable or Modify System Firewall",
+        "Use": "Moses Staff has used batch scripts that can disable the Windows firewall on specific remote machines. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Moses Staff has downloaded and installed web shells to following path C:\\inetpub\\wwwroot\\aspnet_client\\system_web\\IISpool.aspx . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "Moses Staff has used obfuscated web shells in their operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Moses Staff has used the commercial tool DiskCryptor. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.002",
+        "Technique": "Remote Services: SMB/Windows Admin Shares",
+        "Use": "Moses Staff has used batch scripts that can enable SMB on a compromised host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.003",
+        "Technique": "Server Software Component: Web Shell",
+        "Use": "Moses Staff has dropped a web shell onto a compromised system. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "Moses Staff has used signed drivers from an open source tool called DiskCryptor to evade detection. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Moses Staff collected information about the infected host, including the machine names and OS architecture. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "Moses Staff has collected the domain name of a compromised network. [1]"
+    }
+]

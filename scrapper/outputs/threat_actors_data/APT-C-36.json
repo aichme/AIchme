@@ -1,0 +1,56 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "APT-C-36 has embedded a VBScript within a malicious Word document which is executed upon the document opening. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "APT-C-36 has downloaded binary data from a specified domain after the malicious document is opened. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.004",
+        "Technique": "Masquerading: Masquerade Task or Service",
+        "Use": "APT-C-36 has disguised its scheduled tasks as those used by Google. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1571",
+        "Technique": "Non-Standard Port",
+        "Use": "APT-C-36 has used port 4050 for C2 communications. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027",
+        "Technique": "Obfuscated Files or Information",
+        "Use": "APT-C-36 has used ConfuserEx to obfuscate its variant of Imminent Monitor , compressed payload and RAT packages, and password protected encrypted email attachments to avoid detection. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "APT-C-36 obtained and used a modified variant of Imminent Monitor . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "APT-C-36 has used spearphishing emails with password protected RAR attachment to avoid being detected by the email gateway. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "APT-C-36 has used a macro function to set scheduled tasks, disguised as those used by Google. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "APT-C-36 has prompted victims to accept macros in order to execute the subsequent payload. [1]"
+    }
+]

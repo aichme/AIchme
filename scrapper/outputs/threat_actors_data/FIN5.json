@@ -1,0 +1,68 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1119",
+        "Technique": "Automated Collection",
+        "Use": "FIN5 scans processes on all victim systems in the environment and uses automated scripts to pull back the results. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110",
+        "Technique": "Brute Force",
+        "Use": "FIN5 has has used the tool GET2 Penetrator to look for remote login and hard-coded credentials. [3] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059",
+        "Technique": "Command and Scripting Interpreter",
+        "Use": "FIN5 scans processes on all victim systems in the environment and uses automated scripts to pull back the results. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.001",
+        "Technique": "Data Staged: Local Data Staging",
+        "Use": "FIN5 scripts save memory dump data into a specific directory on hosts in the victim environment. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1133",
+        "Technique": "External Remote Services",
+        "Use": "FIN5 has used legitimate VPN, Citrix, or VNC credentials to maintain access to a victim environment. [1] [3] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.001",
+        "Technique": "Indicator Removal: Clear Windows Event Logs",
+        "Use": "FIN5 has cleared event logs from victims. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "FIN5 uses SDelete to clean up the environment and attempt to prevent detection. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "FIN5 has obtained and used a customized version of PsExec , as well as use other tools such as pwdump , SDelete , and Windows Credential Editor . [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090.002",
+        "Technique": "Proxy: External Proxy",
+        "Use": "FIN5 maintains access to victim environments by using FLIPSIDE to create a proxy for a backup RDP tunnel. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "FIN5 has used the open source tool Essential NetTools to map the network and build a list of targets. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "FIN5 has used legitimate VPN, RDP, Citrix, or VNC credentials to maintain access to a victim environment. [1] [3] [2]"
+    }
+]

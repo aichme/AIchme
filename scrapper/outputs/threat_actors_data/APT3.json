@@ -1,0 +1,260 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.001",
+        "Technique": "Account Discovery: Local Account",
+        "Use": "APT3 has used a tool that can obtain info about local and global group users, power users, and administrators. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098",
+        "Technique": "Account Manipulation",
+        "Use": "APT3 has been known to add created accounts to local admin groups to maintain elevated access. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "APT3 has used tools to compress data before exfilling it. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "APT3 places scripts in the startup folder for persistence. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110.002",
+        "Technique": "Brute Force: Password Cracking",
+        "Use": "APT3 has been known to brute force password hashes to be able to leverage plain text credentials. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "APT3 has used PowerShell on victim systems to download and run payloads after exploitation. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "An APT3 downloader uses the Windows command \"cmd.exe\" /C whoami . The group also uses a tool to execute commands on remote computers. [3] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.001",
+        "Technique": "Create Account: Local Account",
+        "Use": "APT3 has been known to create or enable accounts, such as support_388945a0 . [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.003",
+        "Technique": "Create or Modify System Process: Windows Service",
+        "Use": "APT3 has a tool that creates a new service for persistence. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.003",
+        "Technique": "Credentials from Password Stores: Credentials from Web Browsers",
+        "Use": "APT3 has used tools to dump passwords from browsers. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "APT3 will identify Microsoft Office documents on the victim's computer. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.001",
+        "Technique": "Data Staged: Local Data Staging",
+        "Use": "APT3 has been known to stage files for exfiltration in a single location. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1546.008",
+        "Technique": "Event Triggered Execution: Accessibility Features",
+        "Use": "APT3 replaces the Sticky Keys binary C:\\Windows\\System32\\sethc.exe for persistence. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1041",
+        "Technique": "Exfiltration Over C2 Channel",
+        "Use": "APT3 has a tool that exfiltrates data over the C2 channel. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776. [1] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "APT3 has a tool that looks for files and directories on the local file system. [8] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.003",
+        "Technique": "Hide Artifacts: Hidden Window",
+        "Use": "APT3 has been known to use -WindowStyle Hidden to conceal PowerShell windows. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.002",
+        "Technique": "Hijack Execution Flow: DLL Side-Loading",
+        "Use": "APT3 has been known to side load DLLs with a valid version of Chrome with one of their tools. [8] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "APT3 has a tool that can delete files. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "APT3 has a tool that can copy files to remote machines. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.001",
+        "Technique": "Input Capture: Keylogging",
+        "Use": "APT3 has used a keylogging tool that records keystrokes in encrypted files. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1104",
+        "Technique": "Multi-Stage Channels",
+        "Use": "An APT3 downloader first establishes a SOCKS5 connection to 192.157.198[.]103 using TCP port 1913; once the server response is verified, it then requests a connection to 192.184.60[.]229 on TCP port 81. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1095",
+        "Technique": "Non-Application Layer Protocol",
+        "Use": "An APT3 downloader establishes SOCKS5 connections for its initial C2. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027",
+        "Technique": "Obfuscated Files or Information",
+        "Use": "APT3 obfuscates files or information to help evade defensive measures. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.002",
+        "Technique": "Software Packing",
+        "Use": "APT3 has been known to pack their tools. [7] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.005",
+        "Technique": "Indicator Removal from Tools",
+        "Use": "APT3 has been known to remove indicators of compromise from tools. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "APT3 has used a tool to dump credentials by injecting itself into lsass.exe and triggering with the argument \"dig.\" [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069",
+        "Technique": "Permission Groups Discovery",
+        "Use": "APT3 has a tool that can enumerate the permissions associated with Windows groups. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "APT3 has sent spearphishing emails containing malicious links. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "APT3 has a tool that can list out currently running processes. [8] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090.002",
+        "Technique": "Proxy: External Proxy",
+        "Use": "An APT3 downloader establishes SOCKS5 connections for its initial C2. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.001",
+        "Technique": "Remote Services: Remote Desktop Protocol",
+        "Use": "APT3 enables the Remote Desktop Protocol for persistence. [6] APT3 has also interacted with compromised systems to browse and copy files through RDP sessions. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.002",
+        "Technique": "Remote Services: SMB/Windows Admin Shares",
+        "Use": "APT3 will copy files over to Windows Admin Shares (like ADMIN$) as part of lateral movement. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "APT3 has a tool that can detect the existence of remote systems. [4] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "An APT3 downloader creates persistence by creating the following scheduled task: schtasks /create /tn \"mysc\" /tr C:\\Users\\Public\\test.exe /sc ONLOGON /ru \"System\" . [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.011",
+        "Technique": "System Binary Proxy Execution: Rundll32",
+        "Use": "APT3 has a tool that can run DLLs. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "APT3 has a tool that can obtain information about the local system. [4] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "A keylogging tool used by APT3 gathers network information from the victim, including the MAC address, IP address, WINS, DHCP server, and gateway. [4] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "APT3 has a tool that can enumerate current network connections. [4] [8] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "An APT3 downloader uses the Windows command \"cmd.exe\" /C whoami to verify that it is running with the elevated privileges of \"System.\" [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.001",
+        "Technique": "Unsecured Credentials: Credentials In Files",
+        "Use": "APT3 has a tool that can locate credentials in files on the file system such as those from Firefox or Chrome. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "APT3 has lured victims into clicking malicious links delivered through spearphishing. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.002",
+        "Technique": "Valid Accounts: Domain Accounts",
+        "Use": "APT3 leverages valid accounts after gaining credentials for use within the victim domain. [4]"
+    }
+]

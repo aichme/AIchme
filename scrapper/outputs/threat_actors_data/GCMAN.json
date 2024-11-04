@@ -1,0 +1,14 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.004",
+        "Technique": "Remote Services: SSH",
+        "Use": "GCMAN uses Putty for lateral movement. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.005",
+        "Technique": "Remote Services: VNC",
+        "Use": "GCMAN uses VNC for lateral movement. [1]"
+    }
+]

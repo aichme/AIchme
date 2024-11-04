@@ -1,0 +1,170 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098",
+        "Technique": "Account Manipulation",
+        "Use": "APT5 has created their own accounts with Local Administrator privileges to maintain access to systems with short-cycle credential rotation. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "APT5 has used the JAR/ZIP file format for exfiltrated files. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "APT5 has used PowerShell to accomplish tasks within targeted environments. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "APT5 has used cmd.exe for execution on compromised systems. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1554",
+        "Technique": "Compromise Host Software Binary",
+        "Use": "APT5 has modified legitimate binaries and scripts for Pulse Secure VPNs including the legitimate DSUpgrade.pm file to install the ATRIUM webshell for persistence. [3] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.001",
+        "Technique": "Create Account: Local Account",
+        "Use": "APT5 has created Local Administrator accounts to maintain access to systems with short-cycle credential rotation. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.001",
+        "Technique": "Data Staged: Local Data Staging",
+        "Use": "APT5 has staged data on compromised systems prior to exfiltration often in C:\\Users\\Public . [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "APT5 has exploited vulnerabilities in externally facing software and devices including Pulse Secure VPNs and Citrix Application Delivery Controllers. [3] [4] [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "APT5 has used the BLOODMINE utility to discover files with .css, .jpg, .png, .gif, .ico, .js, and .jsp extensions in Pulse Secure Connect logs. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.006",
+        "Technique": "Impair Defenses: Indicator Blocking",
+        "Use": "APT5 has used the CLEANPULSE utility to insert command line strings into a targeted process to prevent certain log events from occurring. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070",
+        "Technique": "Indicator Removal",
+        "Use": "APT5 has used the THINBLOOD utility to clear SSL VPN log files located at /home/runtime/logs . [3] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.003",
+        "Technique": "Clear Command History",
+        "Use": "APT5 has cleared the command history on targeted ESXi servers. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.004",
+        "Technique": "File Deletion",
+        "Use": "APT5 has deleted scripts and web shells to evade detection. [3] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.006",
+        "Technique": "Timestomp",
+        "Use": "APT5 has modified file timestamps. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.001",
+        "Technique": "Input Capture: Keylogging",
+        "Use": "APT5 has used malware with keylogging capabilities to monitor the communications of targeted entities. [5] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1654",
+        "Technique": "Log Enumeration",
+        "Use": "APT5 has used the BLOODMINE utility to parse and extract information from Pulse Secure Connect logs. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "APT5 has named exfiltration archives to mimic Windows Updates at times using filenames with a KB<digits>.zip pattern. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "APT5 has used the Task Manager process to target LSASS process memory in order to obtain NTLM password hashes. APT5 has also dumped clear text passwords and hashes from memory using Mimikatz hosted through an RDP mapped drive. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.002",
+        "Technique": "OS Credential Dumping: Security Account Manager",
+        "Use": "APT5 has copied and exfiltrated the SAM Registry hive from targeted systems. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "APT5 has used Windows-based utilities to carry out tasks including tasklist.exe. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055",
+        "Technique": "Process Injection",
+        "Use": "APT5 has used the CLEANPULSE utility to insert command line strings into a targeted process to alter its functionality. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.001",
+        "Technique": "Remote Services: Remote Desktop Protocol",
+        "Use": "APT5 has moved laterally throughout victim environments using RDP. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.004",
+        "Technique": "Remote Services: SSH",
+        "Use": "APT5 has used SSH for lateral movement in compromised environments including for enabling access to ESXi host servers. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.003",
+        "Technique": "Scheduled Task/Job: Cron",
+        "Use": "APT5 has made modifications to the crontab file including in /var/cron/tabs/ . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.003",
+        "Technique": "Server Software Component: Web Shell",
+        "Use": "APT5 has installed multiple web shells on compromised servers including on Pulse Secure VPN appliances. [3] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "APT5 has used the BLOODMINE utility to collect data on web requests from Pulse Secure Connect logs. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.002",
+        "Technique": "Valid Accounts: Domain Accounts",
+        "Use": "APT5 has used legitimate account credentials to move laterally through compromised environments. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.004",
+        "Technique": "Valid Accounts: Cloud Accounts",
+        "Use": "APT5 has accessed Microsoft M365 cloud environments using stolen credentials. [4]"
+    }
+]

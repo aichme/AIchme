@@ -1,0 +1,68 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "WIRTE has used HTTP for network communication. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "WIRTE has used PowerShell for script execution. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "WIRTE has used VBScript  in its operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "WIRTE has used Base64 to decode malicious VBS script. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "WIRTE has downloaded PowerShell code from the C2 server to be executed. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "WIRTE has named a first stage dropper Kaspersky Update Agent in order to appear legitimate. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1571",
+        "Technique": "Non-Standard Port",
+        "Use": "WIRTE has used HTTPS over ports 2083 and 2087 for C2. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "WIRTE has obtained and used Empire for post-exploitation activities. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "WIRTE has sent emails to intended victims with malicious MS Word and Excel attachments. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.010",
+        "Technique": "System Binary Proxy Execution: Regsvr32",
+        "Use": "WIRTE has used regsvr32.exe to trigger the execution of a malicious script. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "WIRTE has attempted to lure users into opening malicious MS Word and Excel files to execute malicious payloads. [2]"
+    }
+]

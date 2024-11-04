@@ -1,0 +1,8 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027",
+        "Technique": "Obfuscated Files or Information",
+        "Use": "BlackOasis 's first stage shellcode contains a NOP sled with alternative instructions that was likely designed to bypass antivirus tools. [1]"
+    }
+]

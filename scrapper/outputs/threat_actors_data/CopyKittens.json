@@ -1,0 +1,50 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "CopyKittens uses ZPP, a .NET console program, to compress files with ZIP. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.003",
+        "Technique": "Archive Collected Data: Archive via Custom Method",
+        "Use": "CopyKittens encrypts data with a substitute cipher prior to exfiltration. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "CopyKittens has used PowerShell Empire. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.003",
+        "Technique": "Hide Artifacts: Hidden Window",
+        "Use": "CopyKittens has used -w hidden and -windowstyle hidden to conceal PowerShell windows. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "CopyKittens has used Metasploit, Empire , and AirVPN for post-exploitation activities. [4] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090",
+        "Technique": "Proxy",
+        "Use": "CopyKittens has used the AirVPN service for operational activity. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "CopyKittens digitally signed an executable with a stolen certificate from legitimate company AI Squared. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.011",
+        "Technique": "System Binary Proxy Execution: Rundll32",
+        "Use": "CopyKittens uses rundll32 to load various tools on victims, including a lateral movement tool named Vminst, Cobalt Strike, and shellcode. [2]"
+    }
+]

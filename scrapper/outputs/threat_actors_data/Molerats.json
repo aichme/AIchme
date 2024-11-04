@@ -1,0 +1,98 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "Molerats saved malicious files within the AppData and Startup folders to maintain persistence. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Molerats used PowerShell implants on target machines. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "Molerats used various implants, including those built with VBScript, on target machines. [3] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.007",
+        "Technique": "Command and Scripting Interpreter: JavaScript",
+        "Use": "Molerats used various implants, including those built with JS, on target machines. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.003",
+        "Technique": "Credentials from Password Stores: Credentials from Web Browsers",
+        "Use": "Molerats used the public tool BrowserPasswordDump10 to dump passwords saved in browsers on victims. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "Molerats decompresses ZIP files once on the victim machine. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Molerats used executables to download malicious files from different sources. [3] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "Molerats has delivered compressed executables within ZIP files to victims. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Molerats has sent phishing emails with malicious Microsoft Word and PDF attachments. [3] [6] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "Molerats has sent phishing emails with malicious links included. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "Molerats actors obtained a list of active processes on the victim and sent them to C2 servers. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "Molerats has created scheduled tasks to persistently run VBScripts. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "Molerats has used forged Microsoft code-signing certificates on malware. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.007",
+        "Technique": "System Binary Proxy Execution: Msiexec",
+        "Use": "Molerats has used msiexec.exe to execute an MSI payload. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "Molerats has sent malicious links via email trick users into opening a RAR archive and running an executable. [3] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Molerats has sent malicious files via email that tricked users into clicking Enable Content to run an embedded macro and to download malicious archives. [3] [6] [4]"
+    }
+]

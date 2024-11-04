@@ -1,0 +1,56 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "GOLD SOUTHFIELD has staged and executed PowerShell scripts on compromised hosts. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "GOLD SOUTHFIELD has exploited Oracle WebLogic vulnerabilities for initial compromise. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1133",
+        "Technique": "External Remote Services",
+        "Use": "GOLD SOUTHFIELD has used publicly-accessible RDP and remote management and monitoring (RMM) servers to gain access to victim machines. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.010",
+        "Technique": "Obfuscated Files or Information: Command Obfuscation",
+        "Use": "GOLD SOUTHFIELD has executed base64 encoded PowerShell scripts on compromised hosts. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566",
+        "Technique": "Phishing",
+        "Use": "GOLD SOUTHFIELD has conducted malicious spam (malspam) campaigns to gain access to victim's machines. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1219",
+        "Technique": "Remote Access Software",
+        "Use": "GOLD SOUTHFIELD has used the cloud-based remote management and monitoring tool \"ConnectWise Control\" to deploy REvil . [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1113",
+        "Technique": "Screen Capture",
+        "Use": "GOLD SOUTHFIELD has used the remote monitoring and management tool ConnectWise to obtain screen captures from victim's machines. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1195.002",
+        "Technique": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "Use": "GOLD SOUTHFIELD has distributed ransomware by backdooring software installers via a strategic web compromise of the site hosting Italian WinRAR. [1] [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1199",
+        "Technique": "Trusted Relationship",
+        "Use": "GOLD SOUTHFIELD has breached Managed Service Providers (MSP's) to deliver malware to MSP customers. [1]"
+    }
+]

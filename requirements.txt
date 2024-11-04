@@ -1,0 +1,9 @@
+langchain_core
+langchain_milvus
+langchain_huggingface
+flask
+llama-index
+llama-index-llms-nvidia
+markdown
+scrapy
+tqdm

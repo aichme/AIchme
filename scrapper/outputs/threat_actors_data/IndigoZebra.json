@@ -1,0 +1,44 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "IndigoZebra has established domains, some of which were designed to look like official government domains, for their operations. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.006",
+        "Technique": "Acquire Infrastructure: Web Services",
+        "Use": "IndigoZebra created Dropbox accounts for their operations. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1586.002",
+        "Technique": "Compromise Accounts: Email Accounts",
+        "Use": "IndigoZebra has compromised legitimate email accounts to use in their spearphishing operations. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "IndigoZebra has downloaded additional files and tools from its C2 server. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "IndigoZebra has acquired open source tools such as NBTscan and Meterpreter for their operations. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "IndigoZebra sent spearphishing emails containing malicious password-protected RAR attachments. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "IndigoZebra sent spearphishing emails containing malicious attachments that urged recipients to review modifications in the file which would trigger the attack. [1]"
+    }
+]

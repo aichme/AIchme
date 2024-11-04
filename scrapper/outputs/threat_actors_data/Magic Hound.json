@@ -1,0 +1,470 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.003",
+        "Technique": "Account Discovery: Email Account",
+        "Use": "Magic Hound has used Powershell to discover email accounts. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098",
+        "Technique": "Account Manipulation",
+        "Use": "Magic Hound has added a user named DefaultAccount to the Administrators and Remote Desktop Users groups. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Additional Email Delegate Permissions",
+        "Use": "Magic Hound granted compromised email accounts read access to the email boxes of additional targeted accounts. The group then was able to authenticate to the intended victim's OWA (Outlook Web Access) portal and read hundreds of email communications for information on Middle East organizations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "Magic Hound has registered fraudulent domains such as \"mail-newyorker.com\" and \"news12.com.recover-session-service.site\" to target specific victims with phishing attacks. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.006",
+        "Technique": "Acquire Infrastructure: Web Services",
+        "Use": "Magic Hound has acquired Amazon S3 buckets to use in C2. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1595.002",
+        "Technique": "Active Scanning: Vulnerability Scanning",
+        "Use": "Magic Hound has conducted widespread scanning to identify public-facing systems vulnerable to CVE-2021-44228 in Log4j and ProxyShell vulnerabilities; CVE-2021-26855, CVE-2021-26857, CVE-2021-26858, and CVE-2021-27065 in on-premises MS Exchange Servers; and CVE-2018-13379 in Fortinet FortiOS SSL VPNs. [7] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071",
+        "Technique": "Application Layer Protocol",
+        "Use": "Magic Hound malware has used IRC for C2. [15] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1595.001",
+        "Technique": "Web Protocols",
+        "Use": "Magic Hound has used HTTP for C2. [15] [17] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "Magic Hound has used gzip to archive dumped LSASS process memory and RAR to stage and compress local folders. [1] [17] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "Magic Hound malware has used Registry Run keys to establish persistence. [15] [19] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Magic Hound has used PowerShell for execution and privilege escalation. [15] [1] [17] [19] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Magic Hound has used the command-line interface for code execution. [15] [17] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "Magic Hound malware has used VBS scripts for execution. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1586.002",
+        "Technique": "Compromise Accounts: Email Accounts",
+        "Use": "Magic Hound has compromised personal email accounts through the use of legitimate credentials and gathered additional victim information. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.001",
+        "Technique": "Compromise Infrastructure: Domains",
+        "Use": "Magic Hound has used compromised domains to host links targeted to specific phishing victims. [2] [5] [3] [20]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.001",
+        "Technique": "Create Account: Local Account",
+        "Use": "Magic Hound has created local accounts named help and DefaultAccount on compromised machines. [17] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1486",
+        "Technique": "Data Encrypted for Impact",
+        "Use": "Magic Hound has used BitLocker and DiskCryptor to encrypt targeted workstations. [19] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "Magic Hound has used a web shell to exfiltrate a ZIP file containing a dump of LSASS memory on a compromised machine. [17] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1482",
+        "Technique": "Domain Trust Discovery",
+        "Use": "Magic Hound has used a web shell to execute nltest /trusted_domains to identify trust relationships. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "Magic Hound has conducted watering-hole attacks through media and magazine websites. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1114",
+        "Technique": "Email Collection",
+        "Use": "Magic Hound has compromised email credentials in order to steal sensitive data. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.001",
+        "Technique": "Local Email Collection",
+        "Use": "Magic Hound has collected .PST archives. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.002",
+        "Technique": "Remote Email Collection",
+        "Use": "Magic Hound has exported emails from compromised Exchange servers including through use of the cmdlet New-MailboxExportRequest. [17] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1573",
+        "Technique": "Encrypted Channel",
+        "Use": "Magic Hound has used an encrypted http proxy in C2 communications. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.001",
+        "Technique": "Establish Accounts: Social Media Accounts",
+        "Use": "Magic Hound has created fake LinkedIn and other social media accounts to contact targets and convince them--through messages and voice communications--to open malicious links. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.002",
+        "Technique": "Establish Accounts: Email Accounts",
+        "Use": "Magic Hound has established email accounts using fake personas for spearphishing operations. [11] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567",
+        "Technique": "Exfiltration Over Web Service",
+        "Use": "Magic Hound has used the Telegram API sendMessage to relay data on compromised devices. [20]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "Magic Hound has exploited the Log4j utility (CVE-2021-44228), on-premises MS Exchange servers via \"ProxyShell\" (CVE-2021-34473, CVE-2021-34523, CVE-2021-31207), and Fortios SSL VPNs (CVE-2018-13379). [7] [17] [21] [19] [18] [22]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Magic Hound malware can list a victim's logical drives and the type, as well the total/free space of the fixed devices. Other malware can list a directory's contents. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1592.002",
+        "Technique": "Gather Victim Host Information: Software",
+        "Use": "Magic Hound has captured the user-agent strings from visitors to their phishing sites. [20]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589",
+        "Technique": "Gather Victim Identity Information",
+        "Use": "Magic Hound has acquired mobile phone numbers of potential targets, possibly for mobile malware or additional phishing operations. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1592.001",
+        "Technique": "Credentials",
+        "Use": "Magic Hound gathered credentials from two victims that they then attempted to validate across 75 different websites. Magic Hound has also collected credentials from over 900 Fortinet VPN servers in the US, Europe, and Israel. [11] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1592.002",
+        "Technique": "Email Addresses",
+        "Use": "Magic Hound has identified high-value email accounts in academia, journalism, NGO's, foreign policy, and national security for targeting. [5] [20]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1590.005",
+        "Technique": "Gather Victim Network Information: IP Addresses",
+        "Use": "Magic Hound has captured the IP addresses of visitors to their phishing sites. [20]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1591.001",
+        "Technique": "Gather Victim Org Information: Determine Physical Locations",
+        "Use": "Magic Hound has collected location information from visitors to their phishing sites. [20]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.003",
+        "Technique": "Hide Artifacts: Hidden Window",
+        "Use": "Magic Hound malware has a function to determine whether the C2 server wishes to execute the newly dropped file in a hidden window. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562",
+        "Technique": "Impair Defenses",
+        "Use": "Magic Hound has disabled LSA protection on compromised hosts using \"reg\" add HKLM\\SYSTEM\\CurrentControlSet\\Control\\LSA /v RunAsPPL /t REG_DWORD /d 0 /f . [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.001",
+        "Technique": "Disable or Modify Tools",
+        "Use": "Magic Hound has disabled antivirus services on targeted systems in order to upload malicious payloads. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.002",
+        "Technique": "Disable Windows Event Logging",
+        "Use": "Magic Hound has executed scripts to disable the event log service. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.004",
+        "Technique": "Disable or Modify System Firewall",
+        "Use": "Magic Hound has added the following rule to a victim's Windows firewall to allow RDP traffic - \"netsh\" advfirewall firewall add rule name=\"Terminal Server\" dir=in action=allow protocol=TCP localport=3389 . [17] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.003",
+        "Technique": "Indicator Removal: Clear Command History",
+        "Use": "Magic Hound has removed mailbox export requests from compromised Exchange servers. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "Magic Hound has deleted and overwrote files to cover tracks. [15] [1] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Magic Hound has downloaded additional code and files from servers onto victims. [15] [17] [19] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.001",
+        "Technique": "Input Capture: Keylogging",
+        "Use": "Magic Hound malware is capable of keylogging. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1570",
+        "Technique": "Lateral Tool Transfer",
+        "Use": "Magic Hound has copied tools within a compromised network using RDP. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.004",
+        "Technique": "Masquerading: Masquerade Task or Service",
+        "Use": "Magic Hound has named a malicious script CacheTask.bat to mimic a legitimate task. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Magic Hound has used dllhost.exe to mask Fast Reverse Proxy (FRP) and MicrosoftOutLookUpdater.exe for Plink. [17] [19] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1112",
+        "Technique": "Modify Registry",
+        "Use": "Magic Hound has modified Registry settings for security tools. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1046",
+        "Technique": "Network Service Discovery",
+        "Use": "Magic Hound has used KPortScan 3.0 to perform SMB, RDP, and LDAP scanning. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1571",
+        "Technique": "Non-Standard Port",
+        "Use": "Magic Hound malware has communicated with its C2 server over TCP ports 4443 and 10151 using HTTP. [15] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.010",
+        "Technique": "Obfuscated Files or Information: Command Obfuscation",
+        "Use": "Magic Hound has used base64-encoded commands. [15] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "Magic Hound malware has used base64-encoded files and has also encrypted embedded strings with AES. [15] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Magic Hound has obtained and used tools like Havij , sqlmap , Metasploit, Mimikatz , and Plink. [23] [1] [7] [19] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "Magic Hound has stolen domain credentials by dumping LSASS process memory using Task Manager, comsvcs.dll, and from a Microsoft Active Directory Domain Controller using Mimikatz . [1] [17] [19] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "Magic Hound has sent malicious URL links through email to victims. In some cases the URLs were shortened or linked to Word documents with malicious macros that executed PowerShells scripts to download Pupy . [24] [2] [3] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.003",
+        "Technique": "Phishing: Spearphishing via Service",
+        "Use": "Magic Hound used various social media channels (such as LinkedIn) as well as messaging services (such as WhatsApp) to spearphish victims. [25] [12] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1598.003",
+        "Technique": "Phishing for Information: Spearphishing Link",
+        "Use": "Magic Hound has used SMS and email messages with links designed to steal credentials or track victims. [3] [2] [6] [5] [20] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "Magic Hound malware can list running processes. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1572",
+        "Technique": "Protocol Tunneling",
+        "Use": "Magic Hound has used Plink to tunnel RDP over SSH. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090",
+        "Technique": "Proxy",
+        "Use": "Magic Hound has used Fast Reverse Proxy (FRP) for RDP traffic. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.001",
+        "Technique": "Remote Services: Remote Desktop Protocol",
+        "Use": "Magic Hound has used Remote Desktop Services to copy tools on targeted systems. [17] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "Magic Hound has used Ping for discovery on targeted networks. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "Magic Hound has used scheduled tasks to establish persistence and execution. [17] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1113",
+        "Technique": "Screen Capture",
+        "Use": "Magic Hound malware can take a screenshot and upload the file to its C2 server. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.003",
+        "Technique": "Server Software Component: Web Shell",
+        "Use": "Magic Hound has used multiple web shells to gain execution. [17] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.011",
+        "Technique": "System Binary Proxy Execution: Rundll32",
+        "Use": "Magic Hound has used rundll32.exe to execute MiniDump from comsvcs.dll when dumping LSASS memory. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Magic Hound malware has used a PowerShell command to check the victim system architecture to determine if it is an x64 machine. Other malware has obtained the OS version, UUID, and computer/host name to send to the C2 server. [15] [17] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "Magic Hound malware gathers the victim's local IP address, MAC address, and external IP address. [15] [17] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.001",
+        "Technique": "Internet Connection Discovery",
+        "Use": "Magic Hound has conducted a network call out to a specific website as part of their initial discovery activity. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.002",
+        "Technique": "Wi-Fi Discovery",
+        "Use": "Magic Hound has collected names and passwords of all Wi-Fi networks to which a device has previously connected. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "Magic Hound has used quser.exe to identify existing RDP connections. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "Magic Hound malware has obtained the victim username and sent it to the C2 server. [15] [17] [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "Magic Hound has attempted to lure victims into opening malicious links embedded in emails. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Magic Hound has attempted to lure victims into opening malicious email attachments. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.001",
+        "Technique": "Valid Accounts: Default Accounts",
+        "Use": "Magic Hound enabled and used the default system managed account, DefaultAccount, via \"powershell.exe\" /c net user DefaultAccount /active:yes to connect to a targeted Exchange server over RDP. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.002",
+        "Technique": "Valid Accounts: Domain Accounts",
+        "Use": "Magic Hound has used domain administrator accounts after dumping LSASS process memory. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102.002",
+        "Technique": "Web Service: Bidirectional Communication",
+        "Use": "Magic Hound malware can use a SOAP Web service to communicate with its C2 server. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "Magic Hound has used a tool to run cmd /c wmic computersystem get domain for discovery. [17]"
+    }
+]

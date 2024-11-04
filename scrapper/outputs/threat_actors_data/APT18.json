@@ -1,0 +1,74 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "APT18 uses HTTP for C2 communications. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.004",
+        "Technique": "Application Layer Protocol: DNS",
+        "Use": "APT18 uses DNS for C2 communications. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "APT18 establishes persistence via the HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run key. [3] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "APT18 uses cmd.exe to execute commands on the victim’s machine. [4] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1133",
+        "Technique": "External Remote Services",
+        "Use": "APT18 actors leverage legitimate credentials to log into external remote services. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "APT18 can list files information for specific directories. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "APT18 actors deleted tools and batch files from victim systems. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "APT18 can upload a file to the victim’s machine. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "APT18 obfuscates strings in the payload. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.002",
+        "Technique": "Scheduled Task/Job: At",
+        "Use": "APT18 actors used the native at Windows task scheduler tool to use scheduled tasks for execution on a victim network. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "APT18 can collect system information from the victim’s machine. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "APT18 actors leverage legitimate credentials to log into external remote services. [5]"
+    }
+]

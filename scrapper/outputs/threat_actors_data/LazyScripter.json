@@ -1,0 +1,122 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "LazyScripter has used dynamic DNS providers to create legitimate-looking subdomains for C2. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.006",
+        "Technique": "Acquire Infrastructure: Web Services",
+        "Use": "LazyScripter has established GitHub accounts to host its toolsets. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.004",
+        "Technique": "Application Layer Protocol: DNS",
+        "Use": "LazyScripter has leveraged dynamic DNS providers for C2 communications. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "LazyScripter has achieved persistence via writing a PowerShell script to the autorun registry key. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "LazyScripter has used PowerShell scripts to execute malicious code. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "LazyScripter has used batch files to deploy open-source and multi-stage RATs. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "LazyScripter has used VBScript to execute malicious code. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.007",
+        "Technique": "Command and Scripting Interpreter: JavaScript",
+        "Use": "LazyScripter has used JavaScript in its attacks. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "LazyScripter had downloaded additional tools to a compromised host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036",
+        "Technique": "Masquerading",
+        "Use": "LazyScripter has used several different security software icons to disguise executables. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.010",
+        "Technique": "Obfuscated Files or Information: Command Obfuscation",
+        "Use": "LazyScripter has leveraged the BatchEncryption tool to perform advanced batch script obfuscation and encoding techniques. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.001",
+        "Technique": "Obtain Capabilities: Malware",
+        "Use": "LazyScripter has used a variety of open-source remote access Trojans for its operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "LazyScripter has used spam emails weaponized with archive or document files as its initial infection vector. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "LazyScripter has used spam emails that contain a link that redirects the victim to download a malicious document. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.001",
+        "Technique": "Stage Capabilities: Upload Malware",
+        "Use": "LazyScripter has hosted open-source remote access Trojans used in its operations in GitHub. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.005",
+        "Technique": "System Binary Proxy Execution: Mshta",
+        "Use": "LazyScripter has used mshta.exe to execute Koadic stagers. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.011",
+        "Technique": "System Binary Proxy Execution: Rundll32",
+        "Use": "LazyScripter has used rundll32.exe to execute Koadic stagers. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "LazyScripter has relied upon users clicking on links to malicious files. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "LazyScripter has lured users to open malicious email attachments. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102",
+        "Technique": "Web Service",
+        "Use": "LazyScripter has used GitHub to host its payloads to operate spam campaigns. [1]"
+    }
+]

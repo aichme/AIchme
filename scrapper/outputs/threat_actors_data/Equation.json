@@ -1,0 +1,26 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1480.001",
+        "Technique": "Execution Guardrails: Environmental Keying",
+        "Use": "Equation has been observed utilizing environmental keying in payload delivery. [2] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.005",
+        "Technique": "Hide Artifacts: Hidden File System",
+        "Use": "Equation has used an encrypted virtual file system stored in the Windows Registry. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1120",
+        "Technique": "Peripheral Device Discovery",
+        "Use": "Equation has used tools with the functionality to search for specific information about the attached hard drive that could be used to identify and overwrite the firmware. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1542.002",
+        "Technique": "Pre-OS Boot: Component Firmware",
+        "Use": "Equation is known to have the capability to overwrite the firmware on hard drives from some manufacturers. [1]"
+    }
+]

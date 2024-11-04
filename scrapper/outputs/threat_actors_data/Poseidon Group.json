@@ -1,0 +1,50 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.001",
+        "Technique": "Account Discovery: Local Account",
+        "Use": "Poseidon Group searches for administrator accounts on both the local victim machine and the network. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "Poseidon Group searches for administrator accounts on both the local victim machine and the network. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "The Poseidon Group 's Information Gathering Tool (IGT) includes PowerShell components. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Poseidon Group tools attempt to spoof anti-virus processes as a means of self-defense. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003",
+        "Technique": "OS Credential Dumping",
+        "Use": "Poseidon Group conducts credential dumping on victims, with a focus on obtaining credentials belonging to domain and database servers. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "After compromising a victim, Poseidon Group lists all running processes. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "Poseidon Group obtains and saves information about victim network interfaces and addresses. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1007",
+        "Technique": "System Service Discovery",
+        "Use": "After compromising a victim, Poseidon Group discovers all running services. [1]"
+    }
+]

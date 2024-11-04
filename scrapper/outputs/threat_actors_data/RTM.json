@@ -1,0 +1,44 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "RTM has used Registry run keys to establish persistence for the RTM Trojan and other tools, such as a modified version of TeamViewer remote desktop software. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "RTM has distributed its malware via the RIG and SUNDOWN exploit kits, as well as online advertising network Yandex.Direct . [1] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.001",
+        "Technique": "Hijack Execution Flow: DLL Search Order Hijacking",
+        "Use": "RTM has used search order hijacking to force TeamViewer to load a malicious DLL. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "RTM has used spearphishing attachments to distribute its malware. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1219",
+        "Technique": "Remote Access Software",
+        "Use": "RTM has used a modified version of TeamViewer and Remote Utilities for remote access. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "RTM has attempted to lure victims into opening e-mail attachments to execute malicious code. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102.001",
+        "Technique": "Web Service: Dead Drop Resolver",
+        "Use": "RTM has used an RSS feed on Livejournal to update a list of encrypted C2 server names. [1]"
+    }
+]

@@ -1,0 +1,218 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1134.001",
+        "Technique": "Access Token Manipulation: Token Impersonation/Theft",
+        "Use": "FIN8 has used a malicious framework designed to impersonate the lsass.exe/vmtoolsd.exe token. [5] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "FIN8 has used HTTPS for command and control. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "FIN8 has used RAR to compress collected data before exfiltration. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "FIN8 's malicious spearphishing payloads are executed as PowerShell . FIN8 has also used PowerShell for lateral movement and credential access. [1] [5] [6] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "FIN8 has used a Batch file to automate frequently executed post compromise cleanup activities. [6] FIN8 has also executed commands remotely via cmd.exe . [1] [5] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1486",
+        "Technique": "Data Encrypted for Impact",
+        "Use": "FIN8 has deployed ransomware such as Ragnar Locker , White Rabbit, and attempted to execute Noberus on compromised networks. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.002",
+        "Technique": "Data Staged: Remote Data Staging",
+        "Use": "FIN8 aggregates staged data from a network into a single location. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1482",
+        "Technique": "Domain Trust Discovery",
+        "Use": "FIN8 has retrieved a list of trusted domains by using nltest.exe /domain_trusts . [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1573.002",
+        "Technique": "Encrypted Channel: Asymmetric Cryptography",
+        "Use": "FIN8 has used the Plink utility to tunnel RDP back to C2 infrastructure. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1546.003",
+        "Technique": "Event Triggered Execution: Windows Management Instrumentation Event Subscription",
+        "Use": "FIN8 has used WMI event subscriptions for persistence. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1048.003",
+        "Technique": "Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted Non-C2 Protocol",
+        "Use": "FIN8 has used FTP to exfiltrate collected data. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1068",
+        "Technique": "Exploitation for Privilege Escalation",
+        "Use": "FIN8 has exploited the CVE-2016-0167 local vulnerability. [2] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.001",
+        "Technique": "Indicator Removal: Clear Windows Event Logs",
+        "Use": "FIN8 has cleared logs during post compromise cleanup activities. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "FIN8 has deleted tmp and prefetch files during post compromise cleanup activities. FIN8 has also deleted PowerShell scripts to evade detection on compromised machines. [6] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "FIN8 has used remote code execution to download subsequent payloads. [2] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1112",
+        "Technique": "Modify Registry",
+        "Use": "FIN8 has deleted Registry keys during post compromise cleanup activities. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.010",
+        "Technique": "Obfuscated Files or Information: Command Obfuscation",
+        "Use": "FIN8 has used environment variables and standard input (stdin) to obfuscate command-line arguments. FIN8 also obfuscates malicious macros delivered as payloads. [1] [6] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "FIN8 has used open-source tools such as Impacket for targeting efforts. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.003",
+        "Technique": "Obtain Capabilities: Code Signing Certificates",
+        "Use": "FIN8 has used an expired open-source X.509 certificate for testing in the OpenSSL repository, to connect to actor-controlled C2 servers. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "FIN8 harvests credentials using Invoke-Mimikatz or Windows Credentials Editor (WCE). [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "FIN8 has distributed targeted emails containing Word documents with embedded malicious macros. [1] [2] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "FIN8 has distributed targeted emails containing links to malicious documents with embedded macros. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055.004",
+        "Technique": "Process Injection: Asynchronous Procedure Call",
+        "Use": "FIN8 has injected malicious code into a new svchost.exe process. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.001",
+        "Technique": "Remote Services: Remote Desktop Protocol",
+        "Use": "FIN8 has used RDP for lateral movement. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.002",
+        "Technique": "Remote Services: SMB/Windows Admin Shares",
+        "Use": "FIN8 has attempted to map to C$ on enumerated hosts to test the scope of their current credentials/context. FIN8 has also used smbexec from the Impacket suite for lateral movement. [6] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "FIN8 has used dsquery and other Active Directory utilities to enumerate hosts; they have also used nltest.exe /dclist to retrieve a list of domain controllers. [6] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "FIN8 has used scheduled tasks to maintain RDP backdoors. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518.001",
+        "Technique": "Software Discovery: Security Software Discovery",
+        "Use": "FIN8 has used Registry keys to detect and avoid executing in potential sandboxes. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "FIN8 has used PowerShell Scripts to check the architecture of a compromised machine before the selection of a 32-bit or 64-bit version of a malicious .NET loader. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016.001",
+        "Technique": "System Network Configuration Discovery: Internet Connection Discovery",
+        "Use": "FIN8 has used the Ping command to check connectivity to actor-controlled C2 servers. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "FIN8 has executed the command quser to display the session details of a compromised machine. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "FIN8 has used emails with malicious links to lure victims into installing malware. [1] [2] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "FIN8 has used malicious e-mail attachments to lure victims into executing malware. [1] [2] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "FIN8 has used valid accounts for persistence and lateral movement. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102",
+        "Technique": "Web Service",
+        "Use": "FIN8 has used sslip.io , a free IP to domain mapping service that also makes SSL certificate generation easier for traffic encryption, as part of their command and control. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "FIN8 's malicious spearphishing payloads use WMI to launch malware and spawn cmd.exe execution. FIN8 has also used WMIC and the Impacket suite for lateral movement, as well as during and post compromise cleanup activities. [1] [5] [6] [4]"
+    }
+]

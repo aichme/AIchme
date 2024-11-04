@@ -1,0 +1,26 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Threat Group-1314 actors spawned shells on remote systems on a victim network to execute commands. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.002",
+        "Technique": "Remote Services: SMB/Windows Admin Shares",
+        "Use": "Threat Group-1314 actors mapped network drives using net use . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1072",
+        "Technique": "Software Deployment Tools",
+        "Use": "Threat Group-1314 actors used a victim's endpoint management platform, Altiris, for lateral movement. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.002",
+        "Technique": "Valid Accounts: Domain Accounts",
+        "Use": "Threat Group-1314 actors used compromised domain credentials for the victim's endpoint management platform, Altiris, to move laterally. [1]"
+    }
+]

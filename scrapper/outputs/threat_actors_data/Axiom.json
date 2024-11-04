@@ -1,0 +1,98 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.002",
+        "Technique": "Acquire Infrastructure: DNS Server",
+        "Use": "Axiom has acquired dynamic DNS services for use in the targeting of intended victims. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.003",
+        "Technique": "Acquire Infrastructure: Virtual Private Server",
+        "Use": "Axiom has used VPS hosting providers in targeting of intended victims. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560",
+        "Technique": "Archive Collected Data",
+        "Use": "Axiom has compressed and encrypted data prior to exfiltration. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.005",
+        "Technique": "Compromise Infrastructure: Botnet",
+        "Use": "Axiom has used large groups of compromised machines for use as proxy nodes. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "Axiom has collected data from a compromised network. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1001.002",
+        "Technique": "Data Obfuscation: Steganography",
+        "Use": "Axiom has used steganography to hide its C2 communications. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "Axiom has used watering hole attacks to gain access. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1546.008",
+        "Technique": "Event Triggered Execution: Accessibility Features",
+        "Use": "Axiom actors have been known to use the Sticky Keys replacement within RDP sessions to obtain persistence. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "Axiom has been observed using SQL injection to gain access to systems. [5] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "Axiom has used exploits for multiple vulnerabilities including CVE-2014-0322, CVE-2012-4792, CVE-2012-1889, and CVE-2013-3893. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003",
+        "Technique": "OS Credential Dumping",
+        "Use": "Axiom has been known to dump credentials. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566",
+        "Technique": "Phishing",
+        "Use": "Axiom has used spear phishing to initially compromise victims. [4] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1563.002",
+        "Technique": "Remote Service Session Hijacking: RDP Hijacking",
+        "Use": "Axiom has targeted victims with remote administration tools including RDP. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.001",
+        "Technique": "Remote Services: Remote Desktop Protocol",
+        "Use": "Axiom has used RDP during operations. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553",
+        "Technique": "Subvert Trust Controls",
+        "Use": "Axiom has used digital certificates to deliver malware. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "Axiom has used previously compromised administrative accounts to escalate privileges. [5]"
+    }
+]

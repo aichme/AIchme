@@ -1,0 +1,20 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.005",
+        "Technique": "Hide Artifacts: Hidden File System",
+        "Use": "Strider has used a hidden file system that is stored as a file on disk. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1556.002",
+        "Technique": "Modify Authentication Process: Password Filter DLL",
+        "Use": "Strider has registered its persistence module on domain controllers as a Windows LSA (Local System Authority) password filter to acquire credentials any time a domain, local user, or administrator logs in or changes a password. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090.001",
+        "Technique": "Proxy: Internal Proxy",
+        "Use": "Strider has used local servers with both local network and Internet access to act as internal proxy nodes to exfiltrate data from other parts of the network without direct Internet access. [2]"
+    }
+]

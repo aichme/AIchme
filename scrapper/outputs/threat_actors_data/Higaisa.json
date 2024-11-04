@@ -1,0 +1,158 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Higaisa used HTTP and HTTPS to send data back to its C2 server. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "Higaisa added a spoofed binary to the start-up folder for persistence. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Higaisa used cmd.exe for execution. [1] [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "Higaisa has used VBScript code on the victim's machine. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.007",
+        "Technique": "Command and Scripting Interpreter: JavaScript",
+        "Use": "Higaisa used JavaScript to execute additional files. [1] [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1001.003",
+        "Technique": "Data Obfuscation: Protocol Impersonation",
+        "Use": "Higaisa used a FakeTLS session for C2 communications. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "Higaisa used certutil to decode Base64 binaries at runtime and a 16-byte XOR key to decrypt data. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1573.001",
+        "Technique": "Encrypted Channel: Symmetric Cryptography",
+        "Use": "Higaisa used AES-128 to encrypt C2 traffic. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1041",
+        "Technique": "Exfiltration Over C2 Channel",
+        "Use": "Higaisa exfiltrated data over its C2 channel. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "Higaisa has exploited CVE-2018-0798 for execution. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.003",
+        "Technique": "Hide Artifacts: Hidden Window",
+        "Use": "Higaisa used a payload that creates a hidden window. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.002",
+        "Technique": "Hijack Execution Flow: DLL Side-Loading",
+        "Use": "Higaisa ’s JavaScript file used a legitimate Microsoft Office 2007 package to side-load the OINFO12.OCX dynamic link library. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.004",
+        "Technique": "Masquerading: Masquerade Task or Service",
+        "Use": "Higaisa named a shellcode loader binary svchast.exe to spoof the legitimate svchost.exe . [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1106",
+        "Technique": "Native API",
+        "Use": "Higaisa has called various native OS APIs. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.001",
+        "Technique": "Obfuscated Files or Information: Binary Padding",
+        "Use": "Higaisa performed padding with null bytes before calculating its hash. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "Higaisa used Base64 encoded compressed payloads. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Higaisa has sent spearphishing emails containing malicious attachments. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "Higaisa ’s shellcode attempted to find the process ID of the current process. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090.001",
+        "Technique": "Proxy: Internal Proxy",
+        "Use": "Higaisa discovered system proxy settings and used them if available. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "Higaisa dropped and added officeupdate.exe to scheduled tasks. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1029",
+        "Technique": "Scheduled Transfer",
+        "Use": "Higaisa sent the victim computer identifier in a User-Agent string back to the C2 server every 10 minutes. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Higaisa collected the system volume serial number, GUID, and computer name. [3] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "Higaisa used ipconfig to gather network configuration information. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1124",
+        "Technique": "System Time Discovery",
+        "Use": "Higaisa used a function to gather the current time. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Higaisa used malicious e-mail attachments to lure victims into executing LNK files. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1220",
+        "Technique": "XSL Script Processing",
+        "Use": "Higaisa used an XSL file to run VBScript code. [3]"
+    }
+]

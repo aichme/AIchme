@@ -1,0 +1,266 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1548.002",
+        "Technique": "Abuse Elevation Control Mechanism: Bypass User Account Control",
+        "Use": "Earth Lusca has used the Fodhelper UAC bypass technique to gain elevated privileges. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098.004",
+        "Technique": "Account Manipulation: SSH Authorized Keys",
+        "Use": "Earth Lusca has dropped an SSH-authorized key in the /root/.ssh folder in order to access a compromised server with SSH. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "Earth Lusca has registered domains, intended to look like legitimate target domains, that have been used in watering hole attacks. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.004",
+        "Technique": "Acquire Infrastructure: Server",
+        "Use": "Earth Lusca has acquired multiple servers for some of their operations, using each server for a different role. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.006",
+        "Technique": "Acquire Infrastructure: Web Services",
+        "Use": "Earth Lusca has established GitHub accounts to host their malware. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1595.002",
+        "Technique": "Active Scanning: Vulnerability Scanning",
+        "Use": "Earth Lusca has scanned for vulnerabilities in the public-facing servers of their targets. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "Earth Lusca has used WinRAR to compress stolen files into an archive prior to exfiltration. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.012",
+        "Technique": "Boot or Logon Autostart Execution: Print Processors",
+        "Use": "Earth Lusca has added the Registry key HKLM\\SYSTEM\\ControlSet001\\Control\\Print\\Environments\\Windows x64\\Print Processors\\UDPrint\" /v Driver /d \"spool.dll /f to load malware as a Print Processor. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Earth Lusca has used PowerShell to execute commands. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "Earth Lusca used VBA scripts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.006",
+        "Technique": "Command and Scripting Interpreter: Python",
+        "Use": "Earth Lusca used Python scripts for port scanning or building reverse shells. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.007",
+        "Technique": "Command and Scripting Interpreter: JavaScript",
+        "Use": "Earth Lusca has manipulated legitimate websites to inject malicious JavaScript code as part of their watering hole operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.004",
+        "Technique": "Compromise Infrastructure: Server",
+        "Use": "Earth Lusca has used compromised web servers as part of their operational infrastructure. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.006",
+        "Technique": "Compromise Infrastructure: Web Services",
+        "Use": "Earth Lusca has compromised Google Drive repositories. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.003",
+        "Technique": "Create or Modify System Process: Windows Service",
+        "Use": "Earth Lusca created a service using the command sc create \"SysUpdate\" binpath= \"cmd /c start \"[file path]\"\"&&sc config \"SysUpdate\" start= auto&&netstart SysUpdate for persistence. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "Earth Lusca has used certutil to decode a string into a cabinet file. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1482",
+        "Technique": "Domain Trust Discovery",
+        "Use": "Earth Lusca has used Nltest to obtain information about domain controllers. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "Earth Lusca has performed watering hole attacks. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "Earth Lusca has used the megacmd tool to upload stolen files from a victim network to MEGA. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "Earth Lusca has compromised victims by directly exploiting vulnerabilities of public-facing servers, including those associated with Microsoft Exchange and Oracle GlassFish. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1210",
+        "Technique": "Exploitation of Remote Services",
+        "Use": "Earth Lusca has used Mimikatz to exploit a domain controller via the ZeroLogon exploit (CVE-2020-1472). [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.002",
+        "Technique": "Hijack Execution Flow: DLL Side-Loading",
+        "Use": "Earth Lusca has placed a malicious payload in %WINDIR%\\SYSTEM32\\oci.dll so it would be sideloaded by the MSDTC service. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Earth Lusca used the command move [file path] c:\\windows\\system32\\spool\\prtprocs\\x64\\spool.dll to move and register a malicious DLL name as a Windows print processor, which eventually was loaded by the Print Spooler service. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1112",
+        "Technique": "Modify Registry",
+        "Use": "Earth Lusca modified the registry using the command reg add \"HKEY_CURRENT_USER\\Environment\" /v UserInitMprLogonScript /t REG_SZ /d \"[file path]\" for persistence. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027",
+        "Technique": "Obfuscated Files or Information",
+        "Use": "Earth Lusca used Base64 to encode strings. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.003",
+        "Technique": "Steganography",
+        "Use": "Earth Lusca has used steganography to hide shellcode in a BMP image file. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.001",
+        "Technique": "Obtain Capabilities: Malware",
+        "Use": "Earth Lusca has acquired and used a variety of malware, including Cobalt Strike . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Earth Lusca has acquired and used a variety of open source tools. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "Earth Lusca has used ProcDump to obtain the hashes of credentials by dumping the memory of the LSASS process. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.006",
+        "Technique": "OS Credential Dumping: DCSync",
+        "Use": "Earth Lusca has used a DCSync command with Mimikatz to retrieve credentials from an exploited controller. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "Earth Lusca has sent spearphishing emails to potential targets that contained a malicious link. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "Earth Lusca has used Tasklist to obtain information from a compromised host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090",
+        "Technique": "Proxy",
+        "Use": "Earth Lusca adopted Cloudflare as a proxy for compromised servers. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "Earth Lusca used the command powershell \"Get-EventLog -LogName security -Newest 500 | where {$_.EventID -eq 4624} | format-list -property * | findstr \"Address\"\" to find the network information of successfully logged-in accounts to discovery addresses of other machines. Earth Lusca has also used multiple scanning tools to discover other machines within the same compromised network. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053",
+        "Technique": "Scheduled Task/Job",
+        "Use": "Earth Lusca used the command schtasks /Create /SC ONLOgon /TN WindowsUpdateCheck /TR \"[file path]\" /ru system for persistence. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.001",
+        "Technique": "Stage Capabilities: Upload Malware",
+        "Use": "Earth Lusca has staged malware and malicious files on compromised web servers, GitHub, and Google Drive. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.005",
+        "Technique": "System Binary Proxy Execution: Mshta",
+        "Use": "Earth Lusca has used mshta.exe to load an HTA script within a malicious .LNK file. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "Earth Lusca used the command ipconfig to obtain information about network configurations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "Earth Lusca employed a PowerShell script called RDPConnectionParser to read and filter the Windows event log \"Microsoft-Windows-TerminalServices-RDPClient/Operational\"(Event ID 1024) to obtain network information from RDP connections. Earth Lusca has also used netstat from a compromised system to obtain network connection information. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "Earth Lusca collected information on user accounts via the whoami command. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1007",
+        "Technique": "System Service Discovery",
+        "Use": "Earth Lusca has used Tasklist to obtain information from a compromised host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "Earth Lusca has sent spearphishing emails that required the user to click on a malicious link and subsequently open a decoy document with a malicious loader. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Earth Lusca required users to click on a malicious file for the loader to activate. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "Earth Lusca used a VBA script to execute WMI. [1]"
+    }
+]

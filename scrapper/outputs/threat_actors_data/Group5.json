@@ -1,0 +1,26 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "Malware used by Group5 is capable of remotely deleting files from victims. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.001",
+        "Technique": "Input Capture: Keylogging",
+        "Use": "Malware used by Group5 is capable of capturing keystrokes. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "Group5 disguised its malicious binaries with several layers of obfuscation, including encrypting the files. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1113",
+        "Technique": "Screen Capture",
+        "Use": "Malware used by Group5 is capable of watching the victim's screen. [1]"
+    }
+]

@@ -1,0 +1,698 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1134.002",
+        "Technique": "Access Token Manipulation: Create Process with Token",
+        "Use": "Lazarus Group keylogger KiloAlfa obtains user tokens from interactive sessions to execute itself with API call CreateProcessAsUserA under that user's context. [3] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "During Operation Dream Job , Lazarus Group queried compromised victim's active directory servers to obtain the list of employees including administrator accounts. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098",
+        "Technique": "Account Manipulation",
+        "Use": "Lazarus Group malware WhiskeyDelta-Two contains a function that attempts to rename the administrator’s account. [3] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "Lazarus Group has acquired domains related to their campaigns to act as distribution points and C2 channels. [15] [16] During Operation Dream Job , Lazarus Group registered a domain name identical to that of a compromised company as part of their BEC effort. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.004",
+        "Technique": "Acquire Infrastructure: Server",
+        "Use": "During Operation Dream Job , Lazarus Group acquired servers to host their malicious tools. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.006",
+        "Technique": "Acquire Infrastructure: Web Services",
+        "Use": "Lazarus Group has hosted malicious downloads on Github. [15] During Operation Dream Job , Lazarus Group used file hosting services like DropBox and OneDrive. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1557.001",
+        "Technique": "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay",
+        "Use": "Lazarus Group executed Responder using the command [Responder file path] -i [IP address] -rPv on a compromised host to harvest credentials and move laterally. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Lazarus Group has conducted C2 over HTTP and HTTPS. [18] [19] [20] [21] [22] [23] During Operation Dream Job , Lazarus Group uses HTTP and HTTPS to contact actor-controlled C2 servers. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1010",
+        "Technique": "Application Window Discovery",
+        "Use": "Lazarus Group malware IndiaIndia obtains and sends to its C2 server the title of the window for each running process. The KilaAlfa keylogger also reports the title of the window in the foreground. [3] [24] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560",
+        "Technique": "Archive Collected Data",
+        "Use": "Lazarus Group has compressed exfiltrated data with RAR and used RomeoDelta malware to archive specified directories in .zip format, encrypt the .zip file, and upload it to C2. [24] [25] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Archive via Utility",
+        "Use": "During Operation Dream Job , Lazarus Group archived victim's data into a RAR file. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.002",
+        "Technique": "Archive via Library",
+        "Use": "Lazarus Group malware IndiaIndia saves information gathered about the victim to a file that is compressed with Zlib, encrypted, and uploaded to a C2 server. [25] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.003",
+        "Technique": "Archive via Custom Method",
+        "Use": "A Lazarus Group malware sample encrypts data using a simple byte based XOR operation prior to exfiltration. [3] [24] [25] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "Lazarus Group has maintained persistence by loading malicious code into a startup folder or by adding a Registry Run key. [3] [25] [18] [21] During Operation Dream Job , Lazarus Group placed LNK files into the victims' startup folder for persistence. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.009",
+        "Technique": "Boot or Logon Autostart Execution: Shortcut Modification",
+        "Use": "Lazarus Group malware has maintained persistence on a system by creating a LNK shortcut in the user’s Startup folder. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110.003",
+        "Technique": "Brute Force: Password Spraying",
+        "Use": "Lazarus Group malware attempts to connect to Windows shares for lateral movement by using a generated list of usernames, which center around permutations of the username Administrator, and weak passwords. [3] [25]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Lazarus Group has used PowerShell to execute commands and malicious code. [16] During Operation Dream Job , Lazarus Group used PowerShell commands to explore the environment of compromised victims. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Lazarus Group malware uses cmd.exe to execute commands on a compromised host. [3] [14] [18] [26] [22] A Destover-like variant used by Lazarus Group uses a batch file mechanism to delete its binaries from the system. [27] During Operation Dream Job , Lazarus Group launched malicious DLL files, created new folders, and renamed folders with the use of the Windows command shell. [9] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "Lazarus Group has used VBA and embedded macros in Word documents to execute malicious code. [21] [22] During Operation Dream Job , Lazarus Group executed a VBA written malicious macro after victims download malicious DOTM files; Lazarus Group also used Visual Basic macro code to extract a double Base64 encoded DLL implant. [10] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.001",
+        "Technique": "Compromise Infrastructure: Domains",
+        "Use": "For Operation Dream Job , Lazarus Group compromised domains in Italy and other countries for their C2 infrastructure. [11] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.004",
+        "Technique": "Compromise Infrastructure: Server",
+        "Use": "Lazarus Group has compromised servers to stage malicious tools. [17] For Operation Dream Job , Lazarus Group compromised servers to host their malicious tools. [10] [9] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.003",
+        "Technique": "Create or Modify System Process: Windows Service",
+        "Use": "Several Lazarus Group malware families install themselves as new services. [3] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1485",
+        "Technique": "Data Destruction",
+        "Use": "Lazarus Group has used a custom secure delete function to overwrite file contents with data from heap memory. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1132.001",
+        "Technique": "Data Encoding: Standard Encoding",
+        "Use": "A Lazarus Group malware sample encodes data with base64. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "Lazarus Group has collected data and files from compromised networks. [3] [24] [25] [17] During Operation Dream Job , Lazarus Group used malicious Trojans and DLL files to exfiltrate data from an infected host. [10] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1001.003",
+        "Technique": "Data Obfuscation: Protocol Impersonation",
+        "Use": "Lazarus Group malware also uses a unique form of communication encryption known as FakeTLS that mimics TLS but uses a different encryption method, potentially evading SSL traffic inspection/decryption. [3] [14] [18] [27]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.001",
+        "Technique": "Data Staged: Local Data Staging",
+        "Use": "Lazarus Group malware IndiaIndia saves information gathered about the victim to a file that is saved in the %TEMP% directory, then compressed, encrypted, and uploaded to a C2 server. [3] [24]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1622",
+        "Technique": "Debugger Evasion",
+        "Use": "During Operation Dream Job , Lazarus Group used tools that used the IsDebuggerPresent call to detect debuggers. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1491.001",
+        "Technique": "Defacement: Internal Defacement",
+        "Use": "Lazarus Group replaced the background wallpaper of systems with a threatening image after rendering the system unbootable with a Disk Structure Wipe . [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "Lazarus Group has used shellcode within macros to decrypt and manually map DLLs and shellcode into memory at runtime. [21] [22]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1587.001",
+        "Technique": "Develop Capabilities: Malware",
+        "Use": "Lazarus Group has developed custom malware for use in their operations. [15] [16] For Operation Dream Job , Lazarus Group developed custom tools such as Sumarta, DBLL Dropper, Torisma , and DRATzarus for their operations. [10] [9] [11] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1587.002",
+        "Technique": "Develop Capabilities: Code Signing Certificates",
+        "Use": "During Operation Dream Job , Lazarus Group digitally signed their malware and the dbxcli utility. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1561.001",
+        "Technique": "Disk Wipe: Disk Content Wipe",
+        "Use": "Lazarus Group has used malware like WhiskeyAlfa to overwrite the first 64MB of every drive with a mix of static and random buffers. A similar process is then used to wipe content in logical drives and, finally, attempt to wipe every byte of every sector on every drive. WhiskeyBravo can be used to overwrite the first 4.9MB of physical drives. WhiskeyDelta can overwrite the first 132MB or 1.5MB of each drive with random data from heap memory. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1561.002",
+        "Technique": "Disk Wipe: Disk Structure Wipe",
+        "Use": "Lazarus Group malware SHARPKNOT overwrites and deletes the Master Boot Record (MBR) on the victim's machine and has possessed MBR wiper malware since at least 2009. [26] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "Lazarus Group delivered RATANKBA and other malicious code to victims via a compromised legitimate website. [28] [16]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1573.001",
+        "Technique": "Encrypted Channel: Symmetric Cryptography",
+        "Use": "Several Lazarus Group malware families encrypt C2 traffic using custom code that uses XOR with an ADD operation and XOR with a SUB operation. Another Lazarus Group malware sample XORs C2 traffic. Other Lazarus Group malware uses Caracachs encryption to encrypt C2 payloads. Lazarus Group has also used AES to encrypt C2 traffic. [3] [14] [18] [27] During Operation Dream Job , Lazarus Group used an AES key to communicate with their C2 server. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.001",
+        "Technique": "Establish Accounts: Social Media Accounts",
+        "Use": "Lazarus Group has created new Twitter accounts to conduct social engineering against potential victims. [16] For Operation Dream Job , Lazarus Group created fake LinkedIn accounts for their targeting efforts. [10] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.002",
+        "Technique": "Establish Accounts: Email Accounts",
+        "Use": "Lazarus Group has created new email accounts for spearphishing operations. [17] During Operation Dream Job , Lazarus Group created fake email accounts to correspond with fake LinkedIn personas; Lazarus Group also established email accounts to match those of the victim as part of their BEC attempt. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1048.003",
+        "Technique": "Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted Non-C2 Protocol",
+        "Use": "Lazarus Group malware SierraBravo-Two generates an email message via SMTP containing information about newly infected victims. [3] [25]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1041",
+        "Technique": "Exfiltration Over C2 Channel",
+        "Use": "Lazarus Group has exfiltrated data and files over a C2 channel through its various tools and malware. [3] [24] [18] During Operation Dream Job , Lazarus Group exfiltrated data from a compromised host to actor-controlled C2 servers. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "During Operation Dream Job , Lazarus Group used a custom build of open-source command-line dbxcli to exfiltrate stolen data to Dropbox. [9] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "Lazarus Group has exploited Adobe Flash vulnerability CVE-2018-4878 for execution. [29]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1008",
+        "Technique": "Fallback Channels",
+        "Use": "Lazarus Group malware SierraAlfa sends data to one of the hard-coded C2 servers chosen at random, and if the transmission fails, chooses a new C2 server to attempt the transmission again. [3] [25]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Lazarus Group malware can use a common function to identify target files by their extension, and some also enumerate files and directories, including a Destover-like variant that lists files and gathers information for all drives. [3] [27] [21] [22] During Operation Dream Job , Lazarus Group conducted word searches within documents on a compromised host in search of security and financial matters. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589.002",
+        "Technique": "Gather Victim Identity Information: Email Addresses",
+        "Use": "Lazarus Group collected email addresses belonging to various departments of a targeted organization which were used in follow-on phishing campaigns. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1591",
+        "Technique": "Gather Victim Org Information",
+        "Use": "Lazarus Group has studied publicly available information about a targeted organization to tailor spearphishing efforts against specific departments and/or individuals. [17] For Operation Dream Job , Lazarus Group gathered victim organization information to identify specific targets. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589.004",
+        "Technique": "Identify Roles",
+        "Use": "During Operation Dream Job , Lazarus Group targeted specific individuals within an organization with tailored job vacancy announcements. [10] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.001",
+        "Technique": "Hide Artifacts: Hidden Files and Directories",
+        "Use": "Lazarus Group has used a VBA Macro to set its file attributes to System and Hidden and has named files with a dot prefix to hide them from the Finder application. [18] [19] [20] [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.002",
+        "Technique": "Hijack Execution Flow: DLL Side-Loading",
+        "Use": "Lazarus Group has replaced win_fw.dll , an internal component that is executed during IDA Pro installation, with a malicious DLL to download and execute a payload. [23]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.013",
+        "Technique": "Hijack Execution Flow: KernelCallbackTable",
+        "Use": "Lazarus Group has abused the KernelCallbackTable to hijack process control flow and execute shellcode. [21] [22]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.001",
+        "Technique": "Impair Defenses: Disable or Modify Tools",
+        "Use": "Lazarus Group malware TangoDelta attempts to terminate various processes associated with McAfee. Additionally, Lazarus Group malware SHARPKNOT disables the Microsoft Windows System Event Notification and Alerter services. [3] [24] [13] [26] ."
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.004",
+        "Technique": "Impair Defenses: Disable or Modify System Firewall",
+        "Use": "Various Lazarus Group malware modifies the Windows firewall to allow incoming connections or disable it entirely using netsh . [3] [24] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1656",
+        "Technique": "Impersonation",
+        "Use": "During Operation Dream Job , Lazarus Group impersonated HR hiring personnel through LinkedIn messages and conducted interviews with victims in order to deceive them into downloading malware. [10] [9] [30]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070",
+        "Technique": "Indicator Removal",
+        "Use": "Lazarus Group has restored malicious KernelCallbackTable code to its original state after the process execution flow has been hijacked. [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.003",
+        "Technique": "Clear Command History",
+        "Use": "Lazarus Group has routinely deleted log files on a compromised router, including automatic log deletion through the use of the logrotate utility. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.004",
+        "Technique": "File Deletion",
+        "Use": "Lazarus Group malware has deleted files in various ways, including \"suicide scripts\" to delete malware binaries from the victim. Lazarus Group also uses secure file deletion to delete files from the victim. [3] [27] During Operation Dream Job , Lazarus Group removed all previously delivered files from a compromised computer. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.006",
+        "Technique": "Timestomp",
+        "Use": "Several Lazarus Group malware families use timestomping, including modifying the last write timestamp of a specified Registry key to a random date, as well as copying the timestamp for legitimate .exe files (such as calc.exe or mspaint.exe) to its dropped files. [3] [14] [24] [27]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1202",
+        "Technique": "Indirect Command Execution",
+        "Use": "Lazarus Group persistence mechanisms have used forfiles.exe to execute .htm files. [22]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Lazarus Group has downloaded files, malware, and tools from its C2 onto a compromised host. [3] [14] [24] [19] [20] [17] [16] [21] [22] [23] During Operation Dream Job , Lazarus Group downloaded multistage malware and tools onto a compromised host. [10] [9] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.001",
+        "Technique": "Input Capture: Keylogging",
+        "Use": "Lazarus Group malware KiloAlfa contains keylogging functionality. [3] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1534",
+        "Technique": "Internal Spearphishing",
+        "Use": "During Operation Dream Job , Lazarus Group conducted internal spearphishing from within a compromised organization. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.003",
+        "Technique": "Masquerading: Rename System Utilities",
+        "Use": "Lazarus Group has renamed system utilities such as wscript.exe and mshta.exe . [22]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.004",
+        "Technique": "Masquerading: Masquerade Task or Service",
+        "Use": "Lazarus Group has used a scheduled task named SRCheck to mask the execution of a malicious .dll. [23]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Lazarus Group has renamed malicious code to disguise it as Microsoft's narrator and other legitimate files. [31] [22]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.008",
+        "Technique": "Masquerading: Masquerade File Type",
+        "Use": "During Operation Dream Job , Lazarus Group disguised malicious template files as JPEG files to avoid detection. [11] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1104",
+        "Technique": "Multi-Stage Channels",
+        "Use": "Lazarus Group has used multi-stage malware components that inject later stages into separate processes. [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1106",
+        "Technique": "Native API",
+        "Use": "Lazarus Group has used the Windows API ObtainUserAgentString to obtain the User-Agent from a compromised host to connect to a C2 server. [11] Lazarus Group has also used various, often lesser known, functions to perform various types of Discovery and Process Injection . [21] [22] During Operation Dream Job , Lazarus Group used Windows API ObtainUserAgentString to obtain the victim's User-Agent and used the value to connect to their C2 server. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1046",
+        "Technique": "Network Service Discovery",
+        "Use": "Lazarus Group has used nmap from a router VM to scan ports on systems within the restricted segment of an enterprise network. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1571",
+        "Technique": "Non-Standard Port",
+        "Use": "Some Lazarus Group malware uses a list of ordered port numbers to choose a port for C2 traffic, creating port-protocol mismatches. [3] [25]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.002",
+        "Technique": "Obfuscated Files or Information: Software Packing",
+        "Use": "During Operation Dream Job , Lazarus Group packed malicious .db files with Themida to evade detection. [10] [11] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.007",
+        "Technique": "Obfuscated Files or Information: Dynamic API Resolution",
+        "Use": "Lazarus Group has used a custom hashing method to resolve APIs used in shellcode. [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "Lazarus Group has used multiple types of encryption and encoding for their payloads, including AES, Caracachs, RC4, XOR, Base64, and other tricks such as creating aliases in code for Native API function names. [3] [24] [25] [18] [20] [21] [22] During Operation Dream Job , Lazarus Group encrypted malware such as DRATzarus with XOR and DLL files with base64. [10] [9] [11] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Lazarus Group has obtained a variety of tools for their operations, including Responder and PuTTy PSCP. [17] For Operation Dream Job , Lazarus Group obtained tools such as Wake-On-Lan, Responder , ChromePass, and dbxcli. [10] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.003",
+        "Technique": "Obtain Capabilities: Code Signing Certificates",
+        "Use": "During Operation Dream Job , Lazarus Group used code signing certificates issued by Sectigo RSA for some of its malware and tools. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.004",
+        "Technique": "Obtain Capabilities: Digital Certificates",
+        "Use": "Lazarus Group has obtained SSL certificates for their C2 domains. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Lazarus Group has targeted victims with spearphishing emails containing malicious Microsoft Word documents. [29] [17] [21] [22] During Operation Dream Job , Lazarus Group sent emails with malicious attachments to gain unauthorized access to targets' computers. [10] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "Lazarus Group has sent malicious links to victims via email. [17] During Operation Dream Job , Lazarus Group sent malicious OneDrive links with fictitious job offer advertisements via email. [10] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.003",
+        "Technique": "Phishing: Spearphishing via Service",
+        "Use": "Lazarus Group has used social media platforms, including LinkedIn and Twitter, to send spearphishing messages. [16] During Operation Dream Job , Lazarus Group sent victims spearphishing messages via LinkedIn concerning fictitious jobs. [10] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1542.003",
+        "Technique": "Pre-OS Boot: Bootkit",
+        "Use": "Lazarus Group malware WhiskeyAlfa-Three modifies sector 0 of the Master Boot Record (MBR) to ensure that the malware will persist even if a victim machine shuts down. [3] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "Several Lazarus Group malware families gather a list of running processes on a victim system and send it to their C2 server. A Destover-like variant used by Lazarus Group also gathers process times. [3] [24] [18] [27] [20] [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055.001",
+        "Technique": "Process Injection: Dynamic-link Library Injection",
+        "Use": "A Lazarus Group malware sample performs reflective DLL injection. [18] [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090.001",
+        "Technique": "Proxy: Internal Proxy",
+        "Use": "Lazarus Group has used a compromised router to serve as a proxy between a victim network's corporate and restricted segments. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090.002",
+        "Technique": "Proxy: External Proxy",
+        "Use": "Lazarus Group has used multiple proxies to obfuscate network traffic from victims. [32] [20]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1012",
+        "Technique": "Query Registry",
+        "Use": "Lazarus Group malware IndiaIndia checks Registry keys within HKCU and HKLM to determine if certain applications are present, including SecureCRT, Terminal Services, RealVNC, TightVNC, UltraVNC, Radmin, mRemote, TeamViewer, FileZilla, pcAnyware, and Remote Desktop. Another Lazarus Group malware sample checks for the presence of the following Registry key: HKEY_CURRENT_USER\\Software\\Bitcoin\\Bitcoin-Qt . [3] [24] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1620",
+        "Technique": "Reflective Code Loading",
+        "Use": "Lazarus Group has changed memory protection permissions then overwritten in memory DLL function code with shellcode, which was later executed via KernelCallbackTable hijacking. Lazarus Group has also used shellcode within macros to decrypt and manually map DLLs into memory at runtime. [21] [22]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.001",
+        "Technique": "Remote Services: Remote Desktop Protocol",
+        "Use": "Lazarus Group malware SierraCharlie uses RDP for propagation. [3] [25]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.002",
+        "Technique": "Remote Services: SMB/Windows Admin Shares",
+        "Use": "Lazarus Group malware SierraAlfa accesses the ADMIN$ share via SMB to conduct lateral movement. [3] [25]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.004",
+        "Technique": "Remote Services: SSH",
+        "Use": "Lazarus Group used SSH and the PuTTy PSCP utility to gain access to a restricted segment of a compromised network. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "Lazarus Group has used schtasks for persistence including through the periodic execution of a remote XSL script or a dropped VBS payload. [22] [23] During Operation Dream Job , Lazarus Group created scheduled tasks to set a periodic execution of a remote XSL script. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1593.001",
+        "Technique": "Search Open Websites/Domains: Social Media",
+        "Use": "For Operation Dream Job , Lazarus Group used LinkedIn to identify and target employees within a chosen organization. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.004",
+        "Technique": "Server Software Component: IIS Components",
+        "Use": "During Operation Dream Job , Lazarus Group targeted Windows servers running Internet Information Systems (IIS) to install C2 components. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1489",
+        "Technique": "Service Stop",
+        "Use": "Lazarus Group has stopped the MSExchangeIS service to render Exchange contents inaccessible to users. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.001",
+        "Technique": "Stage Capabilities: Upload Malware",
+        "Use": "For Operation Dream Job , Lazarus Group used compromised servers to host malware. [10] [9] [11] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.002",
+        "Technique": "Stage Capabilities: Upload Tool",
+        "Use": "For Operation Dream Job , Lazarus Group used multiple servers to host malicious tools. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "Lazarus Group has digitally signed malware and utilities to evade detection. [21] During Operation Dream Job , Lazarus Group digitally signed their own malware to evade detection. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218",
+        "Technique": "System Binary Proxy Execution",
+        "Use": "Lazarus Group lnk files used for persistence have abused the Windows Update Client ( wuauclt.exe ) to execute a malicious DLL. [21] [22]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.005",
+        "Technique": "Mshta",
+        "Use": "Lazarus Group has used mshta.exe to execute HTML pages downloaded by initial access documents. [21] [22]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.010",
+        "Technique": "Regsvr32",
+        "Use": "During Operation Dream Job , Lazarus Group used regsvr32 to execute malware. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.011",
+        "Technique": "Rundll32",
+        "Use": "Lazarus Group has used rundll32 to execute malicious payloads on a compromised host. [23] During Operation Dream Job , Lazarus Group executed malware with C:\\\\windows\\system32\\rundll32.exe \"C:\\ProgramData\\ThumbNail\\thumbnail.db\" , CtrlPanel S-6-81-3811-75432205-060098-6872 0 0 905 . [10] [9] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Several Lazarus Group malware families collect information on the type and version of the victim OS, as well as the victim computer name and CPU information. A Destover-like variant used by Lazarus Group also collects disk space information and sends it to its C2 server. [3] [14] [24] [18] [27] [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1614.001",
+        "Technique": "System Location Discovery: System Language Discovery",
+        "Use": "During Operation Dream Job , Lazarus Group deployed malware designed not to run on computers set to Korean, Japanese, or Chinese in Windows language preferences. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "Lazarus Group malware IndiaIndia obtains and sends to its C2 server information about the first network interface card’s configuration, including IP address, gateways, subnet mask, DHCP information, and whether WINS is available. [3] [24]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "Lazarus Group has used net use to identify and establish a network connection with a remote host. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "Various Lazarus Group malware enumerates logged-on users. [3] [14] [24] [25] [18] [19] [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1529",
+        "Technique": "System Shutdown/Reboot",
+        "Use": "Lazarus Group has rebooted systems after destroying files and wiping the MBR on infected systems. [26]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1124",
+        "Technique": "System Time Discovery",
+        "Use": "A Destover-like implant used by Lazarus Group can obtain the current system time and send it to the C2 server. [27]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1221",
+        "Technique": "Template Injection",
+        "Use": "During Operation Dream Job , Lazarus Group used DOCX files to retrieve a malicious document template/DOTM file. [10] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "During Operation Dream Job , Lazarus Group lured users into executing a malicious link to disclose private account information or provide initial access. [10] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Lazarus Group has attempted to get users to launch a malicious Microsoft Word attachment delivered via a spearphishing email. [29] [17] [21] [22] During Operation Dream Job , Lazarus Group lured victims into executing malicious documents that contained \"dream job\" descriptions from defense, aerospace, and other sectors. [10] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "Lazarus Group has used administrator credentials to gain access to restricted network segments. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1497.001",
+        "Technique": "Virtualization/Sandbox Evasion: System Checks",
+        "Use": "During Operation Dream Job , Lazarus Group used tools that conducted a variety of system checks to detect sandboxes or VMware services. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1497.003",
+        "Technique": "Virtualization/Sandbox Evasion: Time Based Evasion",
+        "Use": "During Operation Dream Job , Lazarus Group used tools that collected GetTickCount and GetSystemTimeAsFileTime data to detect sandbox or VMware services. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102.002",
+        "Technique": "Web Service: Bidirectional Communication",
+        "Use": "Lazarus Group has used GitHub as C2, pulling hosted image payloads then committing command execution output to files in specific directories. [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "Lazarus Group has used WMIC for discovery as well as to execute payloads for persistence and lateral movement. [3] [25] [17] [22] During Operation Dream Job , Lazarus Group used WMIC to executed a remote XSL script. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1220",
+        "Technique": "XSL Script Processing",
+        "Use": "During Operation Dream Job , Lazarus Group used a remote XSL script to download a Base64-encoded DLL custom downloader. [9]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0865",
+        "Technique": "Spearphishing Attachment",
+        "Use": "Lazarus Group has been observed targeting organizations using spearphishing documents with embedded malicious payloads. [33] Highly targeted spear phishing campaigns have been conducted against a U.S. electric grid company. [34]"
+    }
+]

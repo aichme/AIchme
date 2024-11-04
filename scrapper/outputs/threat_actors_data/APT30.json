@@ -1,0 +1,14 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "APT30 has used spearphishing emails with malicious DOC attachments. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "APT30 has relied on users to execute malicious file attachments delivered via spearphishing emails. [1]"
+    }
+]

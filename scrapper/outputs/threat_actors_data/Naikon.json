@@ -1,0 +1,86 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "Naikon has modified a victim's Windows Run registry to establish persistence. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.002",
+        "Technique": "Hijack Execution Flow: DLL Side-Loading",
+        "Use": "Naikon has used DLL side-loading to load malicious DLL's into legitimate executables. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.004",
+        "Technique": "Masquerading: Masquerade Task or Service",
+        "Use": "Naikon renamed a malicious service taskmgr to appear to be a legitimate version of Task Manager. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Naikon has disguised malicious programs as Google Chrome, Adobe, and VMware executables. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1046",
+        "Technique": "Network Service Discovery",
+        "Use": "Naikon has used the LadonGo scanner to scan target networks. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1137.006",
+        "Technique": "Office Application Startup: Add-ins",
+        "Use": "Naikon has used the RoyalRoad exploit builder to drop a second stage loader, intel.wll, into the Word Startup folder on the compromised host. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Naikon has used malicious e-mail attachments to deliver malware. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "Naikon has used a netbios scanner for remote machine identification. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "Naikon has used schtasks.exe for lateral movement in compromised networks. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518.001",
+        "Technique": "Software Discovery: Security Software Discovery",
+        "Use": "Naikon uses commands such as netsh advfirewall firewall to discover local firewall settings. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "Naikon uses commands such as netsh interface show to discover network interface settings. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Naikon has convinced victims to open malicious attachments to execute malware. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.002",
+        "Technique": "Valid Accounts: Domain Accounts",
+        "Use": "Naikon has used administrator credentials for lateral movement in compromised networks. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "Naikon has used WMIC.exe for lateral movement. [4]"
+    }
+]

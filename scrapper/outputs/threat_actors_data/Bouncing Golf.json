@@ -1,0 +1,8 @@
+[
+    {
+        "Domain": "Mobile",
+        "ID": "T1655.001",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Bouncing Golf distributed malware as repackaged legitimate applications, with the malicious code in the com.golf package. [1]"
+    }
+]

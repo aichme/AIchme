@@ -1,0 +1,386 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "Wizard Spider has identified domain admins through the use of net group \"Domain admins\" /DOMAIN . Wizard Spider has also leveraged the PowerShell cmdlet Get-ADComputer to collect account names from Active Directory data. [11] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1557.001",
+        "Technique": "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay",
+        "Use": "Wizard Spider has used the Invoke-Inveigh PowerShell cmdlets, likely for name service poisoning. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Wizard Spider has used HTTP for network communications. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "Wizard Spider has archived data into ZIP files on compromised machines. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1197",
+        "Technique": "BITS Jobs",
+        "Use": "Wizard Spider has used batch scripts that utilizes WMIC to execute a BITSAdmin transfer of a ransomware payload to each compromised machine. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "Wizard Spider has established persistence via the Registry key HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run and a shortcut within the startup folder. [2] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.004",
+        "Technique": "Boot or Logon Autostart Execution: Winlogon Helper DLL",
+        "Use": "Wizard Spider has established persistence using Userinit by adding the Registry key HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Wizard Spider has used macros to execute PowerShell scripts to download malware on victim's machines. [6] It has also used PowerShell to execute commands and move laterally through a victim network. [2] [4] [12] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Wizard Spider has used cmd.exe to execute commands on a victim's machine. [11] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.001",
+        "Technique": "Create Account: Local Account",
+        "Use": "Wizard Spider has created local administrator accounts to maintain persistence in compromised networks. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.002",
+        "Technique": "Create Account: Domain Account",
+        "Use": "Wizard Spider has created and used new accounts within a victim's Active Directory environment to maintain persistence. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.003",
+        "Technique": "Create or Modify System Process: Windows Service",
+        "Use": "Wizard Spider has installed TrickBot as a service named ControlServiceA in order to establish persistence. [6] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.004",
+        "Technique": "Credentials from Password Stores: Windows Credential Manager",
+        "Use": "Wizard Spider has used PowerShell cmdlet Invoke-WCMDump to enumerate Windows credentials in the Credential Manager in a compromised network. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "Wizard Spider has collected data from a compromised host prior to exfiltration. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074",
+        "Technique": "Data Staged",
+        "Use": "Wizard Spider has collected and staged credentials and network enumeration information, using  the networkdll and psfin TrickBot modules. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.001",
+        "Technique": "Local Data Staging",
+        "Use": "Wizard Spider has staged ZIP files in local directories such as, C:\\PerfLogs\\1\\ and C:\\User\\1\\ prior to exfiltration. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.002",
+        "Technique": "Establish Accounts: Email Accounts",
+        "Use": "Wizard Spider has leveraged ProtonMail email addresses in ransom notes when delivering Ryuk ransomware. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1048.003",
+        "Technique": "Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted Non-C2 Protocol",
+        "Use": "Wizard Spider has exfiltrated victim information using FTP. [11] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1041",
+        "Technique": "Exfiltration Over C2 Channel",
+        "Use": "Wizard Spider has exfiltrated domain credentials and network enumeration information over command and control (C2) channels. [6] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "Wizard Spider has exfiltrated stolen victim data to various cloud storage providers. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1210",
+        "Technique": "Exploitation of Remote Services",
+        "Use": "Wizard Spider has exploited or attempted to exploit Zerologon (CVE-2020-1472) and EternalBlue (MS17-010) vulnerabilities. [4] [11] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1133",
+        "Technique": "External Remote Services",
+        "Use": "Wizard Spider has accessed victim networks by using stolen credentials to access the corporate VPN infrastructure. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1222.001",
+        "Technique": "File and Directory Permissions Modification: Windows File and Directory Permissions Modification",
+        "Use": "Wizard Spider has used the icacls command to modify access control to backup servers, providing them with full control of all the system folders. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.001",
+        "Technique": "Impair Defenses: Disable or Modify Tools",
+        "Use": "Wizard Spider has shut down or uninstalled security applications on victim systems that might prevent ransomware from executing. [2] [4] [11] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "Wizard Spider has used file deletion to remove some modules and configurations from an infected host after use. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Wizard Spider can transfer malicious payloads such as ransomware to compromised machines. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1490",
+        "Technique": "Inhibit System Recovery",
+        "Use": "Wizard Spider has used WMIC and vssadmin to manually delete volume shadow copies. Wizard Spider has also used Conti ransomware to delete volume shadow copies automatically with the use of vssadmin. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1570",
+        "Technique": "Lateral Tool Transfer",
+        "Use": "Wizard Spider has used stolen credentials to copy tools into the %TEMP% directory of domain controllers. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.004",
+        "Technique": "Masquerading: Masquerade Task or Service",
+        "Use": "Wizard Spider has used scheduled tasks to install TrickBot , using task names to appear legitimate such as WinDotNet, GoogleTask, or Sysnetsf. [6] It has also used common document file names for other malware binaries. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1112",
+        "Technique": "Modify Registry",
+        "Use": "Wizard Spider has modified the Registry key HKLM\\System\\CurrentControlSet\\Control\\SecurityProviders\\WDigest by setting the UseLogonCredential registry value to 1 in order to force credentials to be stored in clear text in memory. Wizard Spider has also modified the WDigest registry key to allow plaintext credentials to be cached in memory. [6] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1135",
+        "Technique": "Network Share Discovery",
+        "Use": "Wizard Spider has used the \"net view\" command to locate mapped network shares. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.010",
+        "Technique": "Obfuscated Files or Information: Command Obfuscation",
+        "Use": "Wizard Spider used Base64 encoding to obfuscate an Empire service and PowerShell commands. [5] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Wizard Spider has utilized tools such as Empire , Cobalt Strike , Cobalt Strike , Rubeus , AdFind , BloodHound , Metasploit, Advanced IP Scanner, Nirsoft PingInfoView, and SoftPerfect Network Scanner for targeting efforts. [4] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.003",
+        "Technique": "Obtain Capabilities: Code Signing Certificates",
+        "Use": "Wizard Spider has obtained code signing certificates signed by DigiCert, GlobalSign, and COMOOD for malware payloads. [13] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "Wizard Spider has dumped the lsass.exe memory to harvest credentials with the use of open-source tool LaZagne . [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.002",
+        "Technique": "OS Credential Dumping: Security Account Manager",
+        "Use": "Wizard Spider has acquired credentials from the SAM/SECURITY registry hives. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.003",
+        "Technique": "OS Credential Dumping: NTDS",
+        "Use": "Wizard Spider has gained access to credentials via exported copies of the ntds.dit Active Directory database. Wizard Spider has also created a volume shadow copy and used a batch script file to collect NTDS.dit with the use of the Windows utility, ntdsutil. [4] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Wizard Spider has used spearphishing attachments to deliver Microsoft documents containing macros or PDFs containing malicious links to download either Emotet , Bokbot, TrickBot , or Bazar . [6] [12] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "Wizard Spider has sent phishing emails containing a link to an actor-controlled Google Drive document or other free online file hosting services. [2] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055",
+        "Technique": "Process Injection",
+        "Use": "Wizard Spider has used process injection to execute payloads to escalate privileges. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Dynamic-link Library Injection",
+        "Use": "Wizard Spider has injected malicious DLLs into memory with read, write, and execute permissions. [2] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021",
+        "Technique": "Remote Services",
+        "Use": "Wizard Spider has used the WebDAV protocol to execute Ryuk payloads hosted on network file shares. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Remote Desktop Protocol",
+        "Use": "Wizard Spider has used RDP for lateral movement and to deploy ransomware interactively. [6] [2] [13] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "SMB/Windows Admin Shares",
+        "Use": "Wizard Spider has used SMB to drop Cobalt Strike Beacon on a domain controller for lateral movement. [13] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.006",
+        "Technique": "Windows Remote Management",
+        "Use": "Wizard Spider has used Window Remote Management to move laterally through a victim network. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "Wizard Spider has used networkdll for network discovery and psfin specifically for financial and point of sale indicators. Wizard Spider has also used AdFind , nltest/dclist , and PowerShell script Get-DataInfo.ps1 to enumerate domain computers, including the domain controller. [5] [6] [4] [12] [11] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "Wizard Spider has used scheduled tasks to establish persistence for TrickBot and other malware. [6] [2] [4] [13] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1489",
+        "Technique": "Service Stop",
+        "Use": "Wizard Spider has used taskkill.exe and net.exe to stop backup, catalog, cloud, and other services prior to network encryption. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518",
+        "Technique": "Software Discovery",
+        "Use": "Wizard Spider has utilized the PowerShell script Get-DataInfo.ps1 to collect installed backup software information from a compromised machine. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.001",
+        "Technique": "Security Software Discovery",
+        "Use": "Wizard Spider has used WMI to identify anti-virus products installed on a victim's machine. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1558.003",
+        "Technique": "Steal or Forge Kerberos Tickets: Kerberoasting",
+        "Use": "Wizard Spider has used Rubeus, MimiKatz Kerberos module, and the Invoke-Kerberoast cmdlet to steal AES hashes. [11] [4] [2] [13] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "Wizard Spider has used Digicert code-signing certificates for some of its malware. [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.011",
+        "Technique": "System Binary Proxy Execution: Rundll32",
+        "Use": "Wizard Spider has utilized rundll32.exe to deploy ransomware commands with the use of WebDAV. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Wizard Spider has used Systeminfo and similar commands to acquire detailed configuration information of a victim's machine. Wizard Spider has also utilized the PowerShell cmdlet Get-ADComputer to collect DNS hostnames, last logon dates, and operating system information from Active Directory. [11] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "Wizard Spider has used ipconfig to identify the network configuration of a victim machine. Wizard Spider has also used the PowerShell cmdlet Get-ADComputer to collect IP address data from Active Directory. [15] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "Wizard Spider has used \"whoami\" to identify the local user and their privileges. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1569.002",
+        "Technique": "System Services: Service Execution",
+        "Use": "Wizard Spider has used services.exe to execute scripts and executables during lateral movement within a victim's network. Wizard Spider has also used batch scripts that leverage PsExec to execute a previously transferred ransomware payload on a victim's network. [11] [14] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.006",
+        "Technique": "Unsecured Credentials: Group Policy Preferences",
+        "Use": "Wizard Spider has used PowerShell cmdlets Get-GPPPassword and Find-GPOPassword to find unsecured credentials in a compromised network group policy. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1550.002",
+        "Technique": "Use Alternate Authentication Material: Pass the Hash",
+        "Use": "Wizard Spider has used the Invoke-SMBExec PowerShell cmdlet to execute the pass-the-hash technique and utilized stolen password hashes to move laterally. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "Wizard Spider has lured victims into clicking a malicious link delivered through spearphishing. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Wizard Spider has lured victims to execute malware with spearphishing attachments containing macros to download either Emotet , Bokbot, TrickBot , or Bazar . [6] [3] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "Wizard Spider has used valid credentials for privileged accounts with the goal of accessing domain controllers. [6] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "Domain Accounts",
+        "Use": "Wizard Spider has used administrative accounts, including Domain Admin, to move laterally within a victim network. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "Wizard Spider has used WMI and LDAP queries for network discovery and to move laterally. Wizard Spider has also used batch scripts to leverage WMIC to deploy ransomware. [6] [2] [4] [12] [7]"
+    }
+]

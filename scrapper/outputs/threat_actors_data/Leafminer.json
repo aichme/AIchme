@@ -1,0 +1,104 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110.003",
+        "Technique": "Brute Force: Password Spraying",
+        "Use": "Leafminer used a tool called Total SMB BruteForcer to perform internal password spraying. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.007",
+        "Technique": "Command and Scripting Interpreter: JavaScript",
+        "Use": "Leafminer infected victims using JavaScript code. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.001",
+        "Technique": "Create Account: Local Account",
+        "Use": "Leafminer used a tool called Imecab to set up a persistent remote access account on the victim machine. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555",
+        "Technique": "Credentials from Password Stores",
+        "Use": "Leafminer used several tools for retrieving login and password information, including LaZagne. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.003",
+        "Technique": "Credentials from Web Browsers",
+        "Use": "Leafminer used several tools for retrieving login and password information, including LaZagne. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "Leafminer has infected victims using watering holes. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1114.002",
+        "Technique": "Email Collection: Remote Email Collection",
+        "Use": "Leafminer used a tool called MailSniper to search through the Exchange server mailboxes for keywords. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Leafminer used a tool called MailSniper to search for files on the desktop and another utility called Sobolsoft to extract attachments from EML files. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1046",
+        "Technique": "Network Service Discovery",
+        "Use": "Leafminer scanned network services to search for vulnerabilities in the victim system. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.010",
+        "Technique": "Obfuscated Files or Information: Command Obfuscation",
+        "Use": "Leafminer obfuscated scripts that were used on victim machines. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Leafminer has obtained and used tools such as LaZagne , Mimikatz , PsExec , and MailSniper . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "Leafminer used several tools for retrieving login and password information, including LaZagne and Mimikatz. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.004",
+        "Technique": "OS Credential Dumping: LSA Secrets",
+        "Use": "Leafminer used several tools for retrieving login and password information, including LaZagne. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.005",
+        "Technique": "OS Credential Dumping: Cached Domain Credentials",
+        "Use": "Leafminer used several tools for retrieving login and password information, including LaZagne. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055.013",
+        "Technique": "Process Injection: Process Doppelgänging",
+        "Use": "Leafminer has used Process Doppelgänging to evade security software while deploying tools on compromised systems. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "Leafminer used Microsoft’s Sysinternals tools to gather detailed information about remote systems. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.001",
+        "Technique": "Unsecured Credentials: Credentials In Files",
+        "Use": "Leafminer used several tools for retrieving login and password information, including LaZagne. [1]"
+    }
+]

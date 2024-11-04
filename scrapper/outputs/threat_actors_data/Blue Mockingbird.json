@@ -1,0 +1,134 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1134",
+        "Technique": "Access Token Manipulation",
+        "Use": "Blue Mockingbird has used JuicyPotato to abuse the SeImpersonate token privilege to escalate from web application pool accounts to NT Authority\\SYSTEM. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Blue Mockingbird has used PowerShell reverse TCP shells to issue interactive commands over a network connection. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Blue Mockingbird has used batch script files to automate execution and deployment of payloads. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.003",
+        "Technique": "Create or Modify System Process: Windows Service",
+        "Use": "Blue Mockingbird has made their XMRIG payloads persistent as a Windows Service. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1546.003",
+        "Technique": "Event Triggered Execution: Windows Management Instrumentation Event Subscription",
+        "Use": "Blue Mockingbird has used mofcomp.exe to establish WMI Event Subscription persistence mechanisms configured from a *.mof file. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "Blue Mockingbird has gained initial access by exploiting CVE-2019-18935, a vulnerability within Telerik UI for ASP.NET AJAX. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.012",
+        "Technique": "Hijack Execution Flow: COR_PROFILER",
+        "Use": "Blue Mockingbird has used wmic.exe and Windows Registry modifications to set the COR_PROFILER environment variable to execute a malicious DLL whenever a process loads the .NET CLR. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Blue Mockingbird has masqueraded their XMRIG payload name by naming it wercplsupporte.dll after the legitimate wercplsupport.dll file. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1112",
+        "Technique": "Modify Registry",
+        "Use": "Blue Mockingbird has used Windows Registry modifications to specify a DLL payload. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "Blue Mockingbird has obfuscated the wallet address in the payload binary. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Blue Mockingbird has obtained and used tools such as Mimikatz . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "Blue Mockingbird has used Mimikatz to retrieve credentials from LSASS memory. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090",
+        "Technique": "Proxy",
+        "Use": "Blue Mockingbird has used frp, ssf, and Venom to establish SOCKS proxy connections. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.001",
+        "Technique": "Remote Services: Remote Desktop Protocol",
+        "Use": "Blue Mockingbird has used Remote Desktop to log on to servers interactively and manually copy files to remote hosts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.002",
+        "Technique": "Remote Services: SMB/Windows Admin Shares",
+        "Use": "Blue Mockingbird has used Windows Explorer to manually copy malicious files to remote hosts over SMB. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1496",
+        "Technique": "Resource Hijacking",
+        "Use": "Blue Mockingbird has used XMRIG to mine cryptocurrency on victim systems. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "Blue Mockingbird has used Windows Scheduled Tasks to establish persistence on local and remote hosts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.010",
+        "Technique": "System Binary Proxy Execution: Regsvr32",
+        "Use": "Blue Mockingbird has executed custom-compiled XMRIG miner DLLs using regsvr32.exe. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.011",
+        "Technique": "System Binary Proxy Execution: Rundll32",
+        "Use": "Blue Mockingbird has executed custom-compiled XMRIG miner DLLs using rundll32.exe. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Blue Mockingbird has collected hardware details for the victim's system, including CPU and memory information. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1569.002",
+        "Technique": "System Services: Service Execution",
+        "Use": "Blue Mockingbird has executed custom-compiled XMRIG miner DLLs by configuring them to execute via the \"wercplsupport\" service. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "Blue Mockingbird has used wmic.exe to set environment variables. [1]"
+    }
+]

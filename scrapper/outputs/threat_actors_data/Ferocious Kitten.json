@@ -1,0 +1,38 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "Ferocious Kitten has acquired domains imitating legitimate sites. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.002",
+        "Technique": "Masquerading: Right-to-Left Override",
+        "Use": "Ferocious Kitten has used right-to-left override to reverse executables’ names to make them appear to have different file extensions, rather than their real ones. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Ferocious Kitten has named malicious files update.exe and loaded them into the compromise host's \"Public\" folder. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Ferocious Kitten has obtained open source tools for its operations, including JsonCPP and Psiphon. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Ferocious Kitten has conducted spearphishing campaigns containing malicious documents to lure victims to open the attachments. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Ferocious Kitten has attempted to convince victims to enable malicious content within a spearphishing email by including an odd decoy message. [1]"
+    }
+]

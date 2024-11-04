@@ -1,0 +1,26 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Thrip leveraged PowerShell to run commands to download payloads, traverse the compromised networks, and carry out reconnaissance. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1048.003",
+        "Technique": "Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted Non-C2 Protocol",
+        "Use": "Thrip has used WinSCP to exfiltrate data from a targeted organization over FTP. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Thrip has obtained and used tools such as Mimikatz and PsExec . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1219",
+        "Technique": "Remote Access Software",
+        "Use": "Thrip used a cloud-based remote access software called LogMeIn for their attacks. [1]"
+    }
+]

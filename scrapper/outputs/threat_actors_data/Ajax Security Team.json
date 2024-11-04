@@ -1,0 +1,38 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.003",
+        "Technique": "Credentials from Password Stores: Credentials from Web Browsers",
+        "Use": "Ajax Security Team has used FireMalv custom-developed malware, which collected passwords from the Firefox browser storage. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Ajax Security Team has used Wrapper/Gholee, custom-developed malware, which downloaded additional malware to the infected system. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.001",
+        "Technique": "Input Capture: Keylogging",
+        "Use": "Ajax Security Team has used CWoolger and MPK, custom-developed malware, which recorded all keystrokes on an infected system. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Ajax Security Team has used personalized spearphishing attachments. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.003",
+        "Technique": "Phishing: Spearphishing via Service",
+        "Use": "Ajax Security Team has used various social media channels to spearphish victims. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Ajax Security Team has lured victims into executing malicious files. [1]"
+    }
+]

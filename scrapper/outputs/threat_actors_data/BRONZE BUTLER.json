@@ -1,0 +1,242 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1548.002",
+        "Technique": "Abuse Elevation Control Mechanism: Bypass User Account Control",
+        "Use": "BRONZE BUTLER has used a Windows 10 specific tool and xxmm to bypass UAC for privilege escalation. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "BRONZE BUTLER has used net user /domain to identify account information. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "BRONZE BUTLER malware has used HTTP for C2. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "BRONZE BUTLER has compressed data into password-protected RAR archives prior to exfiltration. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "BRONZE BUTLER has used a batch script that adds a Registry Run key to establish malware persistence. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "BRONZE BUTLER has used PowerShell for execution. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "BRONZE BUTLER has used batch scripts and the command-line interface for execution. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "BRONZE BUTLER has used VBS and VBE scripts for execution. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.006",
+        "Technique": "Command and Scripting Interpreter: Python",
+        "Use": "BRONZE BUTLER has made use of Python-based remote access tools. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1132.001",
+        "Technique": "Data Encoding: Standard Encoding",
+        "Use": "Several BRONZE BUTLER tools encode data with base64 when posting it to a C2 server. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "BRONZE BUTLER has exfiltrated files stolen from local systems. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1039",
+        "Technique": "Data from Network Shared Drive",
+        "Use": "BRONZE BUTLER has exfiltrated files stolen from file shares. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "BRONZE BUTLER downloads encoded payloads and decodes them on the victim. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "BRONZE BUTLER compromised three Japanese websites using a Flash exploit to perform watering hole attacks. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1573.001",
+        "Technique": "Encrypted Channel: Symmetric Cryptography",
+        "Use": "BRONZE BUTLER has used RC4 encryption (for Datper malware) and AES (for xxmm malware) to obfuscate HTTP traffic. BRONZE BUTLER has also used a tool called RarStar that encodes data with a custom XOR algorithm when posting it to a C2 server. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "BRONZE BUTLER has exploited Microsoft Office vulnerabilities CVE-2014-4114, CVE-2018-0802, and CVE-2018-0798 for execution. [4] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "BRONZE BUTLER has collected a list of files from the victim and uploaded it to its C2 server, and then created a new list of specific files to steal. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.002",
+        "Technique": "Hijack Execution Flow: DLL Side-Loading",
+        "Use": "BRONZE BUTLER has used legitimate applications to side-load malicious DLLs. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.001",
+        "Technique": "Impair Defenses: Disable or Modify Tools",
+        "Use": "BRONZE BUTLER has incorporated code into several tools that attempts to terminate anti-virus processes. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "The BRONZE BUTLER uploader or malware the uploader uses command to delete the RAR archives after they have been exfiltrated. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "BRONZE BUTLER has used various tools to download files, including DGet (a similar tool to wget). [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036",
+        "Technique": "Masquerading",
+        "Use": "BRONZE BUTLER has masked executables with document file icons including Word and Adobe PDF. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.002",
+        "Technique": "Right-to-Left Override",
+        "Use": "BRONZE BUTLER has used Right-to-Left Override to deceive victims into executing several strains of malware. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.005",
+        "Technique": "Match Legitimate Name or Location",
+        "Use": "BRONZE BUTLER has given malware the same name as an existing file on the file share server to cause users to unwittingly launch and install the malware on additional systems. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.001",
+        "Technique": "Obfuscated Files or Information: Binary Padding",
+        "Use": "BRONZE BUTLER downloader code has included \"0\" characters at the end of the file to inflate the file size in a likely attempt to evade anti-virus detection. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.003",
+        "Technique": "Obfuscated Files or Information: Steganography",
+        "Use": "BRONZE BUTLER has used steganography in multiple operations to conceal malicious payloads. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "BRONZE BUTLER has obtained and used open-source tools such as Mimikatz , gsecdump , and Windows Credential Editor . [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "BRONZE BUTLER has used various tools (such as Mimikatz and WCE) to perform credential dumping. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "BRONZE BUTLER used spearphishing emails with malicious Microsoft Word attachments to infect victims. [4] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "BRONZE BUTLER typically use ping and Net to enumerate systems. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.002",
+        "Technique": "Scheduled Task/Job: At",
+        "Use": "BRONZE BUTLER has used at to register a scheduled task to execute malware during lateral movement. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "BRONZE BUTLER has used schtasks to register a scheduled task to execute malware during lateral movement. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1113",
+        "Technique": "Screen Capture",
+        "Use": "BRONZE BUTLER has used a tool to capture screenshots. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518",
+        "Technique": "Software Discovery",
+        "Use": "BRONZE BUTLER has used tools to enumerate software installed on an infected host. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1007",
+        "Technique": "System Service Discovery",
+        "Use": "BRONZE BUTLER has used TROJ_GETVERSION to discover system services. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1124",
+        "Technique": "System Time Discovery",
+        "Use": "BRONZE BUTLER has used net time to check the local time on a target system. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1080",
+        "Technique": "Taint Shared Content",
+        "Use": "BRONZE BUTLER has placed malware on file shares and given it the same name as legitimate documents on the share. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1550.003",
+        "Technique": "Use Alternate Authentication Material: Pass the Ticket",
+        "Use": "BRONZE BUTLER has created forged Kerberos Ticket Granting Ticket (TGT) and Ticket Granting Service (TGS) tickets to maintain administrative access. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "BRONZE BUTLER has attempted to get users to launch malicious Microsoft Word attachments delivered via spearphishing emails. [4] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102.001",
+        "Technique": "Web Service: Dead Drop Resolver",
+        "Use": "BRONZE BUTLER 's MSGET downloader uses a dead drop resolver to access malicious payloads. [2]"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Several tools used by Suckfly have been command-line driven. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1046",
+        "Technique": "Network Service Discovery",
+        "Use": "Suckfly the victim's internal network for hosts with ports 8080, 5900, and 40 open. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003",
+        "Technique": "OS Credential Dumping",
+        "Use": "Suckfly used a signed credential-dumping tool to obtain victim account credentials. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "Suckfly has used stolen certificates to sign its malware. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "Suckfly used legitimate account credentials that they dumped to navigate the internal victim network as though they were the legitimate account owner. [2]"
+    }
+]

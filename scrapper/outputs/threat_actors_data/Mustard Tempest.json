@@ -1,0 +1,74 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.004",
+        "Technique": "Acquire Infrastructure: Server",
+        "Use": "Mustard Tempest has acquired servers to host second-stage payloads that remain active for a period of either days, weeks, or months. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.008",
+        "Technique": "Acquire Infrastructure: Malvertising",
+        "Use": "Mustard Tempest has posted false advertisements including for software packages and browser updates in order to distribute malware. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.001",
+        "Technique": "Compromise Infrastructure: Domains",
+        "Use": "Mustard Tempest operates a global network of compromised websites that redirect into a traffic distribution system (TDS) to select victims for a fake browser update page. [3] [4] [5] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "Mustard Tempest has used drive-by downloads for initial infection, often using fake browser updates as a lure. [4] [5] [6] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Mustard Tempest has deployed secondary payloads and third stage implants to compromised hosts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Mustard Tempest has used the filename AutoUpdater.js to mimic legitimate update files and has also used the Cyrillic homoglyph characters С (0xd0a1) and а (0xd0b0) , to produce the filename Сhrome.Updаte.zip . [6] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "Mustard Tempest has sent victims emails containing links to compromised websites. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.001",
+        "Technique": "Stage Capabilities: Upload Malware",
+        "Use": "Mustard Tempest has hosted payloads on acquired second-stage servers for periods of either days, weeks, or months. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.004",
+        "Technique": "Stage Capabilities: Drive-by Target",
+        "Use": "Mustard Tempest has injected malicious JavaScript into compromised websites to infect victims via drive-by download. [4] [5] [6] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.006",
+        "Technique": "Stage Capabilities: SEO Poisoning",
+        "Use": "Mustard Tempest has poisoned search engine results to return fake software updates in order to distribute malware. [1] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Mustard Tempest has used implants to perform system reconnaissance on targeted systems. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "Mustard Tempest has lured users into downloading malware through malicious links in fake advertisements and spearphishing emails. [1] [4]"
+    }
+]

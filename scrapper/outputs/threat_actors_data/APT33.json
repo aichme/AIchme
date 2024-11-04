@@ -1,0 +1,206 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "APT33 has used HTTP for command and control. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "APT33 has used WinRAR to compress data prior to exfil. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "APT33 has deployed a tool known as DarkComet to the Startup folder of a victim, and used Registry run keys to gain persistence. [4] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110.003",
+        "Technique": "Brute Force: Password Spraying",
+        "Use": "APT33 has used password spraying to gain access to target systems. [6] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "APT33 has utilized PowerShell to download files from the C2 server and run various scripts. [4] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "APT33 has used VBScript to initiate the delivery of payloads. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555",
+        "Technique": "Credentials from Password Stores",
+        "Use": "APT33 has used a variety of publicly available tools like LaZagne to gather credentials. [4] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Credentials from Web Browsers",
+        "Use": "APT33 has used a variety of publicly available tools like LaZagne to gather credentials. [4] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1132.001",
+        "Technique": "Data Encoding: Standard Encoding",
+        "Use": "APT33 has used base64 to encode command and control traffic. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1573.001",
+        "Technique": "Encrypted Channel: Symmetric Cryptography",
+        "Use": "APT33 has used AES for encryption of command and control traffic. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1546.003",
+        "Technique": "Event Triggered Execution: Windows Management Instrumentation Event Subscription",
+        "Use": "APT33 has attempted to use WMI event subscriptions to establish persistence on compromised hosts. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1048.003",
+        "Technique": "Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted Non-C2 Protocol",
+        "Use": "APT33 has used FTP to exfiltrate files (separately from the C2 channel). [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "APT33 has attempted to exploit a known vulnerability in WinRAR (CVE-2018-20250), and attempted to gain remote code execution via a security bypass vulnerability (CVE-2017-11774). [4] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1068",
+        "Technique": "Exploitation for Privilege Escalation",
+        "Use": "APT33 has used a publicly available exploit for CVE-2017-0213 to escalate privileges on a local system. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "APT33 has downloaded additional files and programs from its C2 server. [4] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1040",
+        "Technique": "Network Sniffing",
+        "Use": "APT33 has used SniffPass to collect credentials by sniffing network traffic. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1571",
+        "Technique": "Non-Standard Port",
+        "Use": "APT33 has used HTTP over TCP ports 808 and 880 for command and control. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "APT33 has used base64 to encode payloads. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "APT33 has obtained and leveraged publicly-available tools for early intrusion activities. [6] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "APT33 has used a variety of publicly available tools like LaZagne , Mimikatz , and ProcDump to dump credentials. [4] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.004",
+        "Technique": "OS Credential Dumping: LSA Secrets",
+        "Use": "APT33 has used a variety of publicly available tools like LaZagne to gather credentials. [4] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.005",
+        "Technique": "OS Credential Dumping: Cached Domain Credentials",
+        "Use": "APT33 has used a variety of publicly available tools like LaZagne to gather credentials. [4] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "APT33 has sent spearphishing e-mails with archive attachments. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "APT33 has sent spearphishing emails containing links to .hta files. [1] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "APT33 has created a scheduled task to execute a .vbe file multiple times a day. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.001",
+        "Technique": "Unsecured Credentials: Credentials In Files",
+        "Use": "APT33 has used a variety of publicly available tools like LaZagne to gather credentials. [4] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.006",
+        "Technique": "Unsecured Credentials: Group Policy Preferences",
+        "Use": "APT33 has used a variety of publicly available tools like Gpppassword to gather credentials. [4] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "APT33 has lured users to click links to malicious HTML applications delivered via spearphishing emails. [1] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "APT33 has used malicious e-mail attachments to lure victims into executing malware. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "APT33 has used valid accounts for initial access and privilege escalation. [2] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.004",
+        "Technique": "Cloud Accounts",
+        "Use": "APT33 has used compromised Office 365 accounts in tandem with Ruler in an attempt to gain control of endpoints. [3]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0852",
+        "Technique": "Screen Capture",
+        "Use": "APT33 utilize backdoors capable of capturing screenshots once installed on a system. [7] [8]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0853",
+        "Technique": "Scripting",
+        "Use": "APT33 utilized PowerShell scripts to establish command and control and install files for execution. [9] [10]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0865",
+        "Technique": "Spearphishing Attachment",
+        "Use": "APT33 sent spear phishing emails containing links to HTML application files, which were embedded with malicious code. [7] APT33 has conducted targeted spear phishing campaigns against U.S. government agencies and private sector companies. [11]"
+    }
+]

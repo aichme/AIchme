@@ -1,0 +1,26 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "CURIUM has exfiltrated data from a compromised machine. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.001",
+        "Technique": "Establish Accounts: Social Media Accounts",
+        "Use": "CURIUM has established a network of fictitious social media accounts, including on Facebook and LinkedIn, to establish relationships with victims, often posing as an attractive woman. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.003",
+        "Technique": "Phishing: Spearphishing via Service",
+        "Use": "CURIUM has used social media to deliver malicious files to victims. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "CURIUM has lured users into opening malicious files delivered via social media. [1]"
+    }
+]

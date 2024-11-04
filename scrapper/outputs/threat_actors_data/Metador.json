@@ -1,0 +1,56 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Metador has used HTTP for C2. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Metador has used the Windows command line to execute commands. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1546.003",
+        "Technique": "Event Triggered Execution: Windows Management Instrumentation Event Subscription",
+        "Use": "Metador has established persistence through the use of a WMI event subscription combined with unusual living-off-the-land binaries such as cdb.exe . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "Metador has quickly deleted cbd.exe from a compromised host following the successful deployment of their malware. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Metador has downloaded tools and malware onto a compromised system. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1095",
+        "Technique": "Non-Application Layer Protocol",
+        "Use": "Metador has used TCP for C2. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "Metador has encrypted their payloads. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.001",
+        "Technique": "Obtain Capabilities: Malware",
+        "Use": "Metador has used unique malware in their operations, including metaMain and Mafalda . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Metador has used Microsoft's Console Debugger in some of their operations. [1]"
+    }
+]

@@ -1,0 +1,326 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098.004",
+        "Technique": "Account Manipulation: SSH Authorized Keys",
+        "Use": "TeamTNT has added RSA keys in authorized_keys . [8] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "TeamTNT has obtained domains to host their payloads. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1595.001",
+        "Technique": "Active Scanning: Scanning IP Blocks",
+        "Use": "TeamTNT has scanned specific lists of target IP addresses. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1595.002",
+        "Technique": "Active Scanning: Vulnerability Scanning",
+        "Use": "TeamTNT has scanned for vulnerabilities in IoT devices and other related resources such as the Docker API. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071",
+        "Technique": "Application Layer Protocol",
+        "Use": "TeamTNT has used an IRC bot for C2 communications. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1595.001",
+        "Technique": "Web Protocols",
+        "Use": "TeamTNT has the curl command to send credentials over HTTP and the curl and wget commands to download new software. [3] [4] [10] TeamTNT has also used a custom user agent HTTP header in shell scripts. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "TeamTNT has added batch scripts to the startup folder. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "TeamTNT has executed PowerShell commands in batch scripts. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "TeamTNT has used batch scripts to download tools and executing cryptocurrency miners. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.004",
+        "Technique": "Command and Scripting Interpreter: Unix Shell",
+        "Use": "TeamTNT has used shell scripts for execution. [6] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.009",
+        "Technique": "Command and Scripting Interpreter: Cloud API",
+        "Use": "TeamTNT has leveraged AWS CLI to enumerate cloud environments with compromised credentials. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1609",
+        "Technique": "Container Administration Command",
+        "Use": "TeamTNT executed Hildegard through the kubelet API run command and by executing commands on running containers. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1613",
+        "Technique": "Container and Resource Discovery",
+        "Use": "TeamTNT has checked for running containers with docker ps and for specific container names with docker inspect . [6] TeamTNT has also searched for Kubernetes pods running in a local network. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.001",
+        "Technique": "Create Account: Local Account",
+        "Use": "TeamTNT has created local privileged users on victim machines. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.002",
+        "Technique": "Create or Modify System Process: Systemd Service",
+        "Use": "TeamTNT has established persistence through the creation of a cryptocurrency mining system service using systemctl . [6] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.003",
+        "Technique": "Create or Modify System Process: Windows Service",
+        "Use": "TeamTNT has used malware that adds cryptocurrency miners as a service. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.001",
+        "Technique": "Data Staged: Local Data Staging",
+        "Use": "TeamTNT has aggregated collected credentials in text files before exfiltrating. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "TeamTNT has used a script that decodes a Base64-encoded version of WeaveWorks Scope. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1610",
+        "Technique": "Deploy Container",
+        "Use": "TeamTNT has deployed different types of containers into victim environments to facilitate execution. [3] [6] TeamTNT has also transferred cryptocurrency mining software to Kubernetes clusters discovered within local IP address ranges. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1587.001",
+        "Technique": "Develop Capabilities: Malware",
+        "Use": "TeamTNT has developed custom malware such as Hildegard . [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1611",
+        "Technique": "Escape to Host",
+        "Use": "TeamTNT has deployed privileged containers that mount the filesystem of victim machine. [3] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1048",
+        "Technique": "Exfiltration Over Alternative Protocol",
+        "Use": "TeamTNT has sent locally staged files with collected credentials to C2 servers using cURL. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1133",
+        "Technique": "External Remote Services",
+        "Use": "TeamTNT has used open-source tools such as Weave Scope to target exposed Docker API ports and gain initial access to victim environments. [3] [10] TeamTNT has also targeted exposed kubelets for Kubernetes environments. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "TeamTNT has used a script that checks /proc/*/environ for environment variables related to AWS. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1222.002",
+        "Technique": "File and Directory Permissions Modification: Linux and Mac File and Directory Permissions Modification",
+        "Use": "TeamTNT has modified the permissions on binaries with chattr . [6] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.001",
+        "Technique": "Impair Defenses: Disable or Modify Tools",
+        "Use": "TeamTNT has disabled and uninstalled security tools such as Alibaba, Tencent, and BMC cloud monitoring agents on cloud-based infrastructure. [7] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.004",
+        "Technique": "Impair Defenses: Disable or Modify System Firewall",
+        "Use": "TeamTNT has disabled iptables . [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.002",
+        "Technique": "Indicator Removal: Clear Linux or Mac System Logs",
+        "Use": "TeamTNT has removed system logs from /var/log/syslog . [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.003",
+        "Technique": "Indicator Removal: Clear Command History",
+        "Use": "TeamTNT has cleared command history with history -c . [6] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "TeamTNT has used a payload that removes itself after running. TeamTNT also has deleted locally staged files for collecting credentials or scan results for local IP addresses after exfiltrating them. [7] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "TeamTNT has the curl and wget commands as well as batch scripts to download new tools. [3] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036",
+        "Technique": "Masquerading",
+        "Use": "TeamTNT has disguised their scripts with docker-related file names. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.005",
+        "Technique": "Match Legitimate Name or Location",
+        "Use": "TeamTNT has replaced .dockerd and .dockerenv with their own scripts and cryptocurrency mining software. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1046",
+        "Technique": "Network Service Discovery",
+        "Use": "TeamTNT has used masscan to search for open Docker API ports and Kubernetes clusters. [4] [5] [10] TeamTNT has also used malware that utilizes zmap and zgrab to search for vulnerable services in cloud environments. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.002",
+        "Technique": "Obfuscated Files or Information: Software Packing",
+        "Use": "TeamTNT has used UPX and Ezuri packer to pack its binaries. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "TeamTNT has encrypted its binaries via AES and encoded files using Base64. [6] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1120",
+        "Technique": "Peripheral Device Discovery",
+        "Use": "TeamTNT has searched for attached VGA devices using lspci. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "TeamTNT has searched for rival malware and removes it if found. [6] TeamTNT has also searched for running processes containing the strings aliyun or liyun to identify machines running Alibaba Cloud Security tools. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1219",
+        "Technique": "Remote Access Software",
+        "Use": "TeamTNT has established tmate sessions for C2 communications. [5] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.004",
+        "Technique": "Remote Services: SSH",
+        "Use": "TeamTNT has used SSH to connect back to victim machines. [3] TeamTNT has also used SSH to transfer tools and payloads onto victim hosts and execute them. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1496",
+        "Technique": "Resource Hijacking",
+        "Use": "TeamTNT has deployed XMRig Docker images to mine cryptocurrency. [2] [4] TeamTNT has also infected Docker containers and Kubernetes clusters with XMRig, and used RainbowMiner and lolMiner for mining cryptocurrency. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1014",
+        "Technique": "Rootkit",
+        "Use": "TeamTNT has used rootkits such as the open-source Diamorphine rootkit and their custom bots to hide cryptocurrency mining activities on the machine. [6] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518.001",
+        "Technique": "Software Discovery: Security Software Discovery",
+        "Use": "TeamTNT has searched for security products on infected machines. [7] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.001",
+        "Technique": "Stage Capabilities: Upload Malware",
+        "Use": "TeamTNT has uploaded backdoored Docker images to Docker Hub. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "TeamTNT has searched for system version, architecture, disk partition, logical volume, and hostname information. [7] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "TeamTNT has enumerated the host machine’s IP address. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "TeamTNT has run netstat -anp to search for rival malware connections. [6] TeamTNT has also used libprocesshider to modify /etc/ld.so.preload . [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1007",
+        "Technique": "System Service Discovery",
+        "Use": "TeamTNT has searched for services such as Alibaba Cloud Security's aliyun service and BMC Helix Cloud Security's bmc-agent service in order to disable them. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1569",
+        "Technique": "System Services",
+        "Use": "TeamTNT has created system services to execute cryptocurrency mining software. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.001",
+        "Technique": "Unsecured Credentials: Credentials In Files",
+        "Use": "TeamTNT has searched for unsecured AWS credentials and Docker API credentials. [4] [6] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.004",
+        "Technique": "Unsecured Credentials: Private Keys",
+        "Use": "TeamTNT has searched for unsecured SSH keys. [4] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.005",
+        "Technique": "Unsecured Credentials: Cloud Instance Metadata API",
+        "Use": "TeamTNT has queried the AWS instance metadata service for credentials. [6] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.003",
+        "Technique": "User Execution: Malicious Image",
+        "Use": "TeamTNT has relied on users to download and execute malicious Docker images. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102",
+        "Technique": "Web Service",
+        "Use": "TeamTNT has leveraged iplogger.org to send collected data back to C2. [8] [10]"
+    }
+]

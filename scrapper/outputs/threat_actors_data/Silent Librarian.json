@@ -1,0 +1,80 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "Silent Librarian has acquired domains to establish credential harvesting pages, often spoofing the target organization and using free top level domains .TK, .ML, .GA, .CF, and .GQ. [1] [2] [5] [4] [6] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110.003",
+        "Technique": "Brute Force: Password Spraying",
+        "Use": "Silent Librarian has used collected lists of names and e-mail accounts to use in password spraying attacks against private sector targets. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1114",
+        "Technique": "Email Collection",
+        "Use": "Silent Librarian has exfiltrated entire mailboxes from compromised accounts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110.003",
+        "Technique": "Email Forwarding Rule",
+        "Use": "Silent Librarian has set up auto forwarding rules on compromised e-mail accounts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.002",
+        "Technique": "Establish Accounts: Email Accounts",
+        "Use": "Silent Librarian has established e-mail accounts to receive e-mails forwarded from compromised accounts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589.002",
+        "Technique": "Gather Victim Identity Information: Email Addresses",
+        "Use": "Silent Librarian has collected e-mail addresses from targeted organizations from open Internet searches. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589.003",
+        "Technique": "Gather Victim Identity Information: Employee Names",
+        "Use": "Silent Librarian has collected lists of names for individuals from targeted organizations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Silent Librarian has obtained free and publicly available tools including SingleFile and HTTrack to copy login pages of targeted organizations. [4] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.004",
+        "Technique": "Obtain Capabilities: Digital Certificates",
+        "Use": "Silent Librarian has obtained free Let's Encrypt SSL certificates for use on their phishing pages. [2] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1598.003",
+        "Technique": "Phishing for Information: Spearphishing Link",
+        "Use": "Silent Librarian has used links in e-mails to direct victims to credential harvesting websites designed to appear like the targeted organization's login page. [1] [2] [5] [4] [6] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1594",
+        "Technique": "Search Victim-Owned Websites",
+        "Use": "Silent Librarian has searched victim's websites to identify the interests and academic areas of targeted individuals and to scrape source code, branding, and organizational contact information for phishing pages. [1] [2] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.005",
+        "Technique": "Stage Capabilities: Link Target",
+        "Use": "Silent Librarian has cloned victim organization login pages and staged them for later use in credential harvesting campaigns. Silent Librarian has also made use of a variety of URL shorteners for these staged websites. [6] [3] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "Silent Librarian has used compromised credentials to obtain unauthorized access to online accounts. [1]"
+    }
+]

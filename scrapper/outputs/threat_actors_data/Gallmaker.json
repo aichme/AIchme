@@ -1,0 +1,38 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "Gallmaker has used WinZip, likely to archive data prior to exfiltration. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Gallmaker used PowerShell to download additional payloads and for execution. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1559.002",
+        "Technique": "Inter-Process Communication: Dynamic Data Exchange",
+        "Use": "Gallmaker attempted to exploit Microsoft’s DDE protocol in order to gain access to victim machines and for execution. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027",
+        "Technique": "Obfuscated Files or Information",
+        "Use": "Gallmaker obfuscated shellcode used during execution. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Gallmaker sent emails with malicious Microsoft Office documents attached. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Gallmaker sent victims a lure document with a warning that asked victims to \"enable content\" for execution. [1]"
+    }
+]

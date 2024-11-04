@@ -1,0 +1,266 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "Leviathan has established domains that impersonate legitimate entities to use for targeting efforts. [1] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560",
+        "Technique": "Archive Collected Data",
+        "Use": "Leviathan has archived victim's data prior to exfiltration. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1197",
+        "Technique": "BITS Jobs",
+        "Use": "Leviathan has used BITSAdmin to download additional tools. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "Leviathan has used JavaScript to create a shortcut file in the Startup folder that points to its main backdoor. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.009",
+        "Technique": "Boot or Logon Autostart Execution: Shortcut Modification",
+        "Use": "Leviathan has used JavaScript to create a shortcut file in the Startup folder that points to its main backdoor. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Leviathan has used PowerShell for execution. [2] [3] [1] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "Leviathan has used VBScript. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1586.001",
+        "Technique": "Compromise Accounts: Social Media Accounts",
+        "Use": "Leviathan has compromised social media accounts to conduct social engineering attacks. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1586.002",
+        "Technique": "Compromise Accounts: Email Accounts",
+        "Use": "Leviathan has compromised email accounts to conduct social engineering attacks. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.001",
+        "Technique": "Data Staged: Local Data Staging",
+        "Use": "Leviathan has used C:\\Windows\\Debug and C:\\Perflogs as staging directories. [3] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.002",
+        "Technique": "Data Staged: Remote Data Staging",
+        "Use": "Leviathan has staged data remotely prior to exfiltration. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "Leviathan has used a DLL known as SeDll to decrypt and execute other JavaScript backdoors. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "Leviathan has infected victims using watering holes. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.001",
+        "Technique": "Establish Accounts: Social Media Accounts",
+        "Use": "Leviathan has created new social media accounts for targeting efforts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.002",
+        "Technique": "Establish Accounts: Email Accounts",
+        "Use": "Leviathan has created new email accounts for targeting efforts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1546.003",
+        "Technique": "Event Triggered Execution: Windows Management Instrumentation Event Subscription",
+        "Use": "Leviathan has used WMI for persistence. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1041",
+        "Technique": "Exfiltration Over C2 Channel",
+        "Use": "Leviathan has exfiltrated data over its C2 channel. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "Leviathan has used an uploader known as LUNCHMONEY that can exfiltrate files to Dropbox. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "Leviathan has exploited multiple Microsoft Office and .NET vulnerabilities for execution, including CVE-2017-0199, CVE-2017-8759, and CVE-2017-11882. [2] [3] [1] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1133",
+        "Technique": "External Remote Services",
+        "Use": "Leviathan has used external remote services such as virtual private networks (VPN) to gain initial access. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589.001",
+        "Technique": "Gather Victim Identity Information: Credentials",
+        "Use": "Leviathan has collected compromised credentials to use for targeting efforts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Leviathan has downloaded additional scripts and files from adversary-controlled servers. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1559.002",
+        "Technique": "Inter-Process Communication: Dynamic Data Exchange",
+        "Use": "Leviathan has utilized OLE as a method to insert malicious content inside various phishing documents. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1534",
+        "Technique": "Internal Spearphishing",
+        "Use": "Leviathan has conducted internal spearphishing within the victim's environment for lateral movement. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.001",
+        "Technique": "Obfuscated Files or Information: Binary Padding",
+        "Use": "Leviathan has inserted garbage characters into code, presumably to avoid anti-virus detection. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.003",
+        "Technique": "Obfuscated Files or Information: Steganography",
+        "Use": "Leviathan has used steganography to hide stolen data inside other files stored on Github. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "Leviathan has obfuscated code using base64 and gzip compression. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003",
+        "Technique": "OS Credential Dumping",
+        "Use": "Leviathan has used publicly available tools to dump password hashes, including HOMEFRY . [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.001",
+        "Technique": "LSASS Memory",
+        "Use": "Leviathan has used publicly available tools to dump password hashes, including ProcDump and WCE. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Leviathan has sent spearphishing emails with malicious attachments, including .rtf, .doc, and .xls files. [2] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "Leviathan has sent spearphishing emails with links, often using a fraudulent lookalike domain and stolen branding. [2] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055.001",
+        "Technique": "Process Injection: Dynamic-link Library Injection",
+        "Use": "Leviathan has utilized techniques like reflective DLL loading to write a DLL into memory and load a shell that provides backdoor access to the victim. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1572",
+        "Technique": "Protocol Tunneling",
+        "Use": "Leviathan has used protocol tunneling to further conceal C2 communications and infrastructure. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090.003",
+        "Technique": "Proxy: Multi-hop Proxy",
+        "Use": "Leviathan has used multi-hop proxies to disguise the source of their malicious traffic. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.001",
+        "Technique": "Remote Services: Remote Desktop Protocol",
+        "Use": "Leviathan has targeted RDP credentials and used it to move through the victim environment. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.004",
+        "Technique": "Remote Services: SSH",
+        "Use": "Leviathan used ssh for internal reconnaissance. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.003",
+        "Technique": "Server Software Component: Web Shell",
+        "Use": "Leviathan relies on web shells for an initial foothold as well as persistence into the victim's systems. [8] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "Leviathan has used stolen code signing certificates to sign malware. [3] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.010",
+        "Technique": "System Binary Proxy Execution: Regsvr32",
+        "Use": "Leviathan has used regsvr32 for execution. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "Leviathan has sent spearphishing email links attempting to get a user to click. [2] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Leviathan has sent spearphishing attachments attempting to get a user to click. [2] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "Leviathan has obtained valid accounts to gain initial access. [1] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102.003",
+        "Technique": "Web Service: One-Way Communication",
+        "Use": "Leviathan has received C2 instructions from user profiles created on legitimate websites such as Github and TechNet. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "Leviathan has used WMI for execution. [2]"
+    }
+]

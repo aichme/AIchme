@@ -1,0 +1,188 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "PROMETHIUM has used Registry run keys to establish persistence. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.003",
+        "Technique": "Create or Modify System Process: Windows Service",
+        "Use": "PROMETHIUM has created new services and modified existing services for persistence. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1587.002",
+        "Technique": "Develop Capabilities: Code Signing Certificates",
+        "Use": "PROMETHIUM has created self-signed certificates to sign malicious installers. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1587.003",
+        "Technique": "Develop Capabilities: Digital Certificates",
+        "Use": "PROMETHIUM has created self-signed digital certificates for use in HTTPS C2 traffic. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "PROMETHIUM has used watering hole attacks to deliver malicious versions of legitimate installers. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.004",
+        "Technique": "Masquerading: Masquerade Task or Service",
+        "Use": "PROMETHIUM has named services to appear legitimate. [3] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "PROMETHIUM has disguised malicious installer files by bundling them with legitimate software installers. [3] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "PROMETHIUM has signed code with self-signed certificates. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1205.001",
+        "Technique": "Traffic Signaling: Port Knocking",
+        "Use": "PROMETHIUM has used a script that configures the knockd service and firewall to only accept C2 connections from systems that use a specified sequence of knock ports. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "PROMETHIUM has attempted to get users to execute compromised installation files for legitimate software including compression applications, security software, browsers, file recovery applications, and other tools and utilities. [3] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.003",
+        "Technique": "Valid Accounts: Local Accounts",
+        "Use": "PROMETHIUM has created admin accounts on a compromised host. [4]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1517",
+        "Technique": "Access Notifications",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to collect message notifications from 17 applications. [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1437.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to communicate with the C2 server using HTTPS. [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1532",
+        "Technique": "Archive Collected Data",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to exfiltrate encrypted data to the C2 server. [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1429",
+        "Technique": "Audio Capture",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to record phone calls. [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1456",
+        "Technique": "Drive-By Compromise",
+        "Use": "During C0033 , PROMETHIUM distributed StrongPity through the compromised official Syrian E-Gov website. [7]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1521.001",
+        "Technique": "Encrypted Channel: Symmetric Cryptography",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to encrypt C2 communication using AES. [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1624.001",
+        "Technique": "Event Triggered Execution: Broadcast Receivers",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to receive the following broadcast events to establish persistence: BOOT_COMPLETED , BATTERY_LOW , USER_PRESENT , SCREEN_ON , SCREEN_OFF , or CONNECTIVITY_CHANGE . [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1646",
+        "Technique": "Exfiltration Over C2 Channel",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to exfiltrate to the C2 server using HTTPS. [6] [7]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1420",
+        "Technique": "File and Directory Discovery",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to collect file lists on the victim device. [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1629.003",
+        "Technique": "Impair Defenses: Disable or Modify Tools",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to modify permissions on a rooted device and tried to disable the SecurityLogAgent application. [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1544",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to receive files from the C2 and execute them via the parent application. [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1430",
+        "Technique": "Location Tracking",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to access the device’s location. [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1655.001",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "During C0033 , PROMETHIUM used StrongPity on a compromised website to distribute a malicious version of a legitimate application. [7]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1406",
+        "Technique": "Obfuscated Files or Information",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to obfuscate code and strings to evade detection. [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1636.002",
+        "Technique": "Protected User Data: Call Log",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to collect call logs. [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1636.003",
+        "Technique": "Protected User Data: Contact List",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to collect the device’s contact list. [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1636.004",
+        "Technique": "Protected User Data: SMS Messages",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to collect SMS messages. [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1418",
+        "Technique": "Software Discovery",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to obtain a list of installed applications. [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1426",
+        "Technique": "System Information Discovery",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to collect the device’s information, such as SIM serial number, SIM serial number, etc. [6]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1421",
+        "Technique": "System Network Connections Discovery",
+        "Use": "During C0033 , PROMETHIUM used StrongPity to collect information regarding available Wi-Fi networks. [7]"
+    }
+]

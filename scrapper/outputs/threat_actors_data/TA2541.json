@@ -1,0 +1,164 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "TA2541 has registered domains often containing the keywords \"kimjoy,\" \"h0pe,\" and \"grace,\" using domain registrars including Netdorm and No-IP DDNS, and hosting providers including xTom GmbH and Danilenko, Artyom. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.006",
+        "Technique": "Acquire Infrastructure: Web Services",
+        "Use": "TA2541 has hosted malicious files on various platforms including Google Drive, OneDrive, Discord, PasteText, ShareText, and GitHub. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "TA2541 has placed VBS files in the Startup folder and used Registry run keys to establish persistence for malicious payloads. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "TA2541 has used PowerShell to download files and to inject into various Windows processes. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "TA2541 has used VBS files to execute or establish persistence for additional payloads, often using file names consistent with email themes or mimicking system functionality. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1568",
+        "Technique": "Dynamic Resolution",
+        "Use": "TA2541 has used dynamic DNS services for C2 infrastructure. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1573.002",
+        "Technique": "Encrypted Channel: Asymmetric Cryptography",
+        "Use": "TA2541 has used TLS encrypted C2 communications including for campaigns using AsyncRAT. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.001",
+        "Technique": "Impair Defenses: Disable or Modify Tools",
+        "Use": "TA2541 has attempted to disable built-in security protections such as Windows AMSI. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "TA2541 has used malicious scripts and macros with the ability to download additional payloads. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "TA2541 has used file names to mimic legitimate Windows files or system functionality. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.002",
+        "Technique": "Obfuscated Files or Information: Software Packing",
+        "Use": "TA2541 has used a .NET packer to obfuscate malicious files. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "TA2541 has used compressed and char-encoded scripts in operations. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.001",
+        "Technique": "Obtain Capabilities: Malware",
+        "Use": "TA2541 has used multiple strains of malware available for purchase on criminal forums or in open-source repositories. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "TA2541 has used commodity remote access tools. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "TA2541 has sent phishing emails with malicious attachments for initial access including MS Word documents. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "TA2541 has used spearphishing e-mails with malicious links to deliver malware. [1] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055",
+        "Technique": "Process Injection",
+        "Use": "TA2541 has injected malicious code into legitimate .NET related processes including  regsvcs.exe, msbuild.exe, and installutil.exe. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.012",
+        "Technique": "Process Hollowing",
+        "Use": "TA2541 has used process hollowing to execute CyberGate malware. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "TA2541 has used scheduled tasks to establish persistence for installed tools. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518.001",
+        "Technique": "Software Discovery: Security Software Discovery",
+        "Use": "TA2541 has used tools to search victim systems for security products such as antivirus and firewall software. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.001",
+        "Technique": "Stage Capabilities: Upload Malware",
+        "Use": "TA2541 has uploaded malware to various platforms including Google Drive, Pastetext, Sharetext, and GitHub. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.005",
+        "Technique": "System Binary Proxy Execution: Mshta",
+        "Use": "TA2541 has used mshta to execute scripts including VBS. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "TA2541 has collected system information prior to downloading malware on the targeted host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016.001",
+        "Technique": "System Network Configuration Discovery: Internet Connection Discovery",
+        "Use": "TA2541 has run scripts to check internet connectivity from compromised hosts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "TA2541 has used malicious links to cloud and web services to gain execution on victim machines. [1] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "TA2541 has used macro-enabled MS Word documents to lure victims into executing malicious payloads. [1] [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "TA2541 has used WMI to query targeted systems for security products. [1]"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "TA459 has used PowerShell for execution of a payload. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "TA459 has a VBScript for execution. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "TA459 has exploited Microsoft Word vulnerability CVE-2017-0199 for execution. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "TA459 has targeted victims using spearphishing emails with malicious Microsoft Word attachments. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "TA459 has attempted to get victims to open malicious Microsoft Word attachment sent via spearphishing. [1]"
+    }
+]

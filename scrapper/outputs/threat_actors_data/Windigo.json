@@ -1,0 +1,44 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059",
+        "Technique": "Command and Scripting Interpreter",
+        "Use": "Windigo has used a Perl script for information gathering. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "Windigo has used a script to gather credentials in files left on disk by OpenSSH backdoors. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "Windigo has distributed Windows malware via drive-by downloads. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Windigo has used a script to check for the presence of files created by OpenSSH backdoors. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090",
+        "Technique": "Proxy",
+        "Use": "Windigo has delivered a generic Windows proxy Win32/Glubteta.M. Windigo has also used multiple reverse proxy chains as part of their C2 infrastructure. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518",
+        "Technique": "Software Discovery",
+        "Use": "Windigo has used a script to detect installed software on targeted systems. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Windigo has used a script to detect which Linux distribution and version is currently installed on the system. [3]"
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Dark Caracal 's version of Bandook communicates with their server over a TCP port using HTTP payloads Base64 encoded and suffixed with the string \"&&&\". [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "Dark Caracal 's version of Bandook adds a registry key to HKEY_USERS\\Software\\Microsoft\\Windows\\CurrentVersion\\Run for persistence. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Dark Caracal has used macros in Word documents that would download a second stage if executed. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "Dark Caracal collected complete contents of the 'Pictures' folder from compromised Windows systems. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "Dark Caracal leveraged a watering hole to serve up malicious code. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Dark Caracal collected file listings of all default Windows directories. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.002",
+        "Technique": "Obfuscated Files or Information: Software Packing",
+        "Use": "Dark Caracal has used UPX to pack Bandook . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "Dark Caracal has obfuscated strings in Bandook by base64 encoding, and then encrypting them. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.003",
+        "Technique": "Phishing: Spearphishing via Service",
+        "Use": "Dark Caracal spearphished victims via Facebook and Whatsapp. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1113",
+        "Technique": "Screen Capture",
+        "Use": "Dark Caracal took screenshots using their Windows malware. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.001",
+        "Technique": "System Binary Proxy Execution: Compiled HTML File",
+        "Use": "Dark Caracal leveraged a compiled HTML file that contained a command to download and run an executable. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Dark Caracal makes their malware look like Flash Player, Office, or PDF documents in order to entice a user to click on it. [1]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1437.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Dark Caracal controls implants using standard HTTP communication. [1]"
+    }
+]

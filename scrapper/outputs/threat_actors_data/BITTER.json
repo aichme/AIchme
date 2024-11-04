@@ -1,0 +1,104 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "BITTER has registered a variety of domains to host malicious payloads and for C2. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "BITTER has used HTTP POST requests for C2. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1568",
+        "Technique": "Dynamic Resolution",
+        "Use": "BITTER has used DDNS for C2 communications. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1573",
+        "Technique": "Encrypted Channel",
+        "Use": "BITTER has encrypted their C2 communications. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "BITTER has exploited Microsoft Office vulnerabilities CVE-2012-0158, CVE-2017-11882, CVE-2018-0798, and CVE-2018-0802. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1068",
+        "Technique": "Exploitation for Privilege Escalation",
+        "Use": "BITTER has exploited CVE-2021-1732 for privilege escalation. [3] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "BITTER has downloaded additional malware and tools onto a compromised host. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1559.002",
+        "Technique": "Inter-Process Communication: Dynamic Data Exchange",
+        "Use": "BITTER has executed OLE objects using Microsoft Equation Editor to download and run malicious payloads. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.004",
+        "Technique": "Masquerading: Masquerade Task or Service",
+        "Use": "BITTER has disguised malware as a Windows Security update service. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1095",
+        "Technique": "Non-Application Layer Protocol",
+        "Use": "BITTER has used TCP for C2 communications. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "BITTER has used a RAR SFX dropper to deliver malware. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "BITTER has obtained tools such as PuTTY for use in their operations. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "BITTER has sent spearphishing emails with a malicious RTF document or Excel spreadsheet. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "BITTER has used scheduled tasks for persistence and execution. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.001",
+        "Technique": "Stage Capabilities: Upload Malware",
+        "Use": "BITTER has registered domains to stage payloads. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "BITTER has attempted to lure victims into opening malicious attachments delivered via spearphishing. [1] [2]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1660",
+        "Technique": "Phishing",
+        "Use": "BITTER has delivered malicious applications to victims via shortened URLs distributed through SMS, WhatsApp, and various social media platforms. [5]"
+    }
+]

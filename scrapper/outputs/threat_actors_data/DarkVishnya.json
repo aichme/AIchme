@@ -1,0 +1,62 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110",
+        "Technique": "Brute Force",
+        "Use": "DarkVishnya used brute-force attack to obtain login data. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "DarkVishnya used PowerShell to create shellcode loaders. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.003",
+        "Technique": "Create or Modify System Process: Windows Service",
+        "Use": "DarkVishnya created new services for shellcode loaders distribution. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1200",
+        "Technique": "Hardware Additions",
+        "Use": "DarkVishnya used Bash Bunny, Raspberry Pi, netbooks or inexpensive laptops to connect to the company’s local network. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1046",
+        "Technique": "Network Service Discovery",
+        "Use": "DarkVishnya performed port scanning to obtain the list of active services. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1135",
+        "Technique": "Network Share Discovery",
+        "Use": "DarkVishnya scanned the network for public shared folders. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1040",
+        "Technique": "Network Sniffing",
+        "Use": "DarkVishnya used network sniffing to obtain login data. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1571",
+        "Technique": "Non-Standard Port",
+        "Use": "DarkVishnya used ports 5190 and 7900 for shellcode listeners, and 4444, 4445, 31337 for shellcode C2. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "DarkVishnya has obtained and used tools such as Impacket , Winexe , and PsExec . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1219",
+        "Technique": "Remote Access Software",
+        "Use": "DarkVishnya used DameWare Mini Remote Control for lateral movement. [1]"
+    }
+]

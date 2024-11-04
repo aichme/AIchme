@@ -1,0 +1,314 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "FIN7 has registered look-alike domains for use in phishing campaigns. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.006",
+        "Technique": "Acquire Infrastructure: Web Services",
+        "Use": "FIN7 has set up Amazon S3 buckets to host trojanized digital products. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.004",
+        "Technique": "Application Layer Protocol: DNS",
+        "Use": "FIN7 has performed C2 using DNS via A, OPT, and TXT records. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "FIN7 malware has created Registry Run and RunOnce keys to establish persistence, and has also added items to the Startup folder. [2] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059",
+        "Technique": "Command and Scripting Interpreter",
+        "Use": "FIN7 used SQL scripts to help perform tasks on the victim's machine. [4] [12] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "PowerShell",
+        "Use": "FIN7 used a PowerShell script to launch shellcode that retrieved an additional payload. [2] [13] [14] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.003",
+        "Technique": "Windows Command Shell",
+        "Use": "FIN7 used the command prompt to launch commands on the victim’s machine. [4] [12] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.005",
+        "Technique": "Visual Basic",
+        "Use": "FIN7 used VBS scripts to help perform tasks on the victim's machine. [4] [12] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.007",
+        "Technique": "JavaScript",
+        "Use": "FIN7 used JavaScript scripts to help perform tasks on the victim's machine. [4] [12] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.003",
+        "Technique": "Create or Modify System Process: Windows Service",
+        "Use": "FIN7 created new Windows services and added them to the startup directories for persistence. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1486",
+        "Technique": "Data Encrypted for Impact",
+        "Use": "FIN7 has encrypted virtual disk volumes on ESXi servers using a version of Darkside ransomware. [5] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "FIN7 has collected files and other sensitive information from a compromised network. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1587.001",
+        "Technique": "Develop Capabilities: Malware",
+        "Use": "FIN7 has developed malware for use in operations, including the creation of infected removable media. [14] [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1546.011",
+        "Technique": "Event Triggered Execution: Application Shimming",
+        "Use": "FIN7 has used application shim databases for persistence. [16]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "FIN7 has exfiltrated stolen data to the MEGA file sharing site. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "FIN7 has compromised targeted organizations through exploitation of CVE-2021-31207 in Exchange. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1210",
+        "Technique": "Exploitation of Remote Services",
+        "Use": "FIN7 has exploited ZeroLogon (CVE-2020-1472) against vulnerable domain controllers. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1008",
+        "Technique": "Fallback Channels",
+        "Use": "FIN7 's Harpy backdoor malware can use DNS as a backup channel for C2 if HTTP fails. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "FIN7 has downloaded additional malware to execute on the victim's machine, including by using a PowerShell script to launch shellcode that retrieves an additional payload. [2] [18] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1559.002",
+        "Technique": "Inter-Process Communication: Dynamic Data Exchange",
+        "Use": "FIN7 spear phishing campaigns have included malicious Word documents with DDE execution. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.004",
+        "Technique": "Masquerading: Masquerade Task or Service",
+        "Use": "FIN7 has created a scheduled task named \"AdobeFlashSync\" to establish persistence. [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "FIN7 has attempted to run Darkside ransomware with the filename sleep.exe. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1571",
+        "Technique": "Non-Standard Port",
+        "Use": "FIN7 has used port-protocol mismatches on ports such as 53, 80, 443, and 8080 during C2. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.001",
+        "Technique": "Obfuscated Files or Information: Binary Padding",
+        "Use": "FIN7 has used random junk code to obfuscate malware code. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.010",
+        "Technique": "Obfuscated Files or Information: Command Obfuscation",
+        "Use": "FIN7 has used fragmented strings, environment variables, standard input (stdin), and native character-replacement functionalities to obfuscate commands. [20] [4] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "FIN7 has utilized a variety of tools such as Cobalt Strike , PowerSploit , and the remote management tool, Atera for targeting efforts. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069.002",
+        "Technique": "Permission Groups Discovery: Domain Groups",
+        "Use": "FIN7 has used the command net group \"domain admins\" /domain to enumerate domain groups. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "FIN7 sent spearphishing emails with either malicious Microsoft Documents or RTF files attached. [2] [18] [12] [11] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "FIN7 has conducted broad phishing campaigns using malicious links. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1219",
+        "Technique": "Remote Access Software",
+        "Use": "FIN7 has utilized the remote management tool Atera to download malware to a compromised system. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.001",
+        "Technique": "Remote Services: Remote Desktop Protocol",
+        "Use": "FIN7 has used RDP to move laterally in victim environments. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.004",
+        "Technique": "Remote Services: SSH",
+        "Use": "FIN7 has used SSH to move laterally through victim environments. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.005",
+        "Technique": "Remote Services: VNC",
+        "Use": "FIN7 has used TightVNC to control compromised hosts. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1091",
+        "Technique": "Replication Through Removable Media",
+        "Use": "FIN7 actors have mailed USB drives to potential victims containing malware that downloads and installs various backdoors, including in some cases for ransomware operations. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "FIN7 malware has created scheduled tasks to establish persistence. [2] [13] [4] [12]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1113",
+        "Technique": "Screen Capture",
+        "Use": "FIN7 captured screenshots and desktop video recordings. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.001",
+        "Technique": "Stage Capabilities: Upload Malware",
+        "Use": "FIN7 has staged legitimate software, that was trojanized to contain an Atera agent installer, on Amazon S3. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.004",
+        "Technique": "Stage Capabilities: Drive-by Target",
+        "Use": "FIN7 has compromised a digital product website and modified multiple download links to point to trojanized versions of offered digital products. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1558.003",
+        "Technique": "Steal or Forge Kerberos Tickets: Kerberoasting",
+        "Use": "FIN7 has used Kerberoasting PowerShell commands such as, Invoke-Kerberoast for credential access and to enable lateral movement. [5] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "FIN7 has signed Carbanak payloads with legally purchased code signing certificates. FIN7 has also digitally signed their phishing documents, backdoors and other staging tools to bypass security controls. [3] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1195.002",
+        "Technique": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "Use": "FIN7 has gained initial access by compromising a victim's software supply chain. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.005",
+        "Technique": "System Binary Proxy Execution: Mshta",
+        "Use": "FIN7 has used mshta.exe to execute VBScript to execute malicious code on victim systems. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.011",
+        "Technique": "System Binary Proxy Execution: Rundll32",
+        "Use": "FIN7 has used rundll32.exe to execute malware on a compromised network. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "FIN7 has used the command cmd.exe /C quser to collect user session information. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "FIN7 has used malicious links to lure victims into downloading malware. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "FIN7 lured victims to double-click on images in the attachments they sent which would then execute the hidden LNK file. [2] [11] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "FIN7 has harvested valid administrative credentials for lateral movement. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.003",
+        "Technique": "Local Accounts",
+        "Use": "FIN7 has used compromised credentials for access as SYSTEM on Exchange servers. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1125",
+        "Technique": "Video Capture",
+        "Use": "FIN7 created a custom video recording capability that could be used to monitor operations in the victim's environment. [4] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1497.002",
+        "Technique": "Virtualization/Sandbox Evasion: User Activity Based Checks",
+        "Use": "FIN7 used images embedded into document lures that only activate the payload when a user double clicks to avoid sandboxes. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102.002",
+        "Technique": "Web Service: Bidirectional Communication",
+        "Use": "FIN7 used legitimate services like Google Docs, Google Scripts, and Pastebin for C2. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "FIN7 has used WMI to install malware on targeted systems. [11]"
+    }
+]

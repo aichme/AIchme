@@ -1,0 +1,32 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1595.002",
+        "Technique": "Active Scanning: Vulnerability Scanning",
+        "Use": "Volatile Cedar has performed vulnerability scans of the target server. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1595.003",
+        "Technique": "Active Scanning: Wordlist Scanning",
+        "Use": "Volatile Cedar has used DirBuster and GoBuster to brute force web directories and DNS subdomains. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "Volatile Cedar has targeted publicly facing web servers, with both automatic and manual vulnerability discovery. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Volatile Cedar can deploy additional tools. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.003",
+        "Technique": "Server Software Component: Web Shell",
+        "Use": "Volatile Cedar can inject web shell code into a server. [1] [2]"
+    }
+]

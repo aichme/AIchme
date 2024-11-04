@@ -1,0 +1,38 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "Winnti Group has registered domains for C2 that mimicked sites of their intended targets. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Winnti Group has used a program named ff.exe to search for specific documents on compromised hosts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Winnti Group has downloaded an auxiliary program named ff.exe to infected machines. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "Winnti Group looked for a specific process running on infected servers. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1014",
+        "Technique": "Rootkit",
+        "Use": "Winnti Group used a rootkit to modify typical server functionality. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "Winnti Group used stolen certificates to sign its malware. [1]"
+    }
+]

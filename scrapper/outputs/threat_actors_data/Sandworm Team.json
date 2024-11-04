@@ -1,0 +1,716 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "Sandworm Team has used a tool to query Active Directory using LDAP, discovering information about usernames listed in AD. [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.003",
+        "Technique": "Account Discovery: Email Account",
+        "Use": "Sandworm Team used malware to enumerate email settings, including usernames and passwords, from the M.E.Doc application. [22]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098",
+        "Technique": "Account Manipulation",
+        "Use": "During the 2016 Ukraine Electric Power Attack , Sandworm Team used the sp_addlinkedsrvlogin command in MS-SQL to create a link between a created account and other servers in the network. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583",
+        "Technique": "Acquire Infrastructure",
+        "Use": "Sandworm Team used various third-party email campaign management services to deliver phishing emails. [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.001",
+        "Technique": "Domains",
+        "Use": "Sandworm Team has registered domain names and created URLs that are often designed to mimic or spoof legitimate websites, such as email login pages, online file sharing and storage websites, and password reset pages, while also hosting these items on legitimate, compromised network infrastructure. [1] [23]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.004",
+        "Technique": "Server",
+        "Use": "Sandworm Team has leased servers from resellers instead of leasing infrastructure directly from hosting companies to enable its operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1595.002",
+        "Technique": "Active Scanning: Vulnerability Scanning",
+        "Use": "Sandworm Team has scanned network infrastructure for vulnerabilities as part of its operational planning. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Sandworm Team 's BCS-server tool connects to the designated C2 server via HTTP. [21] During the 2015 Ukraine Electric Power Attack , Sandworm Team used BlackEnergy to communicate between compromised hosts and their command-and-control servers via HTTP post requests. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110",
+        "Technique": "Brute Force",
+        "Use": "During the 2016 Ukraine Electric Power Attack , Sandworm Team used a script to attempt RPC authentication against a number of hosts. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Sandworm Team has used PowerShell scripts to run a credential harvesting tool in memory to evade defenses. [1] [17] During the 2016 Ukraine Electric Power Attack , Sandworm Team used PowerShell scripts to run a credential harvesting tool in memory to evade defenses. [17] During the 2022 Ukraine Electric Power Attack , Sandworm Team utilized a PowerShell utility called TANKTRAP to spread and launch a wiper using Windows Group Policy. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "During the 2016 Ukraine Electric Power Attack , Sandworm Team used the xp_cmdshell command in MS-SQL. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "Sandworm Team has created VBScripts to run an SSH server. [24] [21] [25] [17] During the 2015 Ukraine Electric Power Attack , Sandworm Team installed a VBA script called vba_macro.exe . This macro dropped FONTCACHE.DAT , the primary BlackEnergy implant; rundll32.exe , for executing the malware; NTUSER.log , an empty file; and desktop.ini, the default file used to determine folder displays on Windows machines. [14] During the 2016 Ukraine Electric Power Attack , Sandworm Team created VBScripts to run on an SSH server. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1586.001",
+        "Technique": "Compromise Accounts: Social Media Accounts",
+        "Use": "Sandworm Team creates credential capture webpages to compromise existing, legitimate social media accounts. [23]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1554",
+        "Technique": "Compromise Host Software Binary",
+        "Use": "During the 2016 Ukraine Electric Power Attack , Sandworm Team used a trojanized version of Windows Notepad to add a layer of persistence for Industroyer . [16]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.004",
+        "Technique": "Compromise Infrastructure: Server",
+        "Use": "Sandworm Team compromised legitimate Linux servers running the EXIM mail transfer agent for use in subsequent campaigns. [26] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.005",
+        "Technique": "Compromise Infrastructure: Botnet",
+        "Use": "Sandworm Team has used a large-scale botnet to target Small Office/Home Office (SOHO) network devices. [27]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.002",
+        "Technique": "Create Account: Domain Account",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team created privileged domain accounts to be used for further exploitation and lateral movement. [14] During the 2016 Ukraine Electric Power Attack , Sandworm Team created two new accounts, \"admin\" and \"система\" (System). The accounts were then assigned to a domain matching local operation and were delegated new privileges. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.002",
+        "Technique": "Create or Modify System Process: Systemd Service",
+        "Use": "During the 2022 Ukraine Electric Power Attack , Sandworm Team configured Systemd to maintain persistence of GOGETTER, specifying the WantedBy=multi-user.target configuration to run GOGETTER when the system begins accepting user logins. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.003",
+        "Technique": "Create or Modify System Process: Windows Service",
+        "Use": "During the 2016 Ukraine Electric Power Attack , Sandworm Team used an arbitrary system service to load at system boot for persistence for Industroyer . They also replaced the ImagePath registry value of a Windows service with a new backdoor binary. [28]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.003",
+        "Technique": "Credentials from Password Stores: Credentials from Web Browsers",
+        "Use": "Sandworm Team 's CredRaptor tool can collect saved passwords from various internet browsers. [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1485",
+        "Technique": "Data Destruction",
+        "Use": "Sandworm Team has used the BlackEnergy KillDisk component to overwrite files on Windows-based Human-Machine Interfaces. [29] [25] During the 2022 Ukraine Electric Power Attack , Sandworm Team deployed CaddyWiper on the victim’s IT environment systems to wipe files related to the OT capabilities, along with mapped drives, and physical drive partitions. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1132.001",
+        "Technique": "Data Encoding: Standard Encoding",
+        "Use": "Sandworm Team 's BCS-server tool uses base64 encoding and HTML tags for the communication traffic between the C2 server. [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1486",
+        "Technique": "Data Encrypted for Impact",
+        "Use": "Sandworm Team has used Prestige ransomware to encrypt data at targeted organizations in transportation and related logistics industries in Ukraine and Poland. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1213",
+        "Technique": "Data from Information Repositories",
+        "Use": "Sandworm Team exfiltrates data of interest from enterprise databases using Adminer. [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "Sandworm Team has exfiltrated internal documents, files, and other data from compromised hosts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1491.002",
+        "Technique": "Defacement: External Defacement",
+        "Use": "Sandworm Team defaced approximately 15,000 websites belonging to Georgian government, non-government, and private sector organizations in 2019. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "Sandworm Team 's VBS backdoor can decode Base64-encoded data and save it to the %TEMP% folder. The group also decrypted received information using the Triple DES algorithm and decompresses it using GZip. [21] [22]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1587.001",
+        "Technique": "Develop Capabilities: Malware",
+        "Use": "Sandworm Team has developed malware for its operations, including malicious mobile applications and destructive malware such as NotPetya and Olympic Destroyer . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1561.002",
+        "Technique": "Disk Wipe: Disk Structure Wipe",
+        "Use": "Sandworm Team has used the BlackEnergy KillDisk component to corrupt the infected system's master boot record. [29] [25]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1484.001",
+        "Technique": "Domain or Tenant Policy Modification: Group Policy Modification",
+        "Use": "During the 2022 Ukraine Electric Power Attack , Sandworm Team leveraged Group Policy Objects (GPOs) to deploy and execute malware. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1499",
+        "Technique": "Endpoint Denial of Service",
+        "Use": "Sandworm Team temporarily disrupted service to Georgian government, non-government, and private sector websites after compromising a Georgian web hosting provider in 2019. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.001",
+        "Technique": "Establish Accounts: Social Media Accounts",
+        "Use": "Sandworm Team has established social media accounts to disseminate victim internal-only documents and other sensitive data. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.002",
+        "Technique": "Establish Accounts: Email Accounts",
+        "Use": "Sandworm Team has created email accounts that mimic legitimate organizations for its spearphishing operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1041",
+        "Technique": "Exfiltration Over C2 Channel",
+        "Use": "Sandworm Team has sent system information to its C2 server using HTTP. [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "Sandworm Team exploits public-facing applications for initial access and to acquire infrastructure, such as exploitation of the EXIM mail transfer agent in Linux systems. [26] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "Sandworm Team has exploited vulnerabilities in Microsoft PowerPoint via OLE objects (CVE-2014-4114) and Microsoft Word via crafted TIFF images (CVE-2013-3906). [30] [31] [32]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1133",
+        "Technique": "External Remote Services",
+        "Use": "Sandworm Team has used Dropbear SSH with a hardcoded backdoor password to maintain persistence within the target network. Sandworm Team has also used VPN tunnels established in legitimate software company infrastructure to gain access to internal networks of that software company's users. [24] [25] [33] During the 2015 Ukraine Electric Power Attack , Sandworm Team installed a modified Dropbear SSH client as the backdoor to target systems. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Sandworm Team has enumerated files on a compromised host. [1] [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1592.002",
+        "Technique": "Gather Victim Host Information: Software",
+        "Use": "Sandworm Team has researched software code to enable supply-chain operations, most notably for the 2017 NotPetya attack. Sandworm Team also collected a list of computers using specific software as part of its targeting efforts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589.002",
+        "Technique": "Gather Victim Identity Information: Email Addresses",
+        "Use": "Sandworm Team has obtained valid emails addresses while conducting research against target organizations that were subsequently used in spearphishing campaigns. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589.003",
+        "Technique": "Gather Victim Identity Information: Employee Names",
+        "Use": "Sandworm Team 's research of potential victim organizations included the identification and collection of employee information. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1590.001",
+        "Technique": "Gather Victim Network Information: Domain Properties",
+        "Use": "Sandworm Team conducted technical reconnaissance of the Parliament of Georgia's official internet domain prior to its 2019 attack. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1591.002",
+        "Technique": "Gather Victim Org Information: Business Relationships",
+        "Use": "In preparation for its attack against the 2018 Winter Olympics, Sandworm Team conducted online research of partner organizations listed on an official PyeongChang Olympics partnership site. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.001",
+        "Technique": "Impair Defenses: Disable or Modify Tools",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team modified in-registry internet settings to lower internet security. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.002",
+        "Technique": "Impair Defenses: Disable Windows Event Logging",
+        "Use": "During the 2016 Ukraine Electric Power Attack , Sandworm Team disabled event logging on compromised systems. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "Sandworm Team has used backdoors that can delete files used in an attack from an infected system. [21] [22] During the 2015 Ukraine Electric Power Attack , vba_macro.exe deletes itself after FONTCACHE.DAT , rundll32.exe , and the associated .lnk file is delivered. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Sandworm Team has pushed additional malicious tools onto an infected system to steal user credentials, move laterally, and destroy data. [21] [1] During the 2015 Ukraine Electric Power Attack , Sandworm Team pushed additional malicious tools onto an infected system to steal user credentials, move laterally, and destroy data. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.001",
+        "Technique": "Input Capture: Keylogging",
+        "Use": "Sandworm Team has used a keylogger to capture keystrokes by using the SetWindowsHookEx function. [21] During the 2015 Ukraine Electric Power Attack , Sandworm Team gathered account credentials via a BlackEnergy keylogger plugin. [14] [34]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1570",
+        "Technique": "Lateral Tool Transfer",
+        "Use": "Sandworm Team has used move to transfer files to a network share and has copied payloads--such as Prestige ransomware--to an Active Directory Domain Controller and distributed via the Default Domain Group Policy Object. [17] [11] During the 2015 Ukraine Electric Power Attack , Sandworm Team moved their tools laterally within the corporate network and between the ICS and corporate network. [14] During the 2016 Ukraine Electric Power Attack , Sandworm Team used move to transfer files to a network share. [17] During the 2022 Ukraine Electric Power Attack , Sandworm Team used a Group Policy Object (GPO) to copy CaddyWiper 's executable msserver.exe from a staging server to a local hard drive before deployment. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036",
+        "Technique": "Masquerading",
+        "Use": "Sandworm Team masqueraded malicious installers as Windows update packages to evade defense and entice users to execute binaries. [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.004",
+        "Technique": "Masquerade Task or Service",
+        "Use": "During the 2022 Ukraine Electric Power Attack , Sandworm Team leveraged Systemd service units to masquerade GOGETTER malware as legitimate or seemingly legitimate services. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.005",
+        "Technique": "Match Legitimate Name or Location",
+        "Use": "Sandworm Team has avoided detection by naming a malicious binary explorer.exe. [21] [1] During the 2016 Ukraine Electric Power Attack , DLLs and EXEs with filenames associated with common electric power sector protocols were used to masquerade files. [28]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.008",
+        "Technique": "Masquerade File Type",
+        "Use": "During the 2016 Ukraine Electric Power Attack , Sandworm Team masqueraded executables as .txt files. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1112",
+        "Technique": "Modify Registry",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team modified in-registry Internet settings to lower internet security before launching rundll32.exe , which in-turn launches the malware and communicates with C2 servers over the Internet. [14] ."
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1040",
+        "Technique": "Network Sniffing",
+        "Use": "Sandworm Team has used intercepter-NG to sniff passwords in network traffic. [21] During the 2015 Ukraine Electric Power Attack , Sandworm Team used BlackEnergy ’s network sniffer module to discover user credentials being sent over the network between the local LAN and the power grid’s industrial control systems. [35]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1095",
+        "Technique": "Non-Application Layer Protocol",
+        "Use": "During the 2022 Ukraine Electric Power Attack , Sandworm Team proxied C2 communications within a TLS-based tunnel. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1571",
+        "Technique": "Non-Standard Port",
+        "Use": "Sandworm Team has used port 6789 to accept connections on the group's SSH server. [24]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027",
+        "Technique": "Obfuscated Files or Information",
+        "Use": "Sandworm Team has used Base64 encoding within malware variants. [30] During the 2016 Ukraine Electric Power Attack , Sandworm Team used heavily obfuscated code with Industroyer in its Windows Notepad backdoor. [16]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.002",
+        "Technique": "Software Packing",
+        "Use": "During the 2016 Ukraine Electric Power Attack , Sandworm Team used UPX to pack a copy of Mimikatz . [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.010",
+        "Technique": "Command Obfuscation",
+        "Use": "Sandworm Team has used ROT13 encoding, AES encryption and compression with the zlib library for their Python-based backdoor. [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Sandworm Team has acquired open-source tools for their operations, including Invoke-PSImage , which was used to establish an encrypted channel from a compromised host to Sandworm Team 's C2 server in preparation for the 2018 Winter Olympics attack, as well as Impacket and RemoteExec, which were used in their 2022 Prestige operations. [1] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.006",
+        "Technique": "Obtain Capabilities: Vulnerabilities",
+        "Use": "In 2017, Sandworm Team conducted technical research related to vulnerabilities associated with websites used by the Korean Sport and Olympic Committee, a Korean power company, and a Korean airport. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "Sandworm Team has used its plainpwd tool, a modified version of Mimikatz , and comsvcs.dll to dump Windows credentials from system memory. [21] [25] [11] During the 2016 Ukraine Electric Power Attack , Sandworm Team used Mimikatz to capture and use legitimate credentials. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.003",
+        "Technique": "OS Credential Dumping: NTDS",
+        "Use": "Sandworm Team has used ntdsutil.exe to back up the Active Directory database, likely for credential access. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Sandworm Team has delivered malicious Microsoft Office attachments via spearphishing emails. [30] [29] [21] [1] During the 2015 Ukraine Electric Power Attack , Sandworm Team obtained their initial foothold into many IT systems using Microsoft Office attachments delivered through phishing emails. [34]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "Sandworm Team has crafted phishing emails containing malicious hyperlinks. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1598.003",
+        "Technique": "Phishing for Information: Spearphishing Link",
+        "Use": "Sandworm Team has crafted spearphishing emails with hyperlinks designed to trick unwitting recipients into revealing their account credentials. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055",
+        "Technique": "Process Injection",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team loaded BlackEnergy into svchost.exe, which then launched iexplore.exe for their C2. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1572",
+        "Technique": "Protocol Tunneling",
+        "Use": "During the 2022 Ukraine Electric Power Attack , Sandworm Team deployed the GOGETTER tunneler software to establish a \"Yamux\" TLS-based C2 channel with an external server(s). [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090",
+        "Technique": "Proxy",
+        "Use": "Sandworm Team 's BCS-server tool can create an internal proxy server to redirect traffic from the adversary-controlled C2 to internal servers which may not be connected to the internet, but are interconnected locally. [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1219",
+        "Technique": "Remote Access Software",
+        "Use": "Sandworm Team has used remote administration tools or remote industrial control system client software for execution and to maliciously release electricity breakers. [29] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.002",
+        "Technique": "Remote Services: SMB/Windows Admin Shares",
+        "Use": "Sandworm Team has copied payloads to the ADMIN$ share of remote systems and run net use to connect to network shares. [17] [11] During the 2016 Ukraine Electric Power Attack , Sandworm Team utilized net use to connect to network shares. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "Sandworm Team has used a tool to query Active Directory using LDAP, discovering information about computers listed in AD. [21] [17] During the 2015 Ukraine Electric Power Attack , Sandworm Team remotely discovered systems over LAN connections. OT systems were visible from the IT network   as well, giving adversaries the ability to discover operational assets. [35] During the 2016 Ukraine Electric Power Attack , Sandworm Team checked for connectivity to resources within the network and used LDAP to query Active Directory, discovering information about computers listed in AD. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "During the 2022 Ukraine Electric Power Attack , Sandworm Team leveraged Scheduled Tasks through a Group Policy Object (GPO) to execute CaddyWiper at a predetermined time. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1593",
+        "Technique": "Search Open Websites/Domains",
+        "Use": "Sandworm Team researched Ukraine's unique legal entity identifier (called an \"EDRPOU\" number), including running queries on the EDRPOU website, in preparation for the NotPetya attack. Sandworm Team has also researched third-party websites to help it craft credible spearphishing emails. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1594",
+        "Technique": "Search Victim-Owned Websites",
+        "Use": "Sandworm Team has conducted research against potential victim websites as part of its operational planning. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.001",
+        "Technique": "Server Software Component: SQL Stored Procedures",
+        "Use": "During the 2016 Ukraine Electric Power Attack , Sandworm Team used various MS-SQL stored procedures. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.003",
+        "Technique": "Server Software Component: Web Shell",
+        "Use": "Sandworm Team has used webshells including P.A.S. Webshell to maintain access to victim networks. [33] During the 2022 Ukraine Electric Power Attack , Sandworm Team deployed the Neo-REGEORG webshell on an internet-facing server. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1072",
+        "Technique": "Software Deployment Tools",
+        "Use": "Sandworm Team has used the commercially available tool RemoteExec for agentless remote code execution. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1539",
+        "Technique": "Steal Web Session Cookie",
+        "Use": "Sandworm Team used information stealer malware to collect browser session cookies. [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1195.002",
+        "Technique": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "Use": "Sandworm Team has distributed NotPetya by compromising the legitimate Ukrainian accounting software M.E.Doc and replacing a legitimate software update with a malicious one. [36] [25] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.011",
+        "Technique": "System Binary Proxy Execution: Rundll32",
+        "Use": "Sandworm Team used a backdoor which could execute a supplied DLL using rundll32.exe. [22] During the 2015 Ukraine Electric Power Attack , Sandworm Team used a backdoor which could execute a supplied DLL using rundll32.exe . [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Sandworm Team used a backdoor to enumerate information about the infected system's operating system. [22] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "Sandworm Team had gathered user, IP address, and server data related to RDP sessions on a compromised host. It has also accessed network diagram files useful for understanding how a host's network was configured. [1] [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "Sandworm Team has collected the username from a compromised host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1199",
+        "Technique": "Trusted Relationship",
+        "Use": "Sandworm Team has used dedicated network connections from one victim organization to gain unauthorized access to a separate organization. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "Sandworm Team has tricked unwitting recipients into clicking on malicious hyperlinks within emails crafted to resemble trustworthy senders. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Sandworm Team has tricked unwitting recipients into clicking on spearphishing attachments and enabling malicious macros embedded within files. [21] [1] During the 2015 Ukraine Electric Power Attack , Sandworm Team leveraged Microsoft Office attachments which contained malicious macros that were automatically executed once the user permitted them. [34]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "Sandworm Team have used previously acquired legitimate credentials prior to attacks. [29] During the 2015 Ukraine Electric Power Attack , Sandworm Team used valid accounts on the corporate network to escalate privileges, move laterally, and establish persistence within the corporate network. [34]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "Domain Accounts",
+        "Use": "Sandworm Team has used stolen credentials to access administrative accounts within the domain. [1] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102.002",
+        "Technique": "Web Service: Bidirectional Communication",
+        "Use": "Sandworm Team has used the Telegram Bot API from Telegram Messenger to send and receive commands to its Python backdoor. Sandworm Team also used legitimate M.E.Doc software update check requests for sending and receiving commands and hosted malicious payloads on putdrive.com. [21] [25]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "Sandworm Team has used Impacket ’s WMIexec module for remote code execution and VBScript to run WMI queries. [17] [11] During the 2016 Ukraine Electric Power Attack , WMI in scripts were used for remote execution and system surveys. [17]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1660",
+        "Technique": "Phishing",
+        "Use": "Sandworm Team used SMS-based phishing to target victims with malicious links. [13]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0895",
+        "Technique": "Autorun Image",
+        "Use": "During the 2022 Ukraine Electric Power Attack , Sandworm Team used existing hypervisor access to map an ISO image named a.iso to a virtual machine running a SCADA server. The SCADA server’s operating system was configured to autorun CD-ROM images, and as a result, a malicious VBS script on the ISO image was automatically executed. [19]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0803",
+        "Technique": "Block Command Message",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team blocked command messages by using malicious firmware to render serial-to-ethernet converters inoperable. [34]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0804",
+        "Technique": "Block Reporting Message",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team blocked reporting messages by using malicious firmware to render serial-to-ethernet converters inoperable. [34]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0805",
+        "Technique": "Block Serial COM",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team overwrote the serial-to-ethernet converter firmware, rendering the devices not operational. This meant that communication to the downstream serial devices was either not possible or more difficult. [14]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0807",
+        "Technique": "Command-Line Interface",
+        "Use": "Sandworm Team uses the MS-SQL server xp_cmdshell command, and PowerShell to execute commands. [37] During the 2016 Ukraine Electric Power Attack , Sandworm Team supplied the name of the payload DLL to Industroyer via a command line parameter. [16] During the 2022 Ukraine Electric Power Attack , Sandworm Team leveraged the SCIL-API on the MicroSCADA platform to execute commands through the scilc.exe binary. [19]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0885",
+        "Technique": "Commonly Used Port",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team used port 443 to communicate with their C2 servers. [14]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0884",
+        "Technique": "Connection Proxy",
+        "Use": "Sandworm Team establishes an internal proxy prior to the installation of backdoors within the network. [38] During the 2015 Ukraine Electric Power Attack , Sandworm Team established an internal proxy prior to the installation of backdoors within the network. [14]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0813",
+        "Technique": "Denial of Control",
+        "Use": "During the 2015 Ukraine Electric Power Attack , KillDisk rendered devices that were necessary for remote recovery unusable, including at least one RTU. Additionally, Sandworm Team overwrote the firmware for serial-to-ethernet converters, denying operators control of the downstream devices. [14] [34]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0814",
+        "Technique": "Denial of Service",
+        "Use": "During the 2015 Ukraine Electric Power Attack , power company phone line operators were hit with a denial of service attack so that they couldn’t field customers’ calls about outages. Operators were also denied service to their downstream devices when their serial-to-ethernet converters had their firmware overwritten, which bricked the devices. [34]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0816",
+        "Technique": "Device Restart/Shutdown",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team scheduled the uninterruptable power supplies (UPS) to shutdown data and telephone servers via the UPS management interface. [34] [14]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0819",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "Sandworm Team actors exploited vulnerabilities in GE's Cimplicity HMI and Advantech/Broadwin WebAccess HMI software which had been directly exposed to the internet. [39] [40]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0822",
+        "Technique": "External Remote Services",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team used Valid Accounts taken from the Windows Domain Controller to access the control system Virtual Private Network (VPN) used by grid operators. [14]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0823",
+        "Technique": "Graphical User Interface",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team utilized HMI GUIs in the SCADA environment to open breakers. [34]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0867",
+        "Technique": "Lateral Tool Transfer",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team moved their tools laterally within the ICS network. [14] During the 2016 Ukraine Electric Power Attack , Sandworm Team used a VBS script to facilitate lateral tool transfer. The VBS script was used to copy ICS-specific payloads with the following command: cscript C:\\Backinfo\\ufn.vbs C:\\Backinfo\\101.dll C:\\Delta\\101.dll [17]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0826",
+        "Technique": "Loss of Availability",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team opened the breakers at the infected sites, shutting the power off for thousands of businesses and households for around 6 hours. [34] [14]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0827",
+        "Technique": "Loss of Control",
+        "Use": "During the 2015 Ukraine Electric Power Attack , operators were shut out of their equipment either through the denial of peripheral use or the degradation of equipment. Operators were therefore unable to recover from the incident through their traditional means. Much of the power was restored manually. [34]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0828",
+        "Technique": "Loss of Productivity and Revenue",
+        "Use": "During the 2015 Ukraine Electric Power Attack , power breakers were opened which caused the operating companies to be unable to deliver power, and left thousands of businesses and households without power for around 6 hours. [34] [14]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0831",
+        "Technique": "Manipulation of Control",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team opened live breakers via remote commands to the HMI, causing blackouts. [34]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0849",
+        "Technique": "Masquerading",
+        "Use": "During the 2016 Ukraine Electric Power Attack , Sandworm Team transferred executable files as .txt and then renamed them to .exe, likely to avoid detection through extension tracking. [17]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0886",
+        "Technique": "Remote Services",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team used an IT helpdesk software to move the mouse on ICS control devices to maliciously release electricity breakers. [15] During the 2016 Ukraine Electric Power Attack , Sandworm Team used MS-SQL access to a pivot machine, allowing code execution throughout the ICS network. [17]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0846",
+        "Technique": "Remote System Discovery",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team remotely discovered operational assets once on the OT network. [35] [14]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0853",
+        "Technique": "Scripting",
+        "Use": "During the 2016 Ukraine Electric Power Attack , Sandworm Team utilized VBS and batch scripts for file movement and as wrappers for PowerShell execution. [17] During the 2022 Ukraine Electric Power Attack , Sandworm Team utilizes a Visual Basic script lun.vbs to execute n.bat which then executed the MicroSCADA scilc.exe command. [19]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0894",
+        "Technique": "System Binary Proxy Execution",
+        "Use": "During the 2022 Ukraine Electric Power Attack , Sandworm Team executed a MicroSCADA application binary scilc.exe to send a predefined list of SCADA instructions specified in a file defined by the adversary, s1.txt . The executed command C:\\sc\\prog\\exec\\scilc.exe -do pack\\scil\\s1.txt leverages the SCADA software to send unauthorized command messages to remote substations. [19]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0857",
+        "Technique": "System Firmware",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team overwrote the serial-to-ethernet gateways with custom firmware to make systems either disabled, shutdown, and/or unrecoverable. [34]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0855",
+        "Technique": "Unauthorized Command Message",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team issued unauthorized commands to substation breaks after gaining control of operator workstations and accessing a distribution management system (DMS) application. [34] During the 2022 Ukraine Electric Power Attack , Sandworm Team used the MicroSCADA SCIL-API to specify a set of SCADA instructions, including the sending of unauthorized commands to substation devices. [19]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0859",
+        "Technique": "Valid Accounts",
+        "Use": "During the 2015 Ukraine Electric Power Attack , Sandworm Team used valid accounts to laterally move through VPN connections and dual-homed systems. Sandworm Team used the credentials of valid accounts to interact with client applications and access employee workstations hosting HMI applications. [34] [14] During the 2016 Ukraine Electric Power Attack , Sandworm Team used valid accounts to laterally move through VPN connections and dual-homed systems. [17]"
+    }
+]

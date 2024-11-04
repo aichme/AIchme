@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bulma.min.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .is-primary {
+            background-color: #33c4dd !important;
+            border-color: #33c4dd !important;
+            color: black !important;
+        }
+
+        .button.is-primary {
+            background-color: #33c4dd !important;
+            border-color: #33c4dd !important;
+        }
+
+        .footer-hero {
+            background-color: #363636;
+            color: white;
+            padding: 1.5rem 1rem;
+            flex-shrink: 0;
+        }
+
+        .chart-container {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        canvas {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .list-item {
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .list-item:hover {
+            background-color: #33c4dd;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero is-primary mb-4" style="padding: 0.75rem 0.5rem;">
+        <div class="hero-body" style="padding: 0rem 1.5rem;">
+            <div class="container">
+                <h1 class="subtitle is-size-6" style="font-weight: bold; margin-bottom: 0;">
+                    AIchme
+                </h1>
+                <h2 class="subtitle is-size-6">
+                    Predicting possible APTs that could use a CVE, based on their actions in the past.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="button is-primary" href="/" style="margin-left: 20px; margin-top: 20px;">
+                <span class="icon">
+                    <i class="fas fa-home"></i>
+                </span>
+                <span>Home</span>
+            </a>
+        </div>
+    </nav>
+
+
+    <section class="section" style="flex-grow: 1;">
+        <div class="container mb-4">
+            <h1 class="title">CVE Information</h1>
+
+            <div id="basic-info">
+                <p><strong>CVE Name:</strong></p>
+                <p>{{ cve }}</p>
+                <p><strong>Description:</strong></p>
+                <div id="description"></div>
+
+                <p><strong>Extracted Methods:</strong></p>
+                <ul id="nameList" class="box">
+                    {% for method in methods %}
+                    <li data-value=method class="list-item">
+                        {{ loop.index }}. {{ method }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="container mb-8" id="backup-text" style="display: none;">
+            <h1 class="title">Results</h1>
+            <p>We couldn't find any possible match for this CVE description.</p>
+        </div>
+
+
+
+        <div class="container mb-8" id="hidden-container0" style="display: none;">
+            <h1 class="title">Results</h1>
+            <h2 class="title">Summary</h2>
+            <p id="summary-content" class="mb-8" style="padding-bottom: 1vh;"></p>
+            <h2 class="title" style="padding-bottom: 3vh;">Diagrams</h2>
+        </div>
+
+
+
+        <div class="container mb-8" id="hidden-container" style="display: none;">
+            <!-- Histogram Chart -->
+            <div class="box" id="histogram">
+                <h3 class="title is-4">Histogram Plot</h3>
+                <p style="padding-bottom: 2vh;">Shows the number of matches found for each APT.</p>
+                <canvas id="histogramChart"></canvas>
+            </div>
+
+
+            <div class="box chart-container mb-10" id="pieChartBox">
+                <h3 class="title is-4">Pie Chart</h2>
+                    <p style="padding-bottom: 2vh;">Shows the number of matches found for each one of the methods from
+                        the
+                        previously defined list of methods.</p>
+                    <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+
+
+        <!-- Loading Widget -->
+        <div class="container mb-8">
+            <div id="loading-widget" class="has-text-centered">
+                <p><strong>Waiting for LLM response...</strong></p>
+                <i class="fas fa-spinner fa-spin" style="font-size: 2em;"></i>
+            </div>
+
+            <!-- LLM Response Container (Initially hidden) -->
+            <div id="llm-response" class="mb-10" style="display: none;">
+                <h1 class="title">Detailed Matches</h1>
+                <p id="response-text"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-dark footer-hero">
+    </section>
+
+
+    <script>
+        let histogramChart;
+        let pieChart;
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const markdownDescription = {{ description | tojson }};
+            document.getElementById('description').innerHTML = marked.parse(markdownDescription);
+        });
+
+        window.onload = function () {
+            fetchLLMResponse();
+        };
+
+        function renderPieChart(data) {
+            const ctx = document.getElementById('pieChart').getContext('2d');
+
+            const chartData = {
+                labels: data.id,
+                datasets: [{
+                    data: data.matches,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.7)',
+                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(255, 206, 86, 0.7)',
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(153, 102, 255, 0.7)',
+                        'rgba(255, 159, 64, 0.7)',
+                        'rgba(199, 199, 199, 0.7)',
+                        'rgba(0, 128, 0, 0.7)',
+                        'rgba(128, 0, 128, 0.7)',
+                        'rgba(255, 69, 0, 0.7)',
+                        'rgba(0, 255, 255, 0.7)',
+                        'rgba(165, 42, 42, 0.7)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(199, 199, 199, 1)',
+                        'rgba(0, 128, 0, 1)',
+                        'rgba(128, 0, 128, 1)',
+                        'rgba(255, 69, 0, 1)',
+                        'rgba(0, 255, 255, 1)',
+                        'rgba(165, 42, 42, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            };
+
+            if (pieChart) {
+                pieChart.destroy();
+            }
+
+            pieChart = new Chart(ctx, {
+                type: 'pie',
+                data: chartData,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                        }
+                    }
+                }
+            });
+        }
+
+
+        function renderHistogram(data) {
+            const ctx = document.getElementById('histogramChart').getContext('2d');
+
+            if (histogramChart) {
+                histogramChart.destroy();
+            }
+            const maxCount = Math.max(...data.counts);
+
+            const backgroundColors = data.counts.map(count =>
+                count === maxCount ? 'rgba(255, 99, 132, 0.5)' : 'rgba(51, 196, 221, 0.5)'
+
+            );
+            const borderColors = data.counts.map(count =>
+                count === maxCount ? 'rgba(255, 99, 132, 1)' : 'rgba(51, 196, 221, 1)'
+            );
+
+            histogramChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: data.actors,
+                    datasets: [{
+                        label: 'APT Matches',
+                        data: data.counts,
+                        backgroundColor: backgroundColors,
+                        borderColor: borderColors,
+                        borderWidth: 1
+                    }]
+                },
+
+                options: {
+                    scales: {
+                        x: {
+                            beginAtZero: true
+                        },
+                        y: {
+                            ticks: {
+                                callback: function (value, index, values) {
+                                    if (Number.isInteger(value)) {
+                                        return value;
+                                    }
+                                },
+                                stepSize: 1
+                            },
+                            beginAtZero: true,
+                            suggestedMax: maxCount + 1,
+                            title: {
+                                display: true,
+                                text: 'Number of Matches'
+                            }
+                        }
+                    },
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+
+                }
+            });
+        }
+
+
+        // Function to fetch LLM response
+        function fetchLLMResponse() {
+            // Remove the double quotes around the Jinja template expression to ensure it's parsed as JSON
+            const sent_methods = {{ methods | tojson | safe }};
+            const description = {{ description | tojson | safe }};
+
+
+            fetch('/generate_results', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ methods: sent_methods, description: description })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('loading-widget').style.display = 'none';
+
+                const responseArray = data.total_matches;
+                if (responseArray.length > 0) {
+                    document.getElementById('llm-response').style.display = 'block';
+                    document.getElementById('hidden-container').style.display = 'block';
+                    document.getElementById('hidden-container0').style.display = 'block';
+                }
+                else {
+                    document.getElementById('backup-text').style.display = 'block';
+                }
+
+                const summaryContent = document.getElementById('summary-content');
+                summaryContent.innerHTML = data.summary;
+
+                const responseContainer = document.getElementById('response-text');
+                responseContainer.innerHTML = '';
+
+                responseArray.forEach((responseObj, index) => {
+                    const dictionaryContainer = document.createElement('div');
+                    dictionaryContainer.classList.add('box', 'mb-4');
+                    const title = document.createElement('h4');
+                    title.classList.add('title', 'is-4');
+                    title.textContent = `Match ${index + 1}`;
+                    dictionaryContainer.appendChild(title);
+
+                    for (const [key, value] of Object.entries(responseObj)) {
+                        const keyValueElement = document.createElement('p');
+                        if (key == 'method') {
+                            new_value = methods[value];
+                        }
+                        else {
+                            new_value = value;
+                        }
+                        keyValueElement.innerHTML = `<strong>${key}:</strong> ${new_value}`;
+                        dictionaryContainer.appendChild(keyValueElement);
+                    }
+                    responseContainer.appendChild(dictionaryContainer);
+                    renderHistogram(data.histogram);
+                    renderPieChart(data.matches_counter);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching LLM response:', error);
+            })
+            
+        };
+
+    </script>
+
+</body>
+
+</html>

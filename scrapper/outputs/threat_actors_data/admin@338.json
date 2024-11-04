@@ -1,0 +1,74 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.001",
+        "Technique": "Account Discovery: Local Account",
+        "Use": "admin@338 actors used the following commands following exploitation of a machine with LOWBALL malware to enumerate user accounts: net user >> %temp%\\download net user /domain >> %temp%\\download [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Following exploitation with LOWBALL malware, admin@338 actors created a file containing a list of commands to be executed on the compromised computer. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "admin@338 has exploited client software vulnerabilities for execution, such as Microsoft Word CVE-2012-0158. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "admin@338 actors used the following commands after exploiting a machine with LOWBALL malware to obtain information about files and directories: dir c:\\ >> %temp%\\download dir \"c:\\Documents and Settings\" >> %temp%\\download dir \"c:\\Program Files\\\" >> %temp%\\download dir d:\\ >> %temp%\\download [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "admin@338 actors used the following command to rename one of their tools to a benign file name: ren \"%temp%\\upload\" audiodg.exe [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069.001",
+        "Technique": "Permission Groups Discovery: Local Groups",
+        "Use": "admin@338 actors used the following command following exploitation of a machine with LOWBALL malware to list local groups: net localgroup administrator >> %temp%\\download [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "admin@338 has sent emails with malicious Microsoft Office documents attached. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "admin@338 actors used the following commands after exploiting a machine with LOWBALL malware to obtain information about the OS: ver >> %temp%\\download systeminfo >> %temp%\\download [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "admin@338 actors used the following command after exploiting a machine with LOWBALL malware to acquire information about local networks: ipconfig /all >> %temp%\\download [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "admin@338 actors used the following command following exploitation of a machine with LOWBALL malware to display network connections: netstat -ano >> %temp%\\download [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1007",
+        "Technique": "System Service Discovery",
+        "Use": "admin@338 actors used the following command following exploitation of a machine with LOWBALL malware to obtain information about services: net start >> %temp%\\download [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "admin@338 has attempted to get victims to launch malicious Microsoft Word attachments delivered via spearphishing emails. [1]"
+    }
+]

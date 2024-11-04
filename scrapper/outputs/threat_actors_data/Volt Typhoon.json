@@ -1,0 +1,224 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "Volt Typhoon has run net group /dom and net group \"Domain Admins\" /dom in compromised environments for account discovery. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "Volt Typhoon has archived the ntds.dit database as a multi-volume password-protected archive with 7-Zip. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Volt Typhoon has used PowerShell including for remote system discovery. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Volt Typhoon has used the Windows command line to perform hands-on-keyboard activities in targeted environments including for discovery. [1] [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.004",
+        "Technique": "Compromise Infrastructure: Server",
+        "Use": "Volt Typhoon has used compromised PRTG servers from other organizations for C2. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.008",
+        "Technique": "Compromise Infrastructure: Network Devices",
+        "Use": "Volt Typhoon has compromised small office and home office (SOHO) network edge devices, many of which were located in the same geographic area as the victim, to proxy network traffic. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555",
+        "Technique": "Credentials from Password Stores",
+        "Use": "Volt Typhoon has attempted to obtain credentials from OpenSSH, realvnc, and PuTTY. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "Volt Typhoon has stolen the Active Directory database from targeted environments and used Wevtutil to extract event log information. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074",
+        "Technique": "Data Staged",
+        "Use": "Volt Typhoon has staged collected data in password-protected archives. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.001",
+        "Technique": "Local Data Staging",
+        "Use": "Volt Typhoon has saved stolen files including the ntds.dit database and the SYSTEM and SECURITY Registry hives locally to the C:\\Windows\\Temp\\ directory. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1573.001",
+        "Technique": "Encrypted Channel: Symmetric Cryptography",
+        "Use": "Volt Typhoon has used a version of the Awen web shell that employed AES encryption and decryption for C2 communications. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "Volt Typhoon gained initial access through exploitation of CVE-2021-40539 in internet-facing ManageEngine ADSelfService Plus servers. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "Volt Typhoon has run rd /S to delete their working directories and files. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.007",
+        "Technique": "Indicator Removal: Clear Network Connection History and Configurations",
+        "Use": "Volt Typhoon have inspected server logs to remove their IPs. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1570",
+        "Technique": "Lateral Tool Transfer",
+        "Use": "Volt Typhoon has copied web shells between servers in targeted environments. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1654",
+        "Technique": "Log Enumeration",
+        "Use": "Volt Typhoon has used wevtutil.exe and the PowerShell command Get-EventLog security to enumerate Windows logs to search for successful logons. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Volt Typhoon has used legitimate looking filenames for compressed copies of the ntds.dit database and used names including cisco_up.exe, cl64.exe, vm3dservice.exe, watchdogd.exe, Win.exe, WmiPreSV.exe, and WmiPrvSE.exe for the Earthworm and Fast Reverse Proxy tools. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.008",
+        "Technique": "Masquerading: Masquerade File Type",
+        "Use": "Volt Typhoon has appended copies of the ntds.dit database with a .gif file extension. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Volt Typhoon has used customized versions of open-source tools for C2. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "Volt Typhoon has attempted to access hashed credentials from the LSASS process memory space. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.003",
+        "Technique": "OS Credential Dumping: NTDS",
+        "Use": "Volt Typhoon has used ntds.util to create domain controller installation media containing usernames and password hashes. [1] [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069.001",
+        "Technique": "Permission Groups Discovery: Local Groups",
+        "Use": "Volt Typhoon has run net localgroup administrators in compromised environments to enumerate accounts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069.002",
+        "Technique": "Permission Groups Discovery: Domain Groups",
+        "Use": "Volt Typhoon has run net group in compromised environments to discover domain groups. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "Volt Typhoon has enumerated running processes on targeted systems. [1] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090",
+        "Technique": "Proxy",
+        "Use": "Volt Typhoon has used compromised devices and customized versions of open source tools  such as Fast Reverse Proxy (FRP), Earthworm, and Impacket to proxy network traffic. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069.001",
+        "Technique": "Internal Proxy",
+        "Use": "Volt Typhoon has used the built-in netsh port proxy command to create proxies on compromised systems to facilitate access. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1012",
+        "Technique": "Query Registry",
+        "Use": "Volt Typhoon has queried the Registry on compromised systems, reg query hklm\\software\\ , for information on installed software. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "Volt Typhoon has used multiple methods, including Ping , to enumerate systems on compromised networks. [1] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.003",
+        "Technique": "Server Software Component: Web Shell",
+        "Use": "Volt Typhoon has used webshells, including ones named AuditReport.jspx and iisstart.aspx, in compromised environments. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518",
+        "Technique": "Software Discovery",
+        "Use": "Volt Typhoon has queried the Registry on compromised systems for information on installed software. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Volt Typhoon has discovered file system types, drive names, size, and free space on compromised systems. [1] [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "Volt Typhoon has executed multiple commands to enumerate network topology and settings including ipconfig , netsh interface firewall show all , and netsh interface portproxy show all . [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "Volt Typhoon has used netstat -ano on compromised hosts to enumerate network connections. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "Volt Typhoon has executed the PowerShell command Get-EventLog security -instanceid 4624 to identify associated user and computer account names. [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.002",
+        "Technique": "Valid Accounts: Domain Accounts",
+        "Use": "Volt Typhoon has used compromised domain accounts to authenticate to devices on compromised networks. [1] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1497.001",
+        "Technique": "Virtualization/Sandbox Evasion: System Checks",
+        "Use": "Volt Typhoon has run system checks to determine if they were operating in a virtualized environment. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "Volt Typhoon has leveraged WMIC including for execution and remote system discovery. [1] [2] [3]"
+    }
+]

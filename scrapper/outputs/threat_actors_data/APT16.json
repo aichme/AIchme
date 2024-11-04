@@ -1,0 +1,8 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.004",
+        "Technique": "Compromise Infrastructure: Server",
+        "Use": "APT16 has compromised otherwise legitimate sites as staging servers for second-stage payloads. [1]"
+    }
+]

@@ -1,0 +1,398 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1134.002",
+        "Technique": "Access Token Manipulation: Create Process with Token",
+        "Use": "Turla RPC backdoors can impersonate or steal process tokens before executing commands. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.001",
+        "Technique": "Account Discovery: Local Account",
+        "Use": "Turla has used net user to enumerate local accounts on the system. [14] [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "Turla has used net user /domain to enumerate domain accounts. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.006",
+        "Technique": "Acquire Infrastructure: Web Services",
+        "Use": "Turla has created web accounts including Dropbox and GitHub for C2 and document exfiltration. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Turla has used HTTP and HTTPS for C2 communications. [4] [16]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.003",
+        "Technique": "Application Layer Protocol: Mail Protocols",
+        "Use": "Turla has used multiple backdoors which communicate with a C2 server via email attachments. [17]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "Turla has encrypted files stolen from connected USB drives into a RAR file before exfiltration. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "A Turla Javascript backdoor added a local_update_check value under the Registry key HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run to establish persistence. Additionally, a Turla custom executable containing Metasploit shellcode is saved to the Startup folder to gain persistence. [4] [16]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.004",
+        "Technique": "Boot or Logon Autostart Execution: Winlogon Helper DLL",
+        "Use": "Turla established persistence by adding a Shell value under the Registry key HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon . [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110",
+        "Technique": "Brute Force",
+        "Use": "Turla may attempt to connect to systems within a victim's network using net use commands and a predefined list or collection of passwords. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Turla has used PowerShell to execute commands/scripts, in some cases via a custom executable or code from Empire 's PSInject. [16] [11] [18] Turla has also used PowerShell scripts to load and execute malware in memory."
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Turla RPC backdoors have used cmd.exe to execute commands. [11] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "Turla has used VBS scripts throughout its operations. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.006",
+        "Technique": "Command and Scripting Interpreter: Python",
+        "Use": "Turla has used IronPython scripts as part of the IronNetInjector toolchain to drop payloads. [19]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.007",
+        "Technique": "Command and Scripting Interpreter: JavaScript",
+        "Use": "Turla has used various JavaScript-based backdoors. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.003",
+        "Technique": "Compromise Infrastructure: Virtual Private Server",
+        "Use": "Turla has used the VPS infrastructure of compromised Iranian threat actors. [20]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.004",
+        "Technique": "Compromise Infrastructure: Server",
+        "Use": "Turla has used compromised servers as infrastructure. [21] [13] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.006",
+        "Technique": "Compromise Infrastructure: Web Services",
+        "Use": "Turla has frequently used compromised WordPress sites for C2 infrastructure. [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.004",
+        "Technique": "Credentials from Password Stores: Windows Credential Manager",
+        "Use": "Turla has gathered credentials from the Windows Credential Manager tool. [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1213",
+        "Technique": "Data from Information Repositories",
+        "Use": "Turla has used a custom .NET tool to collect documents from an organization's internal central database. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "Turla RPC backdoors can upload files from victim machines. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1025",
+        "Technique": "Data from Removable Media",
+        "Use": "Turla RPC backdoors can collect files from USB thumb drives. [11] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "Turla has used a custom decryption routine, which pulls key and salt values from other artifacts such as a WMI filter or PowerShell Profile , to decode encrypted PowerShell payloads. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1587.001",
+        "Technique": "Develop Capabilities: Malware",
+        "Use": "Turla has developed its own unique malware for use in operations. [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "Turla has infected victims using watering holes. [14] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1546.003",
+        "Technique": "Event Triggered Execution: Windows Management Instrumentation Event Subscription",
+        "Use": "Turla has used WMI event filters and consumers to establish persistence. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1546.013",
+        "Technique": "Event Triggered Execution: PowerShell Profile",
+        "Use": "Turla has used PowerShell profiles to maintain persistence on an infected machine. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "Turla has used WebDAV to upload stolen USB files to a cloud drive. [18] Turla has also exfiltrated stolen files to OneDrive and 4shared. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1068",
+        "Technique": "Exploitation for Privilege Escalation",
+        "Use": "Turla has exploited vulnerabilities in the VBoxDrv.sys driver to obtain kernel mode privileges. [22]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Turla surveys a system upon check-in to discover files in specific locations on the hard disk %TEMP% directory, the current user's desktop, the Program Files directory, and Recent. [1] [14] Turla RPC backdoors have also searched for files matching the lPH*.dll pattern. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1615",
+        "Technique": "Group Policy Discovery",
+        "Use": "Turla surveys a system upon check-in to discover Group Policy details using the gpresult command. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.001",
+        "Technique": "Impair Defenses: Disable or Modify Tools",
+        "Use": "Turla has used a AMSI bypass, which patches the in-memory amsi.dll, in PowerShell scripts to bypass Windows antimalware products. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Turla has used shellcode to download Meterpreter after compromising a victim. [16]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1570",
+        "Technique": "Lateral Tool Transfer",
+        "Use": "Turla RPC backdoors can be used to transfer files to/from victim machines on the local network. [11] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1112",
+        "Technique": "Modify Registry",
+        "Use": "Turla has modify Registry values to store payloads. [11] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1106",
+        "Technique": "Native API",
+        "Use": "Turla and its RPC backdoors have used APIs calls for various tasks related to subverting AMSI and accessing then executing commands through RPC and/or named pipes. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.005",
+        "Technique": "Obfuscated Files or Information: Indicator Removal from Tools",
+        "Use": "Based on comparison of Gazer versions, Turla made an effort to obfuscate strings in the malware that could be used as IoCs, including the mutex name and named pipe. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.010",
+        "Technique": "Obfuscated Files or Information: Command Obfuscation",
+        "Use": "Turla has used encryption (including salted 3DES via PowerSploit 's Out-EncryptedScript.ps1 ), random variable names, and base64 encoding to obfuscate PowerShell commands and payloads. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.011",
+        "Technique": "Obfuscated Files or Information: Fileless Storage",
+        "Use": "Turla has used the Registry to store encrypted and encoded payloads. [11] [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.001",
+        "Technique": "Obtain Capabilities: Malware",
+        "Use": "Turla has used malware obtained after compromising other threat actors, such as OilRig . [20] [21]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Turla has obtained and customized publicly-available tools like Mimikatz . [18]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1201",
+        "Technique": "Password Policy Discovery",
+        "Use": "Turla has used net accounts and net accounts /domain to acquire password policy information. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1120",
+        "Technique": "Peripheral Device Discovery",
+        "Use": "Turla has used fsutil fsinfo drives to list connected drives. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069.001",
+        "Technique": "Permission Groups Discovery: Local Groups",
+        "Use": "Turla has used net localgroup and net localgroup Administrators to enumerate group information, including members of the local administrators group. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069.002",
+        "Technique": "Permission Groups Discovery: Domain Groups",
+        "Use": "Turla has used net group \"Domain Admins\" /domain to identify domain administrators. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "Turla attempted to trick targets into clicking on a link featuring a seemingly legitimate domain from Adobe.com to download their malware and gain initial access. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "Turla surveys a system upon check-in to discover running processes using the tasklist /v command. [1] Turla RPC backdoors have also enumerated processes associated with specific open ports or named pipes. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055",
+        "Technique": "Process Injection",
+        "Use": "Turla has also used PowerSploit 's Invoke-ReflectivePEInjection.ps1 to reflectively load a PowerShell payload into a random process on the victim system. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Dynamic-link Library Injection",
+        "Use": "Turla has used Metasploit to perform reflective DLL injection in order to escalate privileges. [16] [23]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090",
+        "Technique": "Proxy",
+        "Use": "Turla RPC backdoors have included local UPnP RPC proxies. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Internal Proxy",
+        "Use": "Turla has compromised internal network systems to act as a proxy to forward traffic to C2. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1012",
+        "Technique": "Query Registry",
+        "Use": "Turla surveys a system upon check-in to discover information in the Windows Registry with the reg query command. [1] Turla has also retrieved PowerShell payloads hidden in Registry keys as well as checking keys associated with null session named pipes . [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.002",
+        "Technique": "Remote Services: SMB/Windows Admin Shares",
+        "Use": "Turla used net use commands to connect to lateral systems within a network. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "Turla surveys a system upon check-in to discover remote systems on a local network using the net view and net view /DOMAIN commands. Turla has also used net group \"Domain Computers\" /domain , net group \"Domain Controllers\" /domain , and net group \"Exchange Servers\" /domain to enumerate domain computers, including the organization's DC and Exchange Server. [1] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518.001",
+        "Technique": "Software Discovery: Security Software Discovery",
+        "Use": "Turla has obtained information on security software, including security logging information that may indicate whether their malware has been detected. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.006",
+        "Technique": "Subvert Trust Controls: Code Signing Policy Modification",
+        "Use": "Turla has modified variables in kernel memory to turn off Driver Signature Enforcement after exploiting vulnerabilities that obtained kernel mode privileges. [22] [24]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Turla surveys a system upon check-in to discover operating system configuration details using the systeminfo and set commands. [1] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "Turla surveys a system upon check-in to discover network configuration details using the arp -a , nbtstat -n , net config , ipconfig /all , and route commands, as well as NBTscan . [1] [18] [14] Turla RPC backdoors have also retrieved registered RPC interface information from process memory. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.001",
+        "Technique": "Internet Connection Discovery",
+        "Use": "Turla has used tracert to check internet connectivity. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "Turla surveys a system upon check-in to discover active local network connections using the netstat -an , net use , net file , and net session commands. [1] [14] Turla RPC backdoors have also enumerated the IPv4 TCP connection table via the GetTcpTable2 API call. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1007",
+        "Technique": "System Service Discovery",
+        "Use": "Turla surveys a system upon check-in to discover running services and associated processes using the tasklist /svc command. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1124",
+        "Technique": "System Time Discovery",
+        "Use": "Turla surveys a system upon check-in to discover the system time by using the net time command. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "Turla has used spearphishing via a link to get users to download and run their malware. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.003",
+        "Technique": "Valid Accounts: Local Accounts",
+        "Use": "Turla has abused local accounts that have the same password across the victim’s network. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102",
+        "Technique": "Web Service",
+        "Use": "Turla has used legitimate web services including Pastebin, Dropbox, and GitHub for C2 communications. [13] [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.002",
+        "Technique": "Bidirectional Communication",
+        "Use": "A Turla JavaScript backdoor has used Google Apps Script as its C2 server. [4] [16]"
+    }
+]

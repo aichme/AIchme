@@ -1,0 +1,44 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.006",
+        "Technique": "Acquire Infrastructure: Web Services",
+        "Use": "POLONIUM has created and used legitimate Microsoft OneDrive accounts for their operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "POLONIUM has exfiltrated stolen data to POLONIUM -owned OneDrive and Dropbox accounts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "POLONIUM has obtained and used tools such as AirVPN and plink in their operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090",
+        "Technique": "Proxy",
+        "Use": "POLONIUM has used the AirVPN service for operational activity. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1199",
+        "Technique": "Trusted Relationship",
+        "Use": "POLONIUM has used compromised credentials from an IT company to target downstream customers including a law firm and aviation company. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "POLONIUM has used valid compromised credentials to gain access to victim environments. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102.002",
+        "Technique": "Web Service: Bidirectional Communication",
+        "Use": "POLONIUM has used OneDrive and DropBox for C2. [1]"
+    }
+]

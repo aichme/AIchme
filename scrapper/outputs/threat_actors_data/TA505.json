@@ -1,0 +1,206 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.003",
+        "Technique": "Account Discovery: Email Account",
+        "Use": "TA505 has used the tool EmailStealer to steal and send lists of e-mail addresses to a remote server. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "TA505 has registered domains to impersonate services such as Dropbox to distribute malware. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "TA505 has used HTTP to communicate with C2 nodes. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "TA505 has used PowerShell to download and execute malware and reconnaissance scripts. [1] [9] [10] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "TA505 has executed commands using cmd.exe . [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "TA505 has used VBS for code execution. [1] [2] [8] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.007",
+        "Technique": "Command and Scripting Interpreter: JavaScript",
+        "Use": "TA505 has used JavaScript for code execution. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.003",
+        "Technique": "Credentials from Password Stores: Credentials from Web Browsers",
+        "Use": "TA505 has used malware to gather credentials from Internet Explorer. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1486",
+        "Technique": "Data Encrypted for Impact",
+        "Use": "TA505 has used a wide variety of ransomware, such as Clop , Locky, Jaff, Bart, Philadelphia, and GlobeImposter, to encrypt victim files and demand a ransom payment. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "TA505 has decrypted packed DLLs with an XOR key. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1568.001",
+        "Technique": "Dynamic Resolution: Fast Flux DNS",
+        "Use": "TA505 has used fast flux to mask botnets by distributing payloads across multiple IPs. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.001",
+        "Technique": "Impair Defenses: Disable or Modify Tools",
+        "Use": "TA505 has used malware to disable Windows Defender. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "TA505 has downloaded additional malware to execute on victim systems. [10] [11] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1559.002",
+        "Technique": "Inter-Process Communication: Dynamic Data Exchange",
+        "Use": "TA505 has leveraged malicious Word documents that abused DDE. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1112",
+        "Technique": "Modify Registry",
+        "Use": "TA505 has used malware to disable Windows Defender through modification of the Registry. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1106",
+        "Technique": "Native API",
+        "Use": "TA505 has deployed payloads that use Windows API calls on a compromised host. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.002",
+        "Technique": "Obfuscated Files or Information: Software Packing",
+        "Use": "TA505 has used UPX to obscure malicious code. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.010",
+        "Technique": "Obfuscated Files or Information: Command Obfuscation",
+        "Use": "TA505 has used base64 encoded PowerShell commands. [10] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "TA505 has password-protected malicious Word documents. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.001",
+        "Technique": "Obtain Capabilities: Malware",
+        "Use": "TA505 has used malware such as Azorult and Cobalt Strike in their operations. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "TA505 has used a variety of tools in their operations, including AdFind , BloodHound , Mimikatz , and PowerSploit . [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069",
+        "Technique": "Permission Groups Discovery",
+        "Use": "TA505 has used TinyMet to enumerate members of privileged groups. [6] TA505 has also run net group /domain . [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "TA505 has used spearphishing emails with malicious attachments to initially compromise victims. [1] [2] [3] [10] [9] [12] [8] [13] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "TA505 has sent spearphishing emails containing malicious links. [1] [3] [8] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055.001",
+        "Technique": "Process Injection: Dynamic-link Library Injection",
+        "Use": "TA505 has been seen injecting a DLL into winword.exe. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.001",
+        "Technique": "Stage Capabilities: Upload Malware",
+        "Use": "TA505 has staged malware on actor-controlled domains. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "TA505 has signed payloads with code signing certificates from Thawte and Sectigo. [10] [11] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.005",
+        "Technique": "Subvert Trust Controls: Mark-of-the-Web Bypass",
+        "Use": "TA505 has used .iso files to deploy malicious .lnk files. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.007",
+        "Technique": "System Binary Proxy Execution: Msiexec",
+        "Use": "TA505 has used msiexec to download and execute malicious Windows Installer files. [10] [11] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.011",
+        "Technique": "System Binary Proxy Execution: Rundll32",
+        "Use": "TA505 has leveraged rundll32.exe to execute malicious DLLs. [10] [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.001",
+        "Technique": "Unsecured Credentials: Credentials In Files",
+        "Use": "TA505 has used malware to gather credentials from FTP clients and Outlook. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "TA505 has used lures to get users to click links in emails and attachments. For example, TA505 makes their malware look like legitimate Microsoft Word documents, .pdf and/or .lnk files. [1] [2] [3] [10] [9] [12] [8] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "TA505 has used lures to get users to enable content in malicious attachments and execute malicious files contained in archives. For example, TA505 makes their malware look like legitimate Microsoft Word documents, .pdf and/or .lnk files. [1] [2] [3] [10] [9] [12] [8] [13] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.002",
+        "Technique": "Valid Accounts: Domain Accounts",
+        "Use": "TA505 has used stolen domain admin accounts to compromise additional hosts. [6]"
+    }
+]

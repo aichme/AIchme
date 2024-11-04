@@ -1,0 +1,128 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Indrik Spider has used PowerShell Empire for execution of malware. [1] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Indrik Spider has used batch scripts on victim's machines. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.007",
+        "Technique": "Command and Scripting Interpreter: JavaScript",
+        "Use": "Indrik Spider has used malicious JavaScript files for several components of their attack. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1584.004",
+        "Technique": "Compromise Infrastructure: Server",
+        "Use": "Indrik Spider has served fake updates via legitimate websites that have been compromised. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136",
+        "Technique": "Create Account",
+        "Use": "Indrik Spider used wmic.exe to add a new user to the system. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1486",
+        "Technique": "Data Encrypted for Impact",
+        "Use": "Indrik Spider has encrypted domain-controlled systems using BitPaymer . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.001",
+        "Technique": "Data Staged: Local Data Staging",
+        "Use": "Indrik Spider has stored collected date in a .tmp file. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1587.001",
+        "Technique": "Develop Capabilities: Malware",
+        "Use": "Indrik Spider has developed malware for their operations, including ransomware such as BitPaymer and WastedLocker . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1484.001",
+        "Technique": "Domain or Tenant Policy Modification: Group Policy Modification",
+        "Use": "Indrik Spider has used Group Policy Objects to deploy batch scripts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.002",
+        "Technique": "Establish Accounts: Email Accounts",
+        "Use": "Indrik Spider has created email accounts to communicate with their ransomware victims, to include providing payment and decryption details. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.001",
+        "Technique": "Impair Defenses: Disable or Modify Tools",
+        "Use": "Indrik Spider used PsExec to leverage Windows Defender to disable scanning of all downloaded files and to restrict real-time monitoring. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.001",
+        "Technique": "Indicator Removal: Clear Windows Event Logs",
+        "Use": "Indrik Spider has used Cobalt Strike to empty log files. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Indrik Spider has downloaded additional scripts, malware, and tools onto a compromised host. [1] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Indrik Spider used fake updates for FlashPlayer plugin and Google Chrome as initial infection vectors. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "Indrik Spider used Cobalt Strike to carry out credential dumping using ProcDump. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "Indrik Spider has used PowerView to enumerate all Windows Server, Windows Server 2003, and Windows 7 instances in the Active Directory database. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1489",
+        "Technique": "Service Stop",
+        "Use": "Indrik Spider has used PsExec to stop services prior to the execution of ransomware. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1007",
+        "Technique": "System Service Discovery",
+        "Use": "Indrik Spider has used the win32_service WMI class to retrieve a list of services from the system. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Indrik Spider has attempted to get users to click on a malicious zipped file. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.002",
+        "Technique": "Valid Accounts: Domain Accounts",
+        "Use": "Indrik Spider has collected credentials from infected systems, including domain accounts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "Indrik Spider has used WMIC to execute commands on remote computers. [5]"
+    }
+]

@@ -1,0 +1,248 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.001",
+        "Technique": "Account Discovery: Local Account",
+        "Use": "Fox Kitten has accessed ntuser.dat and UserClass.dat on compromised hosts. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "Fox Kitten has used the Softerra LDAP browser to browse documentation on service accounts. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "Fox Kitten has used 7-Zip to archive data. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1217",
+        "Technique": "Browser Information Discovery",
+        "Use": "Fox Kitten has used Google Chrome bookmarks to identify internal resources and assets. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110",
+        "Technique": "Brute Force",
+        "Use": "Fox Kitten has brute forced RDP credentials. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059",
+        "Technique": "Command and Scripting Interpreter",
+        "Use": "Fox Kitten has used a Perl reverse shell to communicate with C2. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "PowerShell",
+        "Use": "Fox Kitten has used PowerShell scripts to access credential data. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.003",
+        "Technique": "Windows Command Shell",
+        "Use": "Fox Kitten has used cmd.exe likely as a password changing mechanism. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.001",
+        "Technique": "Create Account: Local Account",
+        "Use": "Fox Kitten has created a local user account with administrator privileges. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.005",
+        "Technique": "Credentials from Password Stores: Password Managers",
+        "Use": "Fox Kitten has used scripts to access credential information from the KeePass database. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1530",
+        "Technique": "Data from Cloud Storage",
+        "Use": "Fox Kitten has obtained files from the victim's cloud storage instances. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1213",
+        "Technique": "Data from Information Repositories",
+        "Use": "Fox Kitten has accessed victim security and IT environments and Microsoft Teams to mine valuable information. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "Fox Kitten has searched local system resources to access sensitive documents. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1039",
+        "Technique": "Data from Network Shared Drive",
+        "Use": "Fox Kitten has searched network shares to access sensitive documents. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585",
+        "Technique": "Establish Accounts",
+        "Use": "Fox Kitten has created KeyBase accounts to communicate with ransomware victims. [4] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555.001",
+        "Technique": "Social Media Accounts",
+        "Use": "Fox Kitten has used a Twitter account to communicate with ransomware victims. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1546.008",
+        "Technique": "Event Triggered Execution: Accessibility Features",
+        "Use": "Fox Kitten has used sticky keys to launch a command prompt. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "Fox Kitten has exploited known vulnerabilities in Fortinet, PulseSecure, and Palo Alto VPN appliances. [1] [3] [2] [5] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1210",
+        "Technique": "Exploitation of Remote Services",
+        "Use": "Fox Kitten has exploited known vulnerabilities in remote services including RDP. [1] [2] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Fox Kitten has used WizTree to obtain network files and directory listings. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Fox Kitten has downloaded additional tools including PsExec directly to endpoints. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.004",
+        "Technique": "Masquerading: Masquerade Task or Service",
+        "Use": "Fox Kitten has named the task for a reverse proxy lpupdate to appear legitimate. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Fox Kitten has named binaries and configuration files svhost and dllhost respectively to appear legitimate. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1046",
+        "Technique": "Network Service Discovery",
+        "Use": "Fox Kitten has used tools including NMAP to conduct broad scanning to identify open ports. [5] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.010",
+        "Technique": "Obfuscated Files or Information: Command Obfuscation",
+        "Use": "Fox Kitten has base64 encoded scripts to avoid detection. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "Fox Kitten has base64 encoded payloads to avoid detection. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "Fox Kitten has used prodump to dump credentials from LSASS. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.003",
+        "Technique": "OS Credential Dumping: NTDS",
+        "Use": "Fox Kitten has used Volume Shadow Copy to access credential information from NTDS. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1572",
+        "Technique": "Protocol Tunneling",
+        "Use": "Fox Kitten has used protocol tunneling for communication and RDP activity on compromised hosts through the use of open source tools such as ngrok and custom tool SSHMinion. [2] [5] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090",
+        "Technique": "Proxy",
+        "Use": "Fox Kitten has used the open source reverse proxy tools including FRPC and Go Proxy to establish connections from C2 to local servers. [5] [4] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1012",
+        "Technique": "Query Registry",
+        "Use": "Fox Kitten has accessed Registry hives ntuser.dat and UserClass.dat. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.001",
+        "Technique": "Remote Services: Remote Desktop Protocol",
+        "Use": "Fox Kitten has used RDP to log in and move laterally in the target environment. [5] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.002",
+        "Technique": "Remote Services: SMB/Windows Admin Shares",
+        "Use": "Fox Kitten has used valid accounts to access SMB shares. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.004",
+        "Technique": "Remote Services: SSH",
+        "Use": "Fox Kitten has used the PuTTY and Plink tools for lateral movement. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.005",
+        "Technique": "Remote Services: VNC",
+        "Use": "Fox Kitten has installed TightVNC server and client on compromised servers and endpoints for lateral movement. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "Fox Kitten has used Angry IP Scanner to detect remote systems. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "Fox Kitten has used Scheduled Tasks for persistence and to load and execute a reverse proxy binary. [5] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.003",
+        "Technique": "Server Software Component: Web Shell",
+        "Use": "Fox Kitten has installed web shells on compromised hosts to maintain access. [5] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.001",
+        "Technique": "Unsecured Credentials: Credentials In Files",
+        "Use": "Fox Kitten has accessed files to gain valid credentials. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "Fox Kitten has used valid credentials with various services during lateral movement. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102",
+        "Technique": "Web Service",
+        "Use": "Fox Kitten has used Amazon Web Services to host C2. [4]"
+    }
+]

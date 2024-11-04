@@ -1,0 +1,38 @@
+[
+    {
+        "Domain": "ICS",
+        "ID": "T0812",
+        "Technique": "Default Credentials",
+        "Use": "During the Unitronics Defacement Campaign , the CyberAv3ngers discovered and exploited default credentials found on many Unitronics Programmable Logic Controller (PLC) Human-Machine Interface (HMI) . For many of these devices, the default password was set to ‘1111’. [1] [3]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0814",
+        "Technique": "Denial of Service",
+        "Use": "During the Unitronics Defacement Campaign , the CyberAv3ngers defaced controllers’ Human-Machine Interface (HMI) , which prevented multiple entities from being able to operate their devices normally. [1] [3] [4] [5] Additionally, the CyberAv3ngers caused a communications failure in a remote pumping station. [6]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0883",
+        "Technique": "Internet Accessible Device",
+        "Use": "During the Unitronics Defacement Campaign , the CyberAv3ngers exploited devices connected to the public internet, such as internet connected Unitronics Programmable Logic Controller (PLC) with Human-Machine Interface (HMI) and networking equipment such as cellular modems found in OT environments. [1] [2]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0826",
+        "Technique": "Loss of Availability",
+        "Use": "During the Unitronics Defacement Campaign , the CyberAv3ngers caused multiple businesses to halt operations due to the unavailability of the Programmable Logic Controller (PLC) and Human-Machine Interface (HMI) . These victims covered multiple sectors. [4]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0828",
+        "Technique": "Loss of Productivity and Revenue",
+        "Use": "During the Unitronics Defacement Campaign , the CyberAv3ngers caused multiple businesses to halt operations in their industrial environments, impacting their typical business operations. These victims covered multiple sectors. [4]"
+    },
+    {
+        "Domain": "ICS",
+        "ID": "T0829",
+        "Technique": "Loss of View",
+        "Use": "During the Unitronics Defacement Campaign , the CyberAv3ngers replaced the existing graphic on the Programmable Logic Controller (PLC) Human-Machine Interface (HMI) with their own, thereby preventing PLC owners and operators from viewing PLC information on the HMI. [1] [4]"
+    }
+]

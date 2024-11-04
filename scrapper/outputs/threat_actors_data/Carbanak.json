@@ -1,0 +1,56 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.003",
+        "Technique": "Create or Modify System Process: Windows Service",
+        "Use": "Carbanak malware installs itself as a service to provide persistence and SYSTEM privileges. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.004",
+        "Technique": "Impair Defenses: Disable or Modify System Firewall",
+        "Use": "Carbanak may use netsh to add local firewall rule exceptions. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.004",
+        "Technique": "Masquerading: Masquerade Task or Service",
+        "Use": "Carbanak has copied legitimate service names to use for malicious services. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Carbanak has named malware \"svchost.exe,\" which is the name of the Windows shared service host program. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Carbanak has obtained and used open-source tools such as PsExec and Mimikatz . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1219",
+        "Technique": "Remote Access Software",
+        "Use": "Carbanak used legitimate programs such as AmmyyAdmin and Team Viewer for remote interactive C2 to target systems. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.011",
+        "Technique": "System Binary Proxy Execution: Rundll32",
+        "Use": "Carbanak installs VNC server software that executes through rundll32. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "Carbanak actors used legitimate credentials of banking employees to perform operations that sent them millions of dollars. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102.002",
+        "Technique": "Web Service: Bidirectional Communication",
+        "Use": "Carbanak has used a VBScript named \"ggldr\" that uses Google Apps Script, Sheets, and Forms services for C2. [8]"
+    }
+]

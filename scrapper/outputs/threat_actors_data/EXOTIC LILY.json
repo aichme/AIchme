@@ -1,0 +1,92 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "EXOTIC LILY has registered domains to spoof targeted organizations by changing the top-level domain (TLD) to \".us\", \".co\" or \".biz\". [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.001",
+        "Technique": "Establish Accounts: Social Media Accounts",
+        "Use": "EXOTIC LILY has established social media profiles to mimic employees of targeted companies. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.002",
+        "Technique": "Establish Accounts: Email Accounts",
+        "Use": "EXOTIC LILY has created e-mail accounts to spoof targeted organizations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "EXOTIC LILY has used malicious documents containing exploits for CVE-2021-40444 affecting Microsoft MSHTML. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589.002",
+        "Technique": "Gather Victim Identity Information: Email Addresses",
+        "Use": "EXOTIC LILY has gathered targeted individuals' e-mail addresses through open source research and website contact forms. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "EXOTIC LILY conducted an e-mail thread-hijacking campaign with malicious ISO attachments. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "EXOTIC LILY has relied on victims to open malicious links in e-mails for execution. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.003",
+        "Technique": "Phishing: Spearphishing via Service",
+        "Use": "EXOTIC LILY has used the e-mail notification features of legitimate file sharing services for spearphishing. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1597",
+        "Technique": "Search Closed Sources",
+        "Use": "EXOTIC LILY has searched for information on targeted individuals on business databases including RocketReach and CrunchBase. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1593.001",
+        "Technique": "Search Open Websites/Domains: Social Media",
+        "Use": "EXOTIC LILY has copied data from social media sites to impersonate targeted individuals. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1594",
+        "Technique": "Search Victim-Owned Websites",
+        "Use": "EXOTIC LILY has used contact forms on victim websites to generate phishing e-mails. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.001",
+        "Technique": "Stage Capabilities: Upload Malware",
+        "Use": "EXOTIC LILY has uploaded malicious payloads to file-sharing services including TransferNow, TransferXL, WeTransfer, and OneDrive. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "EXOTIC LILY has used malicious links to lure users into executing malicious payloads. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "EXOTIC LILY has gained execution through victims clicking on malicious LNK files contained within ISO files, which can execute hidden DLLs within the ISO. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102",
+        "Technique": "Web Service",
+        "Use": "EXOTIC LILY has used file-sharing services including WeTransfer, TransferNow, and OneDrive to deliver payloads. [1]"
+    }
+]

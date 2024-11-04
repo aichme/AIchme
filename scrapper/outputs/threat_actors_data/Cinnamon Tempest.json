@@ -1,0 +1,122 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Cinnamon Tempest has used PowerShell to communicate with C2, download files, and execute reconnaissance commands. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Cinnamon Tempest has executed ransomware using batch scripts deployed via GPO. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.006",
+        "Technique": "Command and Scripting Interpreter: Python",
+        "Use": "Cinnamon Tempest has used a customized version of the Impacket wmiexec.py module to create renamed output files. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.003",
+        "Technique": "Create or Modify System Process: Windows Service",
+        "Use": "Cinnamon Tempest has created system services to establish persistence for deployed tooling. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "Cinnamon Tempest has used weaponized DLLs to load and decrypt payloads. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1484.001",
+        "Technique": "Domain or Tenant Policy Modification: Group Policy Modification",
+        "Use": "Cinnamon Tempest has used Group Policy to deploy batch scripts for ransomware deployment. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "Cinnamon Tempest has uploaded captured keystroke logs to the Alibaba Cloud Object Storage Service, Aliyun OSS. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "Cinnamon Tempest has exploited multiple unpatched vulnerabilities for initial access including vulnerabilities in Microsoft Exchange, Manage Engine AdSelfService Plus, Confluence, and Log4j. [1] [7] [5] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1657",
+        "Technique": "Financial Theft",
+        "Use": "Cinnamon Tempest has maintained leak sites for exfiltrated data in attempt to extort victims into paying a ransom. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.001",
+        "Technique": "Hijack Execution Flow: DLL Search Order Hijacking",
+        "Use": "Cinnamon Tempest has used search order hijacking to launch Cobalt Strike Beacons. [1] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.002",
+        "Technique": "Hijack Execution Flow: DLL Side-Loading",
+        "Use": "Cinnamon Tempest has abused legitimate executables to side-load weaponized DLLs. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Cinnamon Tempest has downloaded files, including Cobalt Strike , to compromised hosts. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Cinnamon Tempest has used open-source tools including customized versions of the Iox proxy tool, NPS tunneling tool, Meterpreter, and a keylogger that uploads data to Alibaba cloud storage. [5] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1572",
+        "Technique": "Protocol Tunneling",
+        "Use": "Cinnamon Tempest has used the Iox and NPS proxy and tunneling tools in combination  create multiple connections through a single tunnel. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090",
+        "Technique": "Proxy",
+        "Use": "Cinnamon Tempest has used a customized version of the Iox port-forwarding and proxy tool. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.002",
+        "Technique": "Remote Services: SMB/Windows Admin Shares",
+        "Use": "Cinnamon Tempest has used SMBexec for lateral movement. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1080",
+        "Technique": "Taint Shared Content",
+        "Use": "Cinnamon Tempest has deployed ransomware from a batch file in a network share. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "Cinnamon Tempest has used compromised user accounts to deploy payloads and create system services. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.002",
+        "Technique": "Domain Accounts",
+        "Use": "Cinnamon Tempest has obtained highly privileged credentials such as domain administrator in order to deploy malware. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "Cinnamon Tempest has used Impacket for lateral movement via WMI. [1] [5]"
+    }
+]

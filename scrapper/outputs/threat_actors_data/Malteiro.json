@@ -1,0 +1,74 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "Malteiro has utilized a dropper containing malicious VBS scripts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555",
+        "Technique": "Credentials from Password Stores",
+        "Use": "Malteiro has obtained credentials from mail clients via NirSoft MailPassView. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Credentials from Web Browsers",
+        "Use": "Malteiro has stolen credentials stored in the victim’s browsers via software tool NirSoft WebBrowserPassView. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "Malteiro has the ability to deobfuscate downloaded files prior to execution. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1657",
+        "Technique": "Financial Theft",
+        "Use": "Malteiro targets organizations in a wide variety of sectors via the use of Mispadu banking trojan with the goal of financial theft. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "Malteiro has used scripts encoded in Base64 certificates to distribute malware to victims. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Malteiro has sent spearphishing emails containing malicious .zip files. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055.001",
+        "Technique": "Process Injection: Dynamic-link Library Injection",
+        "Use": "Malteiro has injected Mispadu ’s DLL into a process. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518.001",
+        "Technique": "Software Discovery: Security Software Discovery",
+        "Use": "Malteiro collects the installed antivirus on the victim machine. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Malteiro collects the machine information, system architecture, the OS version, computer name, and Windows product name. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1614.001",
+        "Technique": "System Location Discovery: System Language Discovery",
+        "Use": "Malteiro will terminate Mispadu 's infection process if the language of the victim machine is not Spanish or Portuguese. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Malteiro has relied on users to execute .zip file attachments containing malicious URLs. [1]"
+    }
+]

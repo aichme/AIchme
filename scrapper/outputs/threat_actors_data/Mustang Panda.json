@@ -1,0 +1,266 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.001",
+        "Technique": "Acquire Infrastructure: Domains",
+        "Use": "Mustang Panda have acquired C2 domains prior to operations. [3] [5] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "Mustang Panda has communicated with its C2 via HTTP POST requests. [2] [3] [5] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "Mustang Panda has used RAR to create password-protected archives of collected documents prior to exfiltration. [3] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.003",
+        "Technique": "Archive Collected Data: Archive via Custom Method",
+        "Use": "Mustang Panda has encrypted documents with RC4 prior to exfiltration. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1119",
+        "Technique": "Automated Collection",
+        "Use": "Mustang Panda used custom batch scripts to collect files automatically from a targeted system. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "Mustang Panda has created the registry key HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Run\\AdobelmdyU to maintain persistence. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Mustang Panda has used malicious PowerShell scripts to enable execution. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Mustang Panda has executed HTA files via cmd.exe, and used batch scripts for collection. [2] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "Mustang Panda has embedded VBScript components in LNK files to download additional files and automate collection. [1] [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.001",
+        "Technique": "Data Staged: Local Data Staging",
+        "Use": "Mustang Panda has stored collected credential files in c:\\windows\\temp prior to exfiltration. Mustang Panda has also stored documents for exfiltration in a hidden folder on USB drives. [3] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1573.001",
+        "Technique": "Encrypted Channel: Symmetric Cryptography",
+        "Use": "Mustang Panda has encrypted C2 communications with RC4. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1585.002",
+        "Technique": "Establish Accounts: Email Accounts",
+        "Use": "Mustang Panda has leveraged the legitimate email marketing service SMTP2Go for phishing campaigns. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1546.003",
+        "Technique": "Event Triggered Execution: Windows Management Instrumentation Event Subscription",
+        "Use": "Mustang Panda 's custom ORat tool uses a WMI event consumer to maintain persistence. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1052.001",
+        "Technique": "Exfiltration Over Physical Medium: Exfiltration over USB",
+        "Use": "Mustang Panda has used a customized PlugX variant which could exfiltrate documents from air-gapped networks. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "Mustang Panda has exploited CVE-2017-0199 in Microsoft Word to execute code. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Mustang Panda has searched the entire target system for DOC, DOCX, PPT, PPTX, XLS, XLSX, and PDF files. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.001",
+        "Technique": "Hide Artifacts: Hidden Files and Directories",
+        "Use": "Mustang Panda 's PlugX variant has created a hidden folder on USB drives named RECYCLE.BIN to store malicious executables and collected data. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.002",
+        "Technique": "Hijack Execution Flow: DLL Side-Loading",
+        "Use": "Mustang Panda has used a legitimately signed executable to execute a malicious payload within a DLL file. [2] [5] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "Mustang Panda will delete their tools and files, and kill processes after their objectives are reached. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Mustang Panda has downloaded additional executables following the initial infection stage. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "Mustang Panda has used names like adobeupdate.dat and PotPlayerDB.dat to disguise PlugX , and a file named OneDrive.exe to load a Cobalt Strike payload. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.007",
+        "Technique": "Masquerading: Double File Extension",
+        "Use": "Mustang Panda has used an additional filename extension to hide the true file type. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027",
+        "Technique": "Obfuscated Files or Information",
+        "Use": "Mustang Panda has delivered initial payloads hidden using archives and encoding measures. [1] [2] [3] [5] [4] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.001",
+        "Technique": "Binary Padding",
+        "Use": "Mustang Panda has used junk code within their DLL files to hinder analysis. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.003",
+        "Technique": "OS Credential Dumping: NTDS",
+        "Use": "Mustang Panda has used vssadmin to create a volume shadow copy and retrieve the NTDS.dit file. Mustang Panda has also used reg save on the SYSTEM file Registry location to help extract the NTDS.dit file. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Mustang Panda has used spearphishing attachments to deliver initial access payloads. [5] [4] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "Mustang Panda has delivered malicious links to their intended targets. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1598.003",
+        "Technique": "Phishing for Information: Spearphishing Link",
+        "Use": "Mustang Panda has delivered web bugs to profile their intended targets. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "Mustang Panda has used tasklist /v to determine active process information. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1219",
+        "Technique": "Remote Access Software",
+        "Use": "Mustang Panda has installed TeamViewer on targeted systems. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1091",
+        "Technique": "Replication Through Removable Media",
+        "Use": "Mustang Panda has used a customized PlugX variant which could spread through USB connections. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "Mustang Panda has created a scheduled task to execute additional malicious software, as well as maintain persistence. [2] [3] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518",
+        "Technique": "Software Discovery",
+        "Use": "Mustang Panda has searched the victim system for the InstallUtil.exe program and its version. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608",
+        "Technique": "Stage Capabilities",
+        "Use": "Mustang Panda has used servers under their control to validate tracking pixels sent to phishing victims. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.001",
+        "Technique": "Upload Malware",
+        "Use": "Mustang Panda has hosted malicious payloads on DropBox including PlugX . [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.004",
+        "Technique": "System Binary Proxy Execution: InstallUtil",
+        "Use": "Mustang Panda has used InstallUtil.exe to execute a malicious Beacon stager. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.005",
+        "Technique": "System Binary Proxy Execution: Mshta",
+        "Use": "Mustang Panda has used mshta.exe to launch collection scripts. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "Mustang Panda has gathered system information using systeminfo . [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "Mustang Panda has used ipconfig and arp to determine network configuration information. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "Mustang Panda has used netstat -ano to determine network connection information. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "Mustang Panda has sent malicious links including links directing victims to a Google Drive folder. [1] [7] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Mustang Panda has sent malicious files requiring direct victim interaction to execute. [1] [2] [8] [5] [9] [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102",
+        "Technique": "Web Service",
+        "Use": "Mustang Panda has used DropBox URLs to deliver variants of PlugX . [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "Mustang Panda has executed PowerShell scripts via WMI. [2] [3]"
+    }
+]

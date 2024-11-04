@@ -1,0 +1,122 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "Ember Bear has used PowerShell to download and execute malicious code. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "Ember Bear had used cmd.exe and Windows Script Host (wscript) to execute malicious code. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.007",
+        "Technique": "Command and Scripting Interpreter: JavaScript",
+        "Use": "Ember Bear has used JavaScript to execute malicious code on a victim's machine. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "Ember Bear has exploited Microsoft Office vulnerability CVE-2017-11882. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.001",
+        "Technique": "Impair Defenses: Disable or Modify Tools",
+        "Use": "Ember Bear has executed a batch script designed to disable Windows Defender on a compromised host. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Ember Bear has used tools to download malicious code. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1112",
+        "Technique": "Modify Registry",
+        "Use": "Ember Bear has used an open source batch script to modify Windows Defender registry keys. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027",
+        "Technique": "Obfuscated Files or Information",
+        "Use": "Ember Bear has obfuscated malware to help avoid detection. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.001",
+        "Technique": "Binary Padding",
+        "Use": "Ember Bear has added extra spaces between JavaScript code characters to increase the overall file size. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.002",
+        "Technique": "Software Packing",
+        "Use": "Ember Bear has packed malware to help avoid detection. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.010",
+        "Technique": "Command Obfuscation",
+        "Use": "Ember Bear has obfuscated malicious scripts to help avoid detection. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "Ember Bear has obtained and used open source scripts from GitHub. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.003",
+        "Technique": "Obtain Capabilities: Code Signing Certificates",
+        "Use": "Ember Bear has stolen legitimate certificates to sign malicious payloads. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Ember Bear has sent spearphishing emails containing malicious attachments in the form of PDFs, Word documents, JavaScript files, and Control Panel File (CPL) executables. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "Ember Bear has sent spearphishing emails containing malicious links. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "Ember Bear has used stolen certificates from Electrum Technologies GmbH to sign payloads. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.002",
+        "Technique": "System Binary Proxy Execution: Control Panel",
+        "Use": "Ember Bear has used control panel files (CPL), delivered via e-mail, for execution. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "Ember Bear has attempted to lure users to click on a malicious link within a spearphishing email. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Ember Bear has attempted to lure victims into executing malicious files. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102",
+        "Technique": "Web Service",
+        "Use": "Ember Bear has used Discord's content delivery network (CDN) to deliver malware and malicious scripts to a compromised host. [3]"
+    }
+]

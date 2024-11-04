@@ -1,0 +1,170 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1557.002",
+        "Technique": "Adversary-in-the-Middle: ARP Cache Poisoning",
+        "Use": "LuminousMoth has used ARP spoofing to redirect a compromised machine to an actor-controlled website. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "LuminousMoth has used HTTP for C2. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560",
+        "Technique": "Archive Collected Data",
+        "Use": "LuminousMoth has manually archived stolen files from victim machines before exfiltration. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "LuminousMoth has used malicious DLLs that setup persistence in the Registry Key HKCU\\Software\\Microsoft\\Windows\\Current Version\\Run . [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "LuminousMoth has collected files and data from compromised machines. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1030",
+        "Technique": "Data Transfer Size Limits",
+        "Use": "LuminousMoth has split archived files into multiple parts to bypass a 5MB limit. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1587.001",
+        "Technique": "Develop Capabilities: Malware",
+        "Use": "LuminousMoth has used unique malware for information theft and exfiltration. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1041",
+        "Technique": "Exfiltration Over C2 Channel",
+        "Use": "LuminousMoth has used malware that exfiltrates stolen data to its C2 server. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "LuminousMoth has exfiltrated data to Google Drive. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "LuminousMoth has used malware that scans for files in the Documents, Desktop, and Download folders and in other drives. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.001",
+        "Technique": "Hide Artifacts: Hidden Files and Directories",
+        "Use": "LuminousMoth has used malware to store malicious binaries in hidden directories on victim's USB drives. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.002",
+        "Technique": "Hijack Execution Flow: DLL Side-Loading",
+        "Use": "LuminousMoth has used legitimate executables such as winword.exe and igfxem.exe to side-load their malware. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "LuminousMoth has downloaded additional malware and tools onto a compromised host. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "LuminousMoth has disguised their exfiltration malware as ZoomVideoApp.exe . [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1112",
+        "Technique": "Modify Registry",
+        "Use": "LuminousMoth has used malware that adds Registry keys for persistence. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.001",
+        "Technique": "Obtain Capabilities: Malware",
+        "Use": "LuminousMoth has obtained and used malware such as Cobalt Strike . [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "LuminousMoth has obtained an ARP spoofing tool from GitHub. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.004",
+        "Technique": "Obtain Capabilities: Digital Certificates",
+        "Use": "LuminousMoth has used a valid digital certificate for some of their malware. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "LuminousMoth has sent spearphishing emails containing a malicious Dropbox download link. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1091",
+        "Technique": "Replication Through Removable Media",
+        "Use": "LuminousMoth has used malicious DLLs to spread malware to connected removable USB drives on infected machines. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "LuminousMoth has created scheduled tasks to establish persistence for their tools. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.001",
+        "Technique": "Stage Capabilities: Upload Malware",
+        "Use": "LuminousMoth has hosted malicious payloads on Dropbox. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.004",
+        "Technique": "Stage Capabilities: Drive-by Target",
+        "Use": "LuminousMoth has redirected compromised machines to an actor-controlled webpage through HTML injection. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1608.005",
+        "Technique": "Stage Capabilities: Link Target",
+        "Use": "LuminousMoth has created a link to a Dropbox file that has been used in their spear-phishing operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1539",
+        "Technique": "Steal Web Session Cookie",
+        "Use": "LuminousMoth has used an unnamed post-exploitation tool to steal cookies from the Chrome browser. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "LuminousMoth has signed their malware with a valid digital signature. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "LuminousMoth has used a malicious DLL to collect the username from compromised hosts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "LuminousMoth has lured victims into clicking malicious Dropbox download links delivered through spearphishing. [1]"
+    }
+]

@@ -1,0 +1,326 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "Scattered Spider leverages legitimate domain accounts to gain access to the target environment. [3] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.003",
+        "Technique": "Account Discovery: Email Account",
+        "Use": "During C0027 , Scattered Spider accessed Azure AD to identify email addresses. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.004",
+        "Technique": "Account Discovery: Cloud Account",
+        "Use": "During C0027 , Scattered Spider accessed Azure AD to download bulk lists of group members and to identify privileged users, along with the email addresses and AD attributes. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098.001",
+        "Technique": "Account Manipulation: Additional Cloud Credentials",
+        "Use": "During C0027 , Scattered Spider used aws_consoler  to create temporary federated credentials for fake users in order to obfuscate which AWS credential is compromised and enable pivoting from the AWS CLI to console sessions without MFA. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098.003",
+        "Technique": "Account Manipulation: Additional Cloud Roles",
+        "Use": "During C0027 , Scattered Spider used IAM manipulation to gain persistence and to assume or elevate privileges. [5] Scattered Spider has also assigned user access admin roles in order to gain Tenant Root Group management permissions in Azure. [2] During C0027 , Scattered Spider used IAM manipulation to gain persistence and to assume or elevate privileges. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098.005",
+        "Technique": "Account Manipulation: Device Registration",
+        "Use": "During C0027 , Scattered Spider registered devices for MFA to maintain persistence through victims' VPN. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1217",
+        "Technique": "Browser Information Discovery",
+        "Use": "Scattered Spider retrieves browser histories via infostealer malware such as Raccoon Stealer. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1580",
+        "Technique": "Cloud Infrastructure Discovery",
+        "Use": "Scattered Spider enumerates cloud environments to identify server and backup management infrastructure, resource access, databases and storage containers. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1538",
+        "Technique": "Cloud Service Dashboard",
+        "Use": "Scattered Spider abused AWS Systems Manager Inventory to identify targets on the compromised network prior to lateral movement. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136",
+        "Technique": "Create Account",
+        "Use": "Scattered Spider creates new user identities within the compromised organization. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1486",
+        "Technique": "Data Encrypted for Impact",
+        "Use": "Scattered Spider has used BlackCat ransomware to encrypt files on VMWare ESXi servers. [3] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1530",
+        "Technique": "Data from Cloud Storage",
+        "Use": "Scattered Spider enumerates data stored in cloud resources for collection and exfiltration purposes. [3] During C0027 , Scattered Spider accessed victim OneDrive environments to search for VPN and MFA enrollment information, help desk instructions, and new hire guides. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1213.002",
+        "Technique": "Data from Information Repositories: Sharepoint",
+        "Use": "During C0027 , Scattered Spider accessed victim SharePoint environments to search for VPN and MFA enrollment information, help desk instructions, and new hire guides. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1213.003",
+        "Technique": "Data from Information Repositories: Code Repositories",
+        "Use": "Scattered Spider enumerates data stored within victim code repositories, such as internal GitHub repositories. [3] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074",
+        "Technique": "Data Staged",
+        "Use": "Scattered Spider stages data in a centralized database prior to exfiltration. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1006",
+        "Technique": "Direct Volume Access",
+        "Use": "Scattered Spider has created volume shadow copies of virtual domain controller disks to extract the NTDS.dit file. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1484.002",
+        "Technique": "Domain or Tenant Policy Modification: Trust Modification",
+        "Use": "Scattered Spider adds a federated identity provider to the victim’s SSO tenant and activates automatic account linking. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "Scattered Spider has exfiltrated victim data to the MEGA file sharing site. [3] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "During C0027 , Scattered Spider exploited CVE-2021-35464 in the ForgeRock Open Access Management (OpenAM) application server to gain initial access. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1068",
+        "Technique": "Exploitation for Privilege Escalation",
+        "Use": "Scattered Spider has deployed a malicious kernel driver through exploitation of CVE-2015-2291 in the Intel Ethernet diagnostics driver for Windows (iqvw64.sys). [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1133",
+        "Technique": "External Remote Services",
+        "Use": "Scattered Spider has leveraged legitimate remote management tools to maintain persistent access. [4] During C0027 , Scattered Spider used Citrix and VPNs to persist in compromised environments. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "Scattered Spider Spider enumerates a target organization for files and directories of interest, including source code. [3] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1657",
+        "Technique": "Financial Theft",
+        "Use": "Scattered Spider has deployed ransomware on compromised hosts for financial gain. [3] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589.001",
+        "Technique": "Gather Victim Identity Information: Credentials",
+        "Use": "During C0027 , Scattered Spider sent phishing messages via SMS to steal credentials. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.008",
+        "Technique": "Hide Artifacts: Email Hiding Rules",
+        "Use": "Scattered Spider creates inbound rules on the compromised email accounts of security personnel to automatically delete emails from vendor security products. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1656",
+        "Technique": "Impersonation",
+        "Use": "During C0027 , Scattered Spider impersonated legitimate IT personnel in phone calls and text messages either to direct victims to a credential harvesting site or getting victims to run commercial remote monitoring and management (RMM) tools. [5] Scattered Spider utilized social engineering to compel IT help desk personnel to reset passwords and MFA tokens. [3] [2] During C0027 , Scattered Spider impersonated legitimate IT personnel in phone calls and text messages either to direct victims to a credential harvesting site or getting victims to run commercial remote monitoring and management (RMM) tools. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "During C0027 , Scattered Spider downloaded tools using victim organization systems. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1556.006",
+        "Technique": "Modify Authentication Process: Multi-Factor Authentication",
+        "Use": "After compromising user accounts, Scattered Spider registers their own MFA tokens. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1556.009",
+        "Technique": "Modify Authentication Process: Conditional Access Policies",
+        "Use": "Scattered Spider has added additional trusted locations to Azure AD conditional access policies. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1578.002",
+        "Technique": "Modify Cloud Compute Infrastructure: Create Cloud Instance",
+        "Use": "During C0027 , Scattered Spider used access to the victim's Azure tenant to create Azure VMs. [5] Scattered Spider has also created Amazon EC2 instances within the victim's environment. [3] During C0027 , Scattered Spider used access to the victim's Azure tenant to create Azure VMs. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1621",
+        "Technique": "Multi-Factor Authentication Request Generation",
+        "Use": "Scattered Spider has used multifactor authentication (MFA) fatigue by sending repeated MFA authentication requests to targets. [4] During C0027 , Scattered Spider attempted to gain access by continuously sending MFA messages to the victim until they accept the MFA push challenge. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1046",
+        "Technique": "Network Service Discovery",
+        "Use": "During C0027 , used RustScan to scan for open ports on targeted ESXi appliances. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "During C0027 , Scattered Spider obtained and used multiple tools including the LINpeas privilege escalation utility, aws_consoler, rsocx reverse proxy, Level RMM tool, and RustScan port scanner. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.003",
+        "Technique": "OS Credential Dumping: NTDS",
+        "Use": "Scattered Spider has extracted the NTDS.dit file by creating volume shadow copies of virtual domain controller disks. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.006",
+        "Technique": "OS Credential Dumping: DCSync",
+        "Use": "During C0027 , Scattered Spider performed domain replication. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1069.003",
+        "Technique": "Permission Groups Discovery: Cloud Groups",
+        "Use": "During C0027 , Scattered Spider accessed Azure AD to download bulk lists of group members and their Active Directory attributes. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.004",
+        "Technique": "Phishing: Spearphishing Voice",
+        "Use": "During C0027 , Scattered Spider impersonated legitimate IT personnel in phone calls to direct victims to download a remote monitoring and management (RMM) tool that would allow the adversary to remotely control their system. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1598",
+        "Technique": "Phishing for Information",
+        "Use": "Scattered Spider has used a combination of credential phishing and social engineering to capture one-time-password (OTP) codes. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Spearphishing Service",
+        "Use": "During C0027 , Scattered Spider sent Telegram messages impersonating IT personnel to harvest credentials. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.004",
+        "Technique": "Spearphishing Voice",
+        "Use": "During C0027 , Scattered Spider used phone calls to instruct victims to navigate to credential-harvesting websites. [5] Scattered Spider has also called employees at target organizations and compelled them to navigate to fake login portals using adversary-in-the-middle toolkits. [2] During C0027 , Scattered Spider used phone calls to instruct victims to navigate to credential-harvesting websites. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1572",
+        "Technique": "Protocol Tunneling",
+        "Use": "During C0027 , Scattered Spider used SSH tunneling in targeted environments. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090",
+        "Technique": "Proxy",
+        "Use": "During C0027 , Scattered Spider installed the open-source rsocx reverse proxy tool on a targeted ESXi appliance. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1219",
+        "Technique": "Remote Access Software",
+        "Use": "During C0027 , Scattered Spider directed victims to run remote monitoring and management (RMM) tools. [5] In addition to directing victims to run remote software, Scattered Spider members themselves also deploy RMM software including AnyDesk, LogMeIn, and ConnectWise Control to establish persistence on the compromised network. [3] [7] During C0027 , Scattered Spider directed victims to run remote monitoring and management (RMM) tools. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.007",
+        "Technique": "Remote Services: Cloud Services",
+        "Use": "During C0027 , Scattered Spider used compromised Azure credentials for credential theft activity and lateral movement to on-premises systems. [5] Scattered Spider has also leveraged pre-existing AWS EC2 instances for lateral movement and data collection purposes. [3] During C0027 , Scattered Spider used compromised Azure credentials for credential theft activity and lateral movement to on-premises systems. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "Scattered Spider can enumerate remote systems, such as VMware vCenter infrastructure. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1539",
+        "Technique": "Steal Web Session Cookie",
+        "Use": "Scattered Spider retrieves browser cookies via Raccoon Stealer. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1553.002",
+        "Technique": "Subvert Trust Controls: Code Signing",
+        "Use": "Scattered Spider has used self-signed and stolen certificates originally issued to NVIDIA and Global Software LLC. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.001",
+        "Technique": "Unsecured Credentials: Credentials In Files",
+        "Use": "Scattered Spider Spider searches for credential storage documentation on a compromised host. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.004",
+        "Technique": "Unsecured Credentials: Private Keys",
+        "Use": "Scattered Spider enumerate and exfiltrate code-signing certificates from a compromised host. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204",
+        "Technique": "User Execution",
+        "Use": "Scattered Spider has impersonated organization IT and helpdesk staff to instruct victims to execute commercial remote access tools to gain initial access. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.004",
+        "Technique": "Valid Accounts: Cloud Accounts",
+        "Use": "During C0027 , Scattered Spider leveraged compromised credentials from victim users  to authenticate to Azure tenants. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102",
+        "Technique": "Web Service",
+        "Use": "During C0027 , Scattered Spider downloaded tools from sites including file.io, GitHub, and paste.ee. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "During C0027 , Scattered Spider used Windows Management Instrumentation (WMI) to move laterally via Impacket . [5]"
+    },
+    {
+        "Domain": "Mobile",
+        "ID": "T1660",
+        "Technique": "Phishing",
+        "Use": "Scattered Spider has sent SMS phishing messages to employee phone numbers with a link to a site configured with a fake credential harvesting login portal. [2]"
+    }
+]

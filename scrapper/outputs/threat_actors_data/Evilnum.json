@@ -1,0 +1,68 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1548.002",
+        "Technique": "Abuse Elevation Control Mechanism: Bypass User Account Control",
+        "Use": "Evilnum has used PowerShell to bypass UAC. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.007",
+        "Technique": "Command and Scripting Interpreter: JavaScript",
+        "Use": "Evilnum has used malicious JavaScript files on the victim's machine. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555",
+        "Technique": "Credentials from Password Stores",
+        "Use": "Evilnum can collect email credentials from victims. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.001",
+        "Technique": "Hijack Execution Flow: DLL Search Order Hijacking",
+        "Use": "Evilnum has used the malware variant, TerraTV, to load a malicious DLL placed in the TeamViewer directory, instead of the original Windows DLL located in a system folder. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "Evilnum has deleted files used during infection. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Evilnum can deploy additional components or tools as needed. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "Evilnum has sent spearphishing emails containing a link to a zip file hosted on Google Drive. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1219",
+        "Technique": "Remote Access Software",
+        "Use": "EVILNUM has used the malware variant, TerraTV, to run a legitimate TeamViewer application to connect to compromrised machines. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1539",
+        "Technique": "Steal Web Session Cookie",
+        "Use": "Evilnum can steal cookies and session information from browsers. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "Evilnum has sent spearphishing emails designed to trick the recipient into opening malicious shortcut links which downloads a .LNK file. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1497.001",
+        "Technique": "Virtualization/Sandbox Evasion: System Checks",
+        "Use": "Evilnum has used a component called TerraLoader to check certain hardware and file information to detect sandboxed environments. [1]"
+    }
+]

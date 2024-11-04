@@ -1,0 +1,260 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "APT38 used a backdoor, QUICKRIDE, to communicate to the C2 server over HTTP and HTTPS. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1217",
+        "Technique": "Browser Information Discovery",
+        "Use": "APT38 has collected browser bookmark information to learn more about compromised hosts, obtain personal information about users, and acquire details about internal network resources. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1110",
+        "Technique": "Brute Force",
+        "Use": "APT38 has used brute force techniques to attempt account access when passwords are unknown or when password hashes are unavailable. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1115",
+        "Technique": "Clipboard Data",
+        "Use": "APT38 used a Trojan called KEYLIME to collect data from the clipboard. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "APT38 has used PowerShell to execute commands and other operational tasks. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "APT38 has used a command-line tunneler, NACHOCHEESE, to give them shell access to a victim’s machine. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "APT38 has used VBScript to execute commands and other operational tasks. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1543.003",
+        "Technique": "Create or Modify System Process: Windows Service",
+        "Use": "APT38 has installed a new Windows service to establish persistence. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1485",
+        "Technique": "Data Destruction",
+        "Use": "APT38 has used a custom secure delete function to make deleted files unrecoverable. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1486",
+        "Technique": "Data Encrypted for Impact",
+        "Use": "APT38 has used Hermes ransomware to encrypt files with AES256. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "APT38 has collected data from a compromised host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1565.001",
+        "Technique": "Data Manipulation: Stored Data Manipulation",
+        "Use": "APT38 has used DYEPACK to create, delete, and alter records in databases used for SWIFT transactions. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1565.002",
+        "Technique": "Data Manipulation: Transmitted Data Manipulation",
+        "Use": "APT38 has used DYEPACK to manipulate SWIFT messages en route to a printer. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1565.003",
+        "Technique": "Data Manipulation: Runtime Data Manipulation",
+        "Use": "APT38 has used DYEPACK.FOX to manipulate PDF data as it is accessed to remove traces of fraudulent SWIFT transactions from the data displayed to the end user. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1561.002",
+        "Technique": "Disk Wipe: Disk Structure Wipe",
+        "Use": "APT38 has used a custom MBR wiper named BOOTWRECK to render systems inoperable. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "APT38 has conducted watering holes schemes to gain initial access to victims. [2] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "APT38 have enumerated files and directories, or searched in specific locations within a compromised host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.003",
+        "Technique": "Impair Defenses: Impair Command History Logging",
+        "Use": "APT38 has prepended a space to all of their terminal commands to operate without leaving traces in the HISTCONTROL environment. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.004",
+        "Technique": "Impair Defenses: Disable or Modify System Firewall",
+        "Use": "APT38 have created firewall exemptions on specific ports, including ports 443, 6443, 8443, and 9443. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.001",
+        "Technique": "Indicator Removal: Clear Windows Event Logs",
+        "Use": "APT38 clears Window Event logs and Sysmon logs from the system. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.004",
+        "Technique": "Indicator Removal: File Deletion",
+        "Use": "APT38 has used a utility called CLOSESHAVE that can securely delete a file from the system. They have also removed malware, tools, or other non-native files used during the intrusion to reduce their footprint or as part of the post-intrusion cleanup process. [2] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1070.006",
+        "Technique": "Indicator Removal: Timestomp",
+        "Use": "APT38 has modified data timestamps to mimic files that are in the same folder on a compromised host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "APT38 used a backdoor, NESTEGG, that has the capability to download and upload files to and from a victim’s machine. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1056.001",
+        "Technique": "Input Capture: Keylogging",
+        "Use": "APT38 used a Trojan called KEYLIME to capture keystrokes from the victim’s machine. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1112",
+        "Technique": "Modify Registry",
+        "Use": "APT38 uses a tool called CLEANTOAD that has the capability to modify Registry keys. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1106",
+        "Technique": "Native API",
+        "Use": "APT38 has used the Windows API to execute code within a victim's system. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1135",
+        "Technique": "Network Share Discovery",
+        "Use": "APT38 has enumerated network shares on a compromised host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.002",
+        "Technique": "Obfuscated Files or Information: Software Packing",
+        "Use": "APT38 has used several code packing methods such as Themida, Enigma, VMProtect, and Obsidium, to pack their implants. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "APT38 has obtained and used open-source tools such as Mimikatz . [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "APT38 has conducted spearphishing campaigns using malicious email attachments. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "APT38 leveraged Sysmon to understand the processes, services in the organization. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.003",
+        "Technique": "Scheduled Task/Job: Cron",
+        "Use": "APT38 has used cron to create pre-scheduled and periodic background jobs on a Linux system. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "APT38 has used Task Scheduler to run programs at system startup or on a scheduled basis for persistence. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.003",
+        "Technique": "Server Software Component: Web Shell",
+        "Use": "APT38 has used web shells for persistence or to ensure redundant access. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518.001",
+        "Technique": "Software Discovery: Security Software Discovery",
+        "Use": "APT38 has identified security software, configurations, defensive tools, and sensors installed on a compromised system. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.001",
+        "Technique": "System Binary Proxy Execution: Compiled HTML File",
+        "Use": "APT38 has used CHM files to move concealed payloads. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.011",
+        "Technique": "System Binary Proxy Execution: Rundll32",
+        "Use": "APT38 has used rundll32.exe to execute binaries, scripts, and Control Panel Item files and to execute code via proxy to avoid triggering security tools. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "APT38 has attempted to get detailed information about a compromised host, including the operating system, version, patches, hotfixes, and service packs. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "APT38 installed a port monitoring tool, MAPMAKER, to print the active TCP connections on the local system. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "APT38 has identified primary users, currently logged in users, sets of users that commonly use a system, or inactive users. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1569.002",
+        "Technique": "System Services: Service Execution",
+        "Use": "APT38 has created new services or modified existing ones to run executables, commands, or scripts. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1529",
+        "Technique": "System Shutdown/Reboot",
+        "Use": "APT38 has used a custom MBR wiper named BOOTWRECK, which will initiate a system reboot after wiping the victim's MBR. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "APT38 has attempted to lure victims into enabling malicious macros within email attachments. [1]"
+    }
+]

@@ -1,0 +1,188 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1098",
+        "Technique": "Account Manipulation",
+        "Use": "HAFNIUM has granted privileges to domain accounts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.003",
+        "Technique": "Acquire Infrastructure: Virtual Private Server",
+        "Use": "HAFNIUM has operated from leased virtual private servers (VPS) in the United States. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.006",
+        "Technique": "Acquire Infrastructure: Web Services",
+        "Use": "HAFNIUM has acquired web services for use in C2 and exfiltration. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "HAFNIUM has used open-source C2 frameworks, including Covenant. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "HAFNIUM has used 7-Zip and WinRAR to compress stolen files for exfiltration. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "HAFNIUM has used the Exchange Power Shell module Set-OabVirtualDirectoryPowerShell to export mailbox data. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "HAFNIUM has used cmd.exe to execute commands on the victim's machine. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1136.002",
+        "Technique": "Create Account: Domain Account",
+        "Use": "HAFNIUM has created domain accounts. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1132.001",
+        "Technique": "Data Encoding: Standard Encoding",
+        "Use": "HAFNIUM has used ASCII encoding for C2 traffic. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "HAFNIUM has collected data and files from a compromised machine. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1114.002",
+        "Technique": "Email Collection: Remote Email Collection",
+        "Use": "HAFNIUM has used web shells to export mailbox data. [1] [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "HAFNIUM has exfiltrated data to file sharing sites, including MEGA. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "HAFNIUM has exploited CVE-2021-44228 in Log4j and CVE-2021-26855, CVE-2021-26857, CVE-2021-26858, and CVE-2021-27065  to compromise on-premises versions of Microsoft Exchange Server. [1] [2] [5] [6] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "HAFNIUM has searched file contents on a compromised host. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1592.004",
+        "Technique": "Gather Victim Host Information: Client Configurations",
+        "Use": "HAFNIUM has interacted with Office 365 tenants to gather details regarding target's environments. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589.002",
+        "Technique": "Gather Victim Identity Information: Email Addresses",
+        "Use": "HAFNIUM has collected e-mail addresses for users they intended to target. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1590",
+        "Technique": "Gather Victim Network Information",
+        "Use": "HAFNIUM gathered the fully qualified domain names (FQDNs) for targeted Exchange servers in the victim's environment. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1589.005",
+        "Technique": "IP Addresses",
+        "Use": "HAFNIUM has obtained IP addresses for publicly-accessible Exchange servers. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1564.001",
+        "Technique": "Hide Artifacts: Hidden Files and Directories",
+        "Use": "HAFNIUM has hidden files on a compromised host. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "HAFNIUM has downloaded malware and tools--including Nishang and PowerCat--onto a compromised host. [1] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1095",
+        "Technique": "Non-Application Layer Protocol",
+        "Use": "HAFNIUM has used TCP for C2. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "HAFNIUM has used procdump to dump the LSASS process memory. [1] [2] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.003",
+        "Technique": "OS Credential Dumping: NTDS",
+        "Use": "HAFNIUM has stolen copies of the Active Directory database (NTDS.DIT). [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "HAFNIUM has used tasklist to enumerate processes. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "HAFNIUM has enumerated domain controllers using net group \"Domain computers\" and nltest /dclist . [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.003",
+        "Technique": "Server Software Component: Web Shell",
+        "Use": "HAFNIUM has deployed multiple web shells on compromised servers including SIMPLESEESHARP, SPORTSBALL, China Chopper , and ASPXSpy . [1] [2] [5] [6] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.011",
+        "Technique": "System Binary Proxy Execution: Rundll32",
+        "Use": "HAFNIUM has used rundll32 to load malicious DLLs. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "HAFNIUM has collected IP information via IPInfo. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.001",
+        "Technique": "Internet Connection Discovery",
+        "Use": "HAFNIUM has checked for network connectivity from a compromised host using ping , including attempts to contact google[.]com . [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "HAFNIUM has used whoami to gather user information. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078.003",
+        "Technique": "Valid Accounts: Local Accounts",
+        "Use": "HAFNIUM has used the NT AUTHORITY\\SYSTEM account to create files on Exchange servers. [5]"
+    }
+]

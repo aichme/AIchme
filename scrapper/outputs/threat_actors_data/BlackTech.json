@@ -1,0 +1,86 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "BlackTech has exploited a buffer overflow vulnerability in Microsoft Internet Information Services (IIS) 6.0, CVE-2017-7269, in order to establish a new HTTP or command and control (C2) server. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "BlackTech has exploited multiple vulnerabilities for execution, including Microsoft Office vulnerabilities CVE-2012-0158, CVE-2014-6352, CVE-2017-0199, and Adobe Flash CVE-2015-5119. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.002",
+        "Technique": "Hijack Execution Flow: DLL Side-Loading",
+        "Use": "BlackTech has used DLL side loading by giving DLLs hardcoded names and placing them in searched directories. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.002",
+        "Technique": "Masquerading: Right-to-Left Override",
+        "Use": "BlackTech has used right-to-left-override to obfuscate the filenames of malicious e-mail attachments. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1106",
+        "Technique": "Native API",
+        "Use": "BlackTech has used built-in API functions. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1046",
+        "Technique": "Network Service Discovery",
+        "Use": "BlackTech has used the SNScan tool to find other potential targets on victim networks. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "BlackTech has obtained and used tools such as Putty, SNScan, and PsExec for its operations. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.003",
+        "Technique": "Obtain Capabilities: Code Signing Certificates",
+        "Use": "BlackTech has used stolen code-signing certificates for its malicious payloads. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.004",
+        "Technique": "Obtain Capabilities: Digital Certificates",
+        "Use": "BlackTech has used valid, stolen digital certificates for some of their malware and tools. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "BlackTech has used spearphishing e-mails with malicious password-protected archived files (ZIP or RAR) to deliver malware. [1] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "BlackTech has used spearphishing e-mails with links to cloud services to deliver malware. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1021.004",
+        "Technique": "Remote Services: SSH",
+        "Use": "BlackTech has used Putty for remote access. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "BlackTech has used e-mails with malicious links to lure victims into installing malware. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "BlackTech has used e-mails with malicious documents to lure victims into installing malware. [1] [7]"
+    }
+]

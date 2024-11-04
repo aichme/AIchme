@@ -1,0 +1,74 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1005",
+        "Technique": "Data from Local System",
+        "Use": "Andariel has collected large numbers of files from compromised network systems for later extraction. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1189",
+        "Technique": "Drive-by Compromise",
+        "Use": "Andariel has used watering hole attacks, often with zero-day exploits, to gain initial access to victims within a specific IP range. [3] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "Andariel has exploited numerous ActiveX vulnerabilities, including zero-days. [1] [2] [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1592.002",
+        "Technique": "Gather Victim Host Information: Software",
+        "Use": "Andariel has inserted a malicious script within compromised websites to collect potential victim information such as browser type, system language, Flash Player version, and other data. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1590.005",
+        "Technique": "Gather Victim Network Information: IP Addresses",
+        "Use": "Andariel has limited its watering hole attacks to specific IP address ranges. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "Andariel has downloaded additional tools and malware onto compromised hosts. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.003",
+        "Technique": "Obfuscated Files or Information: Steganography",
+        "Use": "Andariel has hidden malicious executables within PNG files. [8] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.001",
+        "Technique": "Obtain Capabilities: Malware",
+        "Use": "Andariel has used a variety of publicly-available remote access Trojans (RATs) for its operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Andariel has conducted spearphishing campaigns that included malicious Word or Excel attachments. [3] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "Andariel has used tasklist to enumerate processes and find a specific string. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "Andariel has used the netstat -naop tcp command to display TCP connections on a victim's machine. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Andariel has attempted to lure victims into enabling malicious macros within email attachments. [3]"
+    }
+]

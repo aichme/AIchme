@@ -1,0 +1,92 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.001",
+        "Technique": "Data Staged: Local Data Staging",
+        "Use": "BackdoorDiplomacy has copied files of interest to the main drive's recycle bin. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "BackdoorDiplomacy has exploited CVE-2020-5902, an F5 BIP-IP vulnerability, to drop a Linux backdoor. BackdoorDiplomacy has also exploited mis-configured Plesk servers. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.001",
+        "Technique": "Hijack Execution Flow: DLL Search Order Hijacking",
+        "Use": "BackdoorDiplomacy has executed DLL search order hijacking. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "BackdoorDiplomacy has downloaded additional files and tools onto a compromised host. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.004",
+        "Technique": "Masquerading: Masquerade Task or Service",
+        "Use": "BackdoorDiplomacy has disguised their backdoor droppers with naming conventions designed to blend into normal operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "BackdoorDiplomacy has dropped implants in folders named for legitimate software. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1046",
+        "Technique": "Network Service Discovery",
+        "Use": "BackdoorDiplomacy has used SMBTouch, a vulnerability scanner, to determine whether a target is vulnerable to EternalBlue malware. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1095",
+        "Technique": "Non-Application Layer Protocol",
+        "Use": "BackdoorDiplomacy has used EarthWorm for network tunneling with a SOCKS5 server and port transfer functionalities. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027",
+        "Technique": "Obfuscated Files or Information",
+        "Use": "BackdoorDiplomacy has obfuscated tools and malware it uses with VMProtect. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.001",
+        "Technique": "Obtain Capabilities: Malware",
+        "Use": "BackdoorDiplomacy has obtained and used leaked malware, including DoublePulsar, EternalBlue, EternalRocks, and EternalSynergy, in its operations. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "BackdoorDiplomacy has obtained a variety of open-source reconnaissance and red team tools for discovery and lateral movement. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1120",
+        "Technique": "Peripheral Device Discovery",
+        "Use": "BackdoorDiplomacy has used an executable to detect removable media, such as USB flash drives. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1055.001",
+        "Technique": "Process Injection: Dynamic-link Library Injection",
+        "Use": "BackdoorDiplomacy has dropped legitimate software onto a compromised host and used it to execute malicious DLLs. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1505.003",
+        "Technique": "Server Software Component: Web Shell",
+        "Use": "BackdoorDiplomacy has used web shells to establish an initial foothold and for lateral movement within a victim's system. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "BackdoorDiplomacy has used NetCat and PortQry  to enumerate network connections and display the status of related TCP and UDP ports. [1]"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.013",
+        "Technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "Use": "Mofang has compressed the ShimRat executable within malicious email attachments. Mofang has also encrypted payloads before they are downloaded to victims. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "Mofang delivered spearphishing emails with malicious documents, PDFs, or Excel files attached. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "Mofang delivered spearphishing emails with malicious links included. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "Mofang 's spearphishing emails required a user to click the link to connect to a compromised website. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "Mofang 's malicious spearphishing attachments required a user to open the file after receiving. [1]"
+    }
+]

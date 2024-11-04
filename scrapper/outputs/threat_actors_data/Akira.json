@@ -1,0 +1,68 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1531",
+        "Technique": "Account Access Removal",
+        "Use": "Akira deletes administrator accounts in victim networks prior to encryption. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "Akira uses utilities such as WinRAR to archive data prior to exfiltration. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1486",
+        "Technique": "Data Encrypted for Impact",
+        "Use": "Akira encrypts files in victim environments as part of ransomware operations. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1213.002",
+        "Technique": "Data from Information Repositories: Sharepoint",
+        "Use": "Akira has accessed and downloaded information stored in SharePoint instances as part of data gathering and exfiltration activity. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1482",
+        "Technique": "Domain Trust Discovery",
+        "Use": "Akira uses the built-in Nltest utility or tools such as AdFind to enumerate Active Directory trusts in victim environments. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1567.002",
+        "Technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "Use": "Akira will exfiltrate victim data using applications such as Rclone . [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1133",
+        "Technique": "External Remote Services",
+        "Use": "Akira uses compromised VPN accounts for initial access to victim networks. [2]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1657",
+        "Technique": "Financial Theft",
+        "Use": "Akira engages in double-extortion ransomware, exfiltrating files then encrypting them, in order to prompt victims to pay a ransom. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1219",
+        "Technique": "Remote Access Software",
+        "Use": "Akira uses legitimate utilities such as AnyDesk and PuTTy for maintaining remote access to victim environments. [2] [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1018",
+        "Technique": "Remote System Discovery",
+        "Use": "Akira uses software such as Advanced IP Scanner and MASSCAN to identify remote hosts within victim networks. [1]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1078",
+        "Technique": "Valid Accounts",
+        "Use": "Akira uses valid account information to remotely access victim networks, such as VPN credentials. [2] [1]"
+    }
+]

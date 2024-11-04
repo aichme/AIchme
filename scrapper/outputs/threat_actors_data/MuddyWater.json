@@ -1,0 +1,350 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1548.002",
+        "Technique": "Abuse Elevation Control Mechanism: Bypass User Account Control",
+        "Use": "MuddyWater uses various techniques to bypass UAC. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1087.002",
+        "Technique": "Account Discovery: Domain Account",
+        "Use": "MuddyWater has used cmd.exe net user /domain to enumerate domain users. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1583.006",
+        "Technique": "Acquire Infrastructure: Web Services",
+        "Use": "MuddyWater has used file sharing services including OneHub, Sync, and TeraBox to distribute tools. [10] [9] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1071.001",
+        "Technique": "Application Layer Protocol: Web Protocols",
+        "Use": "MuddyWater has used HTTP for C2 communications. [5] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1560.001",
+        "Technique": "Archive Collected Data: Archive via Utility",
+        "Use": "MuddyWater has used the native Windows cabinet creation tool, makecab.exe, likely to compress stolen data to be uploaded. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1547.001",
+        "Technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "Use": "MuddyWater has added Registry Run key KCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\SystemTextEncoding to establish persistence. [11] [14] [15] [6] [9] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.001",
+        "Technique": "Command and Scripting Interpreter: PowerShell",
+        "Use": "MuddyWater has used PowerShell for execution. [11] [16] [14] [3] [4] [15] [6] [9] [7] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Command and Scripting Interpreter: Windows Command Shell",
+        "Use": "MuddyWater has used a custom tool for creating reverse shells. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.005",
+        "Technique": "Command and Scripting Interpreter: Visual Basic",
+        "Use": "MuddyWater has used VBScript files to execute its POWERSTATS payload, as well as macros. [11] [16] [14] [3] [4] [5] [6] [9] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.006",
+        "Technique": "Command and Scripting Interpreter: Python",
+        "Use": "MuddyWater has developed tools in Python including Out1 . [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.007",
+        "Technique": "Command and Scripting Interpreter: JavaScript",
+        "Use": "MuddyWater has used JavaScript files to execute its POWERSTATS payload. [4] [11] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1555",
+        "Technique": "Credentials from Password Stores",
+        "Use": "MuddyWater has performed credential dumping with LaZagne and other tools, including by dumping passwords saved in victim email. [2] [3] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1059.003",
+        "Technique": "Credentials from Web Browsers",
+        "Use": "MuddyWater has run tools including Browser64 to steal passwords saved in victim web browsers. [3] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1132.001",
+        "Technique": "Data Encoding: Standard Encoding",
+        "Use": "MuddyWater has used tools to encode C2 communications including Base64 encoding. [5] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1074.001",
+        "Technique": "Data Staged: Local Data Staging",
+        "Use": "MuddyWater has stored a decoy PDF file within a victim's %temp% folder. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1140",
+        "Technique": "Deobfuscate/Decode Files or Information",
+        "Use": "MuddyWater has decoded base64-encoded PowerShell, JavaScript, and VBScript. [11] [16] [4] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1573.001",
+        "Technique": "Encrypted Channel: Symmetric Cryptography",
+        "Use": "MuddyWater has used AES to encrypt C2 responses. [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1041",
+        "Technique": "Exfiltration Over C2 Channel",
+        "Use": "MuddyWater has used C2 infrastructure to receive exfiltrated data. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1190",
+        "Technique": "Exploit Public-Facing Application",
+        "Use": "MuddyWater has exploited the Microsoft Exchange memory corruption vulnerability (CVE-2020-0688). [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1203",
+        "Technique": "Exploitation for Client Execution",
+        "Use": "MuddyWater has exploited the Office vulnerability CVE-2017-0199 for execution. [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1210",
+        "Technique": "Exploitation of Remote Services",
+        "Use": "MuddyWater has exploited the Microsoft Netlogon vulnerability (CVE-2020-1472). [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1083",
+        "Technique": "File and Directory Discovery",
+        "Use": "MuddyWater has used malware that checked if the ProgramData folder had folders or files with the keywords \"Kasper,\" \"Panda,\" or \"ESET.\" [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1574.002",
+        "Technique": "Hijack Execution Flow: DLL Side-Loading",
+        "Use": "MuddyWater maintains persistence on victim networks through side-loading dlls to trick legitimate programs into running malware. [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1562.001",
+        "Technique": "Impair Defenses: Disable or Modify Tools",
+        "Use": "MuddyWater can disable the system's local proxy settings. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1105",
+        "Technique": "Ingress Tool Transfer",
+        "Use": "MuddyWater has used malware that can upload additional files to the victim’s machine. [14] [4] [6] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1559.001",
+        "Technique": "Inter-Process Communication: Component Object Model",
+        "Use": "MuddyWater has used malware that has the capability to execute malicious code via COM, DCOM, and Outlook. [14] [5] [7]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1559.002",
+        "Technique": "Inter-Process Communication: Dynamic Data Exchange",
+        "Use": "MuddyWater has used malware that can execute PowerShell scripts via DDE. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1036.005",
+        "Technique": "Masquerading: Match Legitimate Name or Location",
+        "Use": "MuddyWater has disguised malicious executables and used filenames and Registry key names associated with Windows Defender. [11] [15] [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1104",
+        "Technique": "Multi-Stage Channels",
+        "Use": "MuddyWater has used one C2 to obtain enumeration scripts and monitor web logs, but a different C2 to send data back. [15]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.003",
+        "Technique": "Obfuscated Files or Information: Steganography",
+        "Use": "MuddyWater has stored obfuscated JavaScript code in an image file named temp.jpg. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.004",
+        "Technique": "Obfuscated Files or Information: Compile After Delivery",
+        "Use": "MuddyWater has used the .NET csc.exe tool to compile executables from downloaded C# code. [4]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.010",
+        "Technique": "Obfuscated Files or Information: Command Obfuscation",
+        "Use": "MuddyWater has used Daniel Bohannon’s Invoke-Obfuscation framework and obfuscated PowerShell scripts. [2] [17] The group has also used other obfuscation methods, including Base64 obfuscation of VBScripts and PowerShell commands. [2] [11] [14] [15] [5] [9] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1588.002",
+        "Technique": "Obtain Capabilities: Tool",
+        "Use": "MuddyWater has made use of legitimate tools ConnectWise and Remote Utilities to gain access to target environment. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1137.001",
+        "Technique": "Office Application Startup: Office Template Macros",
+        "Use": "MuddyWater has used a Word Template, Normal.dotm, for persistence. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.001",
+        "Technique": "OS Credential Dumping: LSASS Memory",
+        "Use": "MuddyWater has performed credential dumping with Mimikatz and procdump64.exe. [2] [3] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.004",
+        "Technique": "OS Credential Dumping: LSA Secrets",
+        "Use": "MuddyWater has performed credential dumping with LaZagne . [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1003.005",
+        "Technique": "OS Credential Dumping: Cached Domain Credentials",
+        "Use": "MuddyWater has performed credential dumping with LaZagne . [2] [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.001",
+        "Technique": "Phishing: Spearphishing Attachment",
+        "Use": "MuddyWater has compromised third parties and used compromised accounts to send spearphishing emails with targeted attachments to recipients. [2] [11] [14] [5] [10] [9] [7] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1566.002",
+        "Technique": "Phishing: Spearphishing Link",
+        "Use": "MuddyWater has sent targeted spearphishing e-mails with malicious links. [10] [9] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1057",
+        "Technique": "Process Discovery",
+        "Use": "MuddyWater has used malware to obtain a list of running processes on the system. [14] [5]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1090.002",
+        "Technique": "Proxy: External Proxy",
+        "Use": "MuddyWater has controlled POWERSTATS from behind a proxy network to obfuscate the C2 location. [3] MuddyWater has used a series of compromised websites that victims connected to randomly to relay information to command and control (C2). [6] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1219",
+        "Technique": "Remote Access Software",
+        "Use": "MuddyWater has used legitimate applications ScreenConnect and AteraAgent to manage systems remotely and move laterally. [9] [10] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.005",
+        "Technique": "Scheduled Task/Job: Scheduled Task",
+        "Use": "MuddyWater has used scheduled tasks to establish persistence. [6]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1113",
+        "Technique": "Screen Capture",
+        "Use": "MuddyWater has used malware that can capture screenshots of the victim’s machine. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1518",
+        "Technique": "Software Discovery",
+        "Use": "MuddyWater has used a PowerShell backdoor to check for Skype connectivity on the target machine. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1053.001",
+        "Technique": "Security Software Discovery",
+        "Use": "MuddyWater has used malware to check running processes against a hard-coded list of security tools often used by malware researchers. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.003",
+        "Technique": "System Binary Proxy Execution: CMSTP",
+        "Use": "MuddyWater has used CMSTP.exe and a malicious INF to execute its POWERSTATS payload. [11]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.005",
+        "Technique": "System Binary Proxy Execution: Mshta",
+        "Use": "MuddyWater has used mshta.exe to execute its POWERSTATS payload and to pass a PowerShell one-liner for execution. [11] [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1218.011",
+        "Technique": "System Binary Proxy Execution: Rundll32",
+        "Use": "MuddyWater has used malware that leveraged rundll32.exe in a Registry Run key to execute a .dll. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1082",
+        "Technique": "System Information Discovery",
+        "Use": "MuddyWater has used malware that can collect the victim’s OS version and machine name. [14] [15] [6] [9] [8]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1016",
+        "Technique": "System Network Configuration Discovery",
+        "Use": "MuddyWater has used malware to collect the victim’s IP address and domain name. [14]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1049",
+        "Technique": "System Network Connections Discovery",
+        "Use": "MuddyWater has used a PowerShell backdoor to check for Skype connections on the target machine. [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1033",
+        "Technique": "System Owner/User Discovery",
+        "Use": "MuddyWater has used malware that can collect the victim’s username. [14] [9]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1552.001",
+        "Technique": "Unsecured Credentials: Credentials In Files",
+        "Use": "MuddyWater has run a tool that steals passwords saved in victim email. [3]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.001",
+        "Technique": "User Execution: Malicious Link",
+        "Use": "MuddyWater has distributed URLs in phishing e-mails that link to lure documents. [10] [9] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1204.002",
+        "Technique": "User Execution: Malicious File",
+        "Use": "MuddyWater has attempted to get users to open malicious PDF attachment and to enable macros and launch malicious Microsoft Word documents delivered via spearphishing emails. [2] [11] [14] [15] [5] [6] [10] [9] [7] [8] [13]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1102.002",
+        "Technique": "Web Service: Bidirectional Communication",
+        "Use": "MuddyWater has used web services including OneHub to distribute remote access tools. [10]"
+    },
+    {
+        "Domain": "Enterprise",
+        "ID": "T1047",
+        "Technique": "Windows Management Instrumentation",
+        "Use": "MuddyWater has used malware that leveraged WMI for execution and querying host information. [14] [4] [15] [7]"
+    }
+]

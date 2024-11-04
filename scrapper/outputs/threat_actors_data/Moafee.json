@@ -1,0 +1,8 @@
+[
+    {
+        "Domain": "Enterprise",
+        "ID": "T1027.001",
+        "Technique": "Obfuscated Files or Information: Binary Padding",
+        "Use": "Moafee has been known to employ binary padding. [1]"
+    }
+]
